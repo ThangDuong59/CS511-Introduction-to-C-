@@ -1,0 +1,11 @@
+C:\Users\pupou\OneDrive\Máy tính\UIT\CS511\exercise\exercise1\bin\Debug\exercise1.exe.config
+C:\Users\pupou\OneDrive\Máy tính\UIT\CS511\exercise\exercise1\bin\Debug\exercise1.exe
+C:\Users\pupou\OneDrive\Máy tính\UIT\CS511\exercise\exercise1\bin\Debug\exercise1.pdb
+C:\Users\pupou\OneDrive\Máy tính\UIT\CS511\exercise\exercise1\obj\Debug\exercise1.csprojAssemblyReference.cache
+C:\Users\pupou\OneDrive\Máy tính\UIT\CS511\exercise\exercise1\obj\Debug\exercise1.Form1.resources
+C:\Users\pupou\OneDrive\Máy tính\UIT\CS511\exercise\exercise1\obj\Debug\exercise1.Form2.resources
+C:\Users\pupou\OneDrive\Máy tính\UIT\CS511\exercise\exercise1\obj\Debug\exercise1.Properties.Resources.resources
+C:\Users\pupou\OneDrive\Máy tính\UIT\CS511\exercise\exercise1\obj\Debug\exercise1.csproj.GenerateResource.cache
+C:\Users\pupou\OneDrive\Máy tính\UIT\CS511\exercise\exercise1\obj\Debug\exercise1.exe
+C:\Users\pupou\OneDrive\Máy tính\UIT\CS511\exercise\exercise1\obj\Debug\exercise1.pdb
+C:\Users\pupou\OneDrive\Máy tính\UIT\CS511\exercise\exercise1\obj\Debug\exercise1.Form3.resources

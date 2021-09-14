@@ -1,0 +1,10 @@
+D:\UIT\CS511\exercise\exercise2\BangGiaCuoc\bin\Debug\BangGiaCuoc.exe.config
+D:\UIT\CS511\exercise\exercise2\BangGiaCuoc\bin\Debug\BangGiaCuoc.exe
+D:\UIT\CS511\exercise\exercise2\BangGiaCuoc\bin\Debug\BangGiaCuoc.pdb
+D:\UIT\CS511\exercise\exercise2\BangGiaCuoc\obj\Debug\BangGiaCuoc.csprojAssemblyReference.cache
+D:\UIT\CS511\exercise\exercise2\BangGiaCuoc\obj\Debug\BangGiaCuoc.Form1.resources
+D:\UIT\CS511\exercise\exercise2\BangGiaCuoc\obj\Debug\BangGiaCuoc.Properties.Resources.resources
+D:\UIT\CS511\exercise\exercise2\BangGiaCuoc\obj\Debug\BangGiaCuoc.csproj.GenerateResource.cache
+D:\UIT\CS511\exercise\exercise2\BangGiaCuoc\obj\Debug\BangGiaCuoc.exe
+D:\UIT\CS511\exercise\exercise2\BangGiaCuoc\obj\Debug\BangGiaCuoc.pdb
+D:\UIT\CS511\exercise\exercise2\BangGiaCuoc\obj\Debug\BangGiaCuoc.Form2.resources
