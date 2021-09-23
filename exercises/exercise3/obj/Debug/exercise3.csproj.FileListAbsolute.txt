@@ -1,0 +1,9 @@
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise3\bin\Debug\exercise3.exe.config
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise3\bin\Debug\exercise3.exe
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise3\bin\Debug\exercise3.pdb
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise3\obj\Debug\exercise3.csprojAssemblyReference.cache
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise3\obj\Debug\exercise3.csproj.GenerateResource.cache
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise3\obj\Debug\exercise3.exe
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise3\obj\Debug\exercise3.pdb
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise3\obj\Debug\exercise3.Properties.Resources.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise3\obj\Debug\exercise3.Hotel.resources
