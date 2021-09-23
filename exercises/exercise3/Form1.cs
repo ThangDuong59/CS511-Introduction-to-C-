@@ -113,8 +113,13 @@ namespace exercise3
             button_thanh_toan.Enabled = false;
             button_dat_phong.Enabled = true;
 
+<<<<<<< HEAD
             dt.Rows[item_index]["Ngay"] = 0;
             dt.Rows[item_index]["TinhTrangPhong"] = "Trong";
+=======
+            dt.Rows[idindex]["Ngay"] = 0;
+            dt.Rows[idindex]["TinhTrangPhong"] = "Trong";
+>>>>>>> 41fe23336e26894bc5d7836594071224752c6d52
             MessageBox.Show("So tien da thanh toan: " + textbox_gia_phong.Text);
         }
 
@@ -141,8 +146,13 @@ namespace exercise3
             button_thanh_toan.Enabled = true;
             button_huy_phong.Enabled = true;
 
+<<<<<<< HEAD
             dt.Rows[item_index]["Ngay"] = numericupdown_so_ngay_o.Value;
             dt.Rows[item_index]["TinhTrangPhong"] = "Day";
+=======
+            dt.Rows[idindex]["Ngay"] = numericupdown_so_ngay_o.Value;
+            dt.Rows[idindex]["TinhTrangPhong"] = "Day";
+>>>>>>> 41fe23336e26894bc5d7836594071224752c6d52
         }
     }
 }
