@@ -17,7 +17,7 @@ namespace exercise3
         int so_phong_C = 0;
        
         DataTable dt = new DataTable();
-        int idindex = -1;
+        int item_index = -1;
         DataTable initialize_datatable()
         {
             DataTable dt = new DataTable();
@@ -76,8 +76,8 @@ namespace exercise3
         private void listview1_itemselectionchange(object sender, ListViewItemSelectionChangedEventArgs e)
         {
             string s = "MaPhong='" + e.Item.Text + "'";
-            idindex = e.ItemIndex;
-            System.Console.WriteLine("Phong: " + idindex.ToString());
+            item_index = e.ItemIndex;
+            System.Console.WriteLine("Phong: " + item_index.ToString());
             DataRow[] dr = dt.Select(s);
             textbox_ma_phong.Text = dr[0]["MaPhong"].ToString();
             combobox_loai_phong.Text = dr[0]["LoaiPhong"].ToString();
@@ -108,8 +108,13 @@ namespace exercise3
             radiobutton_trong.Checked = true;
             radiobutton_day.Checked = false;
             numericupdown_so_ngay_o.Value = 0;
-            dt.Rows[idindex]["Ngay"] = 0;
-            dt.Rows[idindex]["TinhTrangPhong"] = "Trong";
+
+            button_huy_phong.Enabled = false;
+            button_thanh_toan.Enabled = false;
+            button_dat_phong.Enabled = true;
+
+            dt.Rows[item_index]["Ngay"] = 0;
+            dt.Rows[item_index]["TinhTrangPhong"] = "Trong";
             MessageBox.Show("So tien da thanh toan: " + textbox_gia_phong.Text);
         }
 
@@ -117,17 +122,27 @@ namespace exercise3
         {
             radiobutton_trong.Checked = true;
             radiobutton_day.Checked = false;
+
+            button_huy_phong.Enabled = false;
+            button_thanh_toan.Enabled = false;
+            button_dat_phong.Enabled = true;
+
             numericupdown_so_ngay_o.Value = 0;
-            dt.Rows[idindex]["Ngay"] = 0;
-            dt.Rows[idindex]["TinhTrangPhong"] = "Trong";
+            dt.Rows[item_index]["Ngay"] = 0;
+            dt.Rows[item_index]["TinhTrangPhong"] = "Trong";
         }
 
         private void click_dat_phong(object sender, EventArgs e)
         {
             radiobutton_trong.Checked = false;
             radiobutton_day.Checked = true;
-            dt.Rows[idindex]["Ngay"] = numericupdown_so_ngay_o.Value;
-            dt.Rows[idindex]["TinhTrangPhong"] = "Day";
+
+            button_dat_phong.Enabled = false;
+            button_thanh_toan.Enabled = true;
+            button_huy_phong.Enabled = true;
+
+            dt.Rows[item_index]["Ngay"] = numericupdown_so_ngay_o.Value;
+            dt.Rows[item_index]["TinhTrangPhong"] = "Day";
         }
     }
 }
