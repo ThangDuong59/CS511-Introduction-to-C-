@@ -108,6 +108,11 @@ namespace exercise3
             radiobutton_trong.Checked = true;
             radiobutton_day.Checked = false;
             numericupdown_so_ngay_o.Value = 0;
+
+            button_huy_phong.Enabled = false;
+            button_thanh_toan.Enabled = false;
+            button_dat_phong.Enabled = true;
+
             dt.Rows[idindex]["Ngay"] = 0;
             dt.Rows[idindex]["TinhTrangPhong"] = "Trong";
             MessageBox.Show("So tien da thanh toan: " + textbox_gia_phong.Text);
@@ -117,6 +122,11 @@ namespace exercise3
         {
             radiobutton_trong.Checked = true;
             radiobutton_day.Checked = false;
+
+            button_huy_phong.Enabled = false;
+            button_thanh_toan.Enabled = false;
+            button_dat_phong.Enabled = true;
+
             numericupdown_so_ngay_o.Value = 0;
             dt.Rows[idindex]["Ngay"] = 0;
             dt.Rows[idindex]["TinhTrangPhong"] = "Trong";
@@ -126,6 +136,11 @@ namespace exercise3
         {
             radiobutton_trong.Checked = false;
             radiobutton_day.Checked = true;
+
+            button_dat_phong.Enabled = false;
+            button_thanh_toan.Enabled = true;
+            button_huy_phong.Enabled = true;
+
             dt.Rows[idindex]["Ngay"] = numericupdown_so_ngay_o.Value;
             dt.Rows[idindex]["TinhTrangPhong"] = "Day";
         }
