@@ -1,0 +1,10 @@
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice01\bin\Debug\practice01.exe.config
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice01\bin\Debug\practice01.exe
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice01\bin\Debug\practice01.pdb
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice01\obj\Debug\practice01.csprojAssemblyReference.cache
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice01\obj\Debug\practice01.Properties.Resources.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice01\obj\Debug\practice01.csproj.GenerateResource.cache
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice01\obj\Debug\practice01.exe
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice01\obj\Debug\practice01.pdb
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice01\obj\Debug\practice01.form_main.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice01\obj\Debug\practice01.Form_Splash_Screen.resources
