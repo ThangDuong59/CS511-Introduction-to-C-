@@ -290,7 +290,7 @@ namespace Buoi6
             this.label_panelTest_false.ForeColor = System.Drawing.Color.Crimson;
             this.label_panelTest_false.Location = new System.Drawing.Point(154, 580);
             this.label_panelTest_false.Name = "label_panelTest_false";
-            this.label_panelTest_false.Size = new System.Drawing.Size(100, 23);
+            this.label_panelTest_false.Size = new System.Drawing.Size(118, 23);
             this.label_panelTest_false.TabIndex = 8;
             this.label_panelTest_false.Text = "False: 0";
             // 
@@ -300,7 +300,7 @@ namespace Buoi6
             this.label_panelTest_true.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label_panelTest_true.Location = new System.Drawing.Point(20, 580);
             this.label_panelTest_true.Name = "label_panelTest_true";
-            this.label_panelTest_true.Size = new System.Drawing.Size(100, 23);
+            this.label_panelTest_true.Size = new System.Drawing.Size(118, 23);
             this.label_panelTest_true.TabIndex = 7;
             this.label_panelTest_true.Text = "True: 0";
             // 
@@ -435,7 +435,7 @@ namespace Buoi6
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1077, 654);
+            this.ClientSize = new System.Drawing.Size(1079, 654);
             this.ControlBox = false;
             this.Controls.Add(this.panelTest);
             this.Controls.Add(this.panelImport);

@@ -33,7 +33,7 @@ namespace Buoi6
             string[] fileDapAn = File.ReadAllLines(pathDapAn);
             richTextBox_panelImport_questions.Text = filedata.ToString();
             richTextBox_panelImport_questions.Font = new System.Drawing.Font(richTextBox_panelImport_questions.Font.Name, 16F);
-
+            button_panelMenu_test.Enabled = true;
             dt.Rows.Clear();
             using (StreamReader fileCauHoi = new StreamReader(pathTracNghiem))
             {
@@ -82,7 +82,6 @@ namespace Buoi6
             string filedata1 = stream.ReadToEnd();
             richTextBox_panelImport_dapAn.Text = filedata1.ToString();
             richTextBox_panelImport_dapAn.Font = new System.Drawing.Font(richTextBox_panelImport_dapAn.Font.Name, 16F);
-            button_panelMenu_test.Enabled = true;
             stream.Close();
         }
 
@@ -90,6 +89,8 @@ namespace Buoi6
         {
             panelImport.Visible = true;
             panelTest.Visible = false;
+            richTextBox_panelImport_questions.Text = "";
+            richTextBox_panelImport_dapAn.Text = "";
         }
         string ans;
         private void button_panelMenu_click_test(object sender, EventArgs e)
@@ -103,13 +104,26 @@ namespace Buoi6
             radioButton_panelTest_b.Text = Convert.ToString(dt.Rows[0]["Dapan3"]);
             radioButton_panelTest_d.Text = Convert.ToString(dt.Rows[0]["Dapan4"]);
             label_panelTest_dapAn.Font = new System.Drawing.Font(label_panelTest_dapAn.Font.Name, 16F);
+
+            radioButton_panelTest_a.Enabled = true;
+            radioButton_panelTest_b.Enabled = true;
+            radioButton_panelTest_c.Enabled = true;
+            radioButton_panelTest_d.Enabled = true;
+            button_panelTest_ketQua.Enabled = true;
+            button_panelTest_tien.Enabled = true;
             button_panelTest_lui.Enabled = false;
+
+            label_panelTest_true.Text = "True: 0";
+            label_panelTest_false.Text = "False: 0";
+
+            listView_panelTest_dapAn.Items.Clear();
+            a = 0;
+            button_panelMenu_import.Enabled = false;
 
             radioButton_panelTest_a.Checked = true;
             radioButton_panelTest_c.Checked = false;
             radioButton_panelTest_b.Checked = false;
             radioButton_panelTest_d.Checked = false;
-
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -215,11 +229,13 @@ namespace Buoi6
             button_panelTest_lui.Enabled = false;
             button_panelTest_tien.Enabled = false;
             button_panelMenu_test.Enabled = false;
+            button_panelMenu_import.Enabled = true;
 
             string t = " ";
             int tang = 1;
             int soCauDung = 0;
             int soCauSai = 0;
+            listView_panelTest_dapAn.View = View.LargeIcon;
             if (radioButton_panelTest_a.Checked == true)
             {
                 ans = "A";
@@ -240,7 +256,7 @@ namespace Buoi6
                 ans = "D";
                 dt.Rows[a]["Picked"] = ans;
             }
-            for (int i = 0; i <= 49; i++)
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
                 if (Convert.ToString(dt.Rows[i]["Picked"]) == " ")
                 {
