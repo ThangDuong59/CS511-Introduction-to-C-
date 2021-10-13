@@ -31,6 +31,10 @@ namespace Buoi6
             StreamReader stream = new StreamReader(pathTracNghiem);
             string filedata = stream.ReadToEnd();
             string[] fileDapAn = File.ReadAllLines(pathDapAn);
+            for(int i = 0; i < fileDapAn.Length; ++i)
+            {
+                fileDapAn[i] = fileDapAn[i].Split(" ".ToCharArray())[3];
+            }
             richTextBox_panelImport_questions.Text = filedata.ToString();
             richTextBox_panelImport_questions.Font = new System.Drawing.Font(richTextBox_panelImport_questions.Font.Name, 16F);
             button_panelMenu_test.Enabled = true;
@@ -147,12 +151,12 @@ namespace Buoi6
             }
             else if (radioButton_panelTest_c.Checked == true)
             {
-                ans = "B";
+                ans = "C";
                 dt.Rows[a]["Picked"] = ans;
             }
             else if (radioButton_panelTest_b.Checked == true)
             {
-                ans = "C";
+                ans = "B";
                 dt.Rows[a]["Picked"] = ans;
             }
             else if (radioButton_panelTest_d.Checked == true)
@@ -168,10 +172,34 @@ namespace Buoi6
             radioButton_panelTest_d.Text = Convert.ToString(dt.Rows[a]["Dapan4"]);
             label_panelTest_dapAn.Font = new System.Drawing.Font(label_panelTest_dapAn.Font.Name, 16F);
 
-            radioButton_panelTest_a.Checked = true;
-            radioButton_panelTest_c.Checked = false;
-            radioButton_panelTest_b.Checked = false;
-            radioButton_panelTest_d.Checked = false;
+            if (dt.Rows[a]["Picked"].ToString() == " " || dt.Rows[a]["Picked"].ToString() == "A")
+            {
+                radioButton_panelTest_a.Checked = true;
+                radioButton_panelTest_c.Checked = false;
+                radioButton_panelTest_b.Checked = false;
+                radioButton_panelTest_d.Checked = false;
+            }
+            else if (dt.Rows[a]["Picked"].ToString() == "B")
+            {
+                radioButton_panelTest_a.Checked = false;
+                radioButton_panelTest_c.Checked = false;
+                radioButton_panelTest_b.Checked = true;
+                radioButton_panelTest_d.Checked = false;
+            }
+            else if (dt.Rows[a]["Picked"].ToString() == "C")
+            {
+                radioButton_panelTest_a.Checked = false;
+                radioButton_panelTest_c.Checked = true;
+                radioButton_panelTest_b.Checked = false;
+                radioButton_panelTest_d.Checked = false;
+            }
+            else if (dt.Rows[a]["Picked"].ToString() == "D")
+            {
+                radioButton_panelTest_a.Checked = false;
+                radioButton_panelTest_c.Checked = false;
+                radioButton_panelTest_b.Checked = false;
+                radioButton_panelTest_d.Checked = true;
+            }
 
             button_panelTest_lui.Enabled = true;
             if(a == 49)
@@ -182,7 +210,7 @@ namespace Buoi6
 
         private void button_panelTest_click_lui(object sender, EventArgs e)
         {
-            a--;
+            --a;
             label_panelTest_dapAn.Text = Convert.ToString(dt.Rows[a]["Question"]);
             radioButton_panelTest_a.Text = Convert.ToString(dt.Rows[a]["Dapan1"]);
             radioButton_panelTest_c.Text = Convert.ToString(dt.Rows[a]["Dapan2"]);
@@ -200,15 +228,15 @@ namespace Buoi6
             else if (answer == "B")
             {
                 radioButton_panelTest_a.Checked = false;
-                radioButton_panelTest_c.Checked = true;
-                radioButton_panelTest_b.Checked = false;
+                radioButton_panelTest_c.Checked = false;
+                radioButton_panelTest_b.Checked = true;
                 radioButton_panelTest_d.Checked = false;
             }
             else if (answer == "C")
             {
                 radioButton_panelTest_a.Checked = false;
-                radioButton_panelTest_c.Checked = false;
-                radioButton_panelTest_b.Checked = true;
+                radioButton_panelTest_c.Checked = true;
+                radioButton_panelTest_b.Checked = false;
                 radioButton_panelTest_d.Checked = false;
             }
             else if (answer == "D")
