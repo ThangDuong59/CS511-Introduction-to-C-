@@ -2514,7 +2514,7 @@ namespace practice01
         private int welcomeImageNumber = 1;
         private void loadNextWelcomeImage()
         {
-            if (welcomeImageNumber == 3)
+            if (welcomeImageNumber == 4)
             {
                 welcomeImageNumber = 1;
             }
@@ -2525,7 +2525,7 @@ namespace practice01
         private int voucherImageNumber = 1;
         private void loadNextVoucherImage()
         {
-            if (voucherImageNumber == 3)
+            if (voucherImageNumber == 4)
             {
                 voucherImageNumber = 1;
             }
