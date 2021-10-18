@@ -1,0 +1,10 @@
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise6\bin\Debug\exercise6.exe.config
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise6\bin\Debug\exercise6.exe
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise6\bin\Debug\exercise6.pdb
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise6\obj\Debug\exercise6.csprojAssemblyReference.cache
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise6\obj\Debug\exercise6.Form1.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise6\obj\Debug\exercise6.Properties.Resources.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise6\obj\Debug\exercise6.csproj.GenerateResource.cache
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise6\obj\Debug\exercise6.exe
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise6\obj\Debug\exercise6.pdb
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise6\obj\Debug\exercise6.Form2.resources
