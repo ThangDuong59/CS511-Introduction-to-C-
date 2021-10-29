@@ -89,7 +89,7 @@ namespace BTH8
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(9, 50);
+            this.label1.Location = new System.Drawing.Point(9, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 17);
             this.label1.TabIndex = 3;
@@ -102,7 +102,7 @@ namespace BTH8
             this.btnloadimage.ForeColor = System.Drawing.Color.White;
             this.btnloadimage.Location = new System.Drawing.Point(6, 121);
             this.btnloadimage.Name = "btnloadimage";
-            this.btnloadimage.Size = new System.Drawing.Size(209, 51);
+            this.btnloadimage.Size = new System.Drawing.Size(222, 51);
             this.btnloadimage.TabIndex = 2;
             this.btnloadimage.Text = "Load Image";
             this.btnloadimage.UseVisualStyleBackColor = false;
@@ -110,17 +110,19 @@ namespace BTH8
             // 
             // textBox_y
             // 
+            this.textBox_y.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.textBox_y.Location = new System.Drawing.Point(158, 50);
             this.textBox_y.Name = "textBox_y";
-            this.textBox_y.Size = new System.Drawing.Size(59, 26);
+            this.textBox_y.Size = new System.Drawing.Size(59, 23);
             this.textBox_y.TabIndex = 1;
             this.textBox_y.Text = "100";
             // 
             // textBox_x
             // 
+            this.textBox_x.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.textBox_x.Location = new System.Drawing.Point(91, 50);
             this.textBox_x.Name = "textBox_x";
-            this.textBox_x.Size = new System.Drawing.Size(59, 26);
+            this.textBox_x.Size = new System.Drawing.Size(59, 23);
             this.textBox_x.TabIndex = 0;
             this.textBox_x.Text = "100";
             // 
@@ -183,7 +185,7 @@ namespace BTH8
             this.btnpencolor.ForeColor = System.Drawing.Color.White;
             this.btnpencolor.Location = new System.Drawing.Point(7, 138);
             this.btnpencolor.Name = "btnpencolor";
-            this.btnpencolor.Size = new System.Drawing.Size(215, 39);
+            this.btnpencolor.Size = new System.Drawing.Size(221, 39);
             this.btnpencolor.TabIndex = 6;
             this.btnpencolor.Text = "Pen Color";
             this.btnpencolor.UseVisualStyleBackColor = false;
