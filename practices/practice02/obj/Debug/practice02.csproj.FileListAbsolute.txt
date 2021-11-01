@@ -1,0 +1,13 @@
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\bin\Debug\practice02.exe.config
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\bin\Debug\practice02.exe
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\bin\Debug\practice02.pdb
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.formMain.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.Properties.Resources.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.csproj.GenerateResource.cache
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.exe
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.pdb
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.uciTechScreen.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.ucMyOrderScreen.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.ucSellItemUI.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.ucSearchScreen.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.csprojAssemblyReference.cache
