@@ -29,29 +29,54 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucSearchScreen));
-            this.panel_uciTech_menuTopBar = new System.Windows.Forms.Panel();
+            this.panel_ucSearchScreen_menuTopBar = new System.Windows.Forms.Panel();
+            this.button_ucSearchScreen_notification = new System.Windows.Forms.Button();
+            this.button_ucSearchScreen_backArrow = new System.Windows.Forms.Button();
             this.panel_ucSearchScreen_searchBar = new System.Windows.Forms.Panel();
             this.textBox_ucSearchScreen_searchBar = new System.Windows.Forms.TextBox();
             this.pictureBox_ucSearchScreen_magnifiyingGlass = new System.Windows.Forms.PictureBox();
-            this.button_ucSearchScreen_backArrow = new System.Windows.Forms.Button();
-            this.button_ucSearchScreen_notification = new System.Windows.Forms.Button();
             this.flowLayoutPanel_ucSearchScreen = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel_uciTech_menuTopBar.SuspendLayout();
+            this.panel_ucSearchScreen_menuTopBar.SuspendLayout();
             this.panel_ucSearchScreen_searchBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ucSearchScreen_magnifiyingGlass)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel_uciTech_menuTopBar
+            // panel_ucSearchScreen_menuTopBar
             // 
-            this.panel_uciTech_menuTopBar.BackColor = System.Drawing.Color.Thistle;
-            this.panel_uciTech_menuTopBar.Controls.Add(this.button_ucSearchScreen_notification);
-            this.panel_uciTech_menuTopBar.Controls.Add(this.button_ucSearchScreen_backArrow);
-            this.panel_uciTech_menuTopBar.Controls.Add(this.panel_ucSearchScreen_searchBar);
-            this.panel_uciTech_menuTopBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_uciTech_menuTopBar.Location = new System.Drawing.Point(0, 0);
-            this.panel_uciTech_menuTopBar.Name = "panel_uciTech_menuTopBar";
-            this.panel_uciTech_menuTopBar.Size = new System.Drawing.Size(377, 49);
-            this.panel_uciTech_menuTopBar.TabIndex = 1;
+            this.panel_ucSearchScreen_menuTopBar.BackColor = System.Drawing.Color.Thistle;
+            this.panel_ucSearchScreen_menuTopBar.Controls.Add(this.button_ucSearchScreen_notification);
+            this.panel_ucSearchScreen_menuTopBar.Controls.Add(this.button_ucSearchScreen_backArrow);
+            this.panel_ucSearchScreen_menuTopBar.Controls.Add(this.panel_ucSearchScreen_searchBar);
+            this.panel_ucSearchScreen_menuTopBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_ucSearchScreen_menuTopBar.Location = new System.Drawing.Point(0, 0);
+            this.panel_ucSearchScreen_menuTopBar.Name = "panel_ucSearchScreen_menuTopBar";
+            this.panel_ucSearchScreen_menuTopBar.Size = new System.Drawing.Size(377, 49);
+            this.panel_ucSearchScreen_menuTopBar.TabIndex = 1;
+            // 
+            // button_ucSearchScreen_notification
+            // 
+            this.button_ucSearchScreen_notification.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_ucSearchScreen_notification.BackgroundImage")));
+            this.button_ucSearchScreen_notification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button_ucSearchScreen_notification.FlatAppearance.BorderSize = 0;
+            this.button_ucSearchScreen_notification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_ucSearchScreen_notification.Location = new System.Drawing.Point(337, 9);
+            this.button_ucSearchScreen_notification.Name = "button_ucSearchScreen_notification";
+            this.button_ucSearchScreen_notification.Size = new System.Drawing.Size(32, 28);
+            this.button_ucSearchScreen_notification.TabIndex = 5;
+            this.button_ucSearchScreen_notification.UseVisualStyleBackColor = true;
+            this.button_ucSearchScreen_notification.Click += new System.EventHandler(this.button_click_ucSearchScreen_notification);
+            // 
+            // button_ucSearchScreen_backArrow
+            // 
+            this.button_ucSearchScreen_backArrow.FlatAppearance.BorderSize = 0;
+            this.button_ucSearchScreen_backArrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_ucSearchScreen_backArrow.Image = ((System.Drawing.Image)(resources.GetObject("button_ucSearchScreen_backArrow.Image")));
+            this.button_ucSearchScreen_backArrow.Location = new System.Drawing.Point(12, 9);
+            this.button_ucSearchScreen_backArrow.Name = "button_ucSearchScreen_backArrow";
+            this.button_ucSearchScreen_backArrow.Size = new System.Drawing.Size(29, 29);
+            this.button_ucSearchScreen_backArrow.TabIndex = 4;
+            this.button_ucSearchScreen_backArrow.UseVisualStyleBackColor = true;
+            this.button_ucSearchScreen_backArrow.Click += new System.EventHandler(this.button_click_ucSearchScreen_backArrow);
             // 
             // panel_ucSearchScreen_searchBar
             // 
@@ -72,6 +97,7 @@
             this.textBox_ucSearchScreen_searchBar.Size = new System.Drawing.Size(242, 23);
             this.textBox_ucSearchScreen_searchBar.TabIndex = 1;
             this.textBox_ucSearchScreen_searchBar.Text = "Nhập sản phẩm bạn cần tìm...";
+            this.textBox_ucSearchScreen_searchBar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_keyDown_ucSearchScreen_searchBar);
             // 
             // pictureBox_ucSearchScreen_magnifiyingGlass
             // 
@@ -83,30 +109,6 @@
             this.pictureBox_ucSearchScreen_magnifiyingGlass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_ucSearchScreen_magnifiyingGlass.TabIndex = 4;
             this.pictureBox_ucSearchScreen_magnifiyingGlass.TabStop = false;
-            // 
-            // button_ucSearchScreen_backArrow
-            // 
-            this.button_ucSearchScreen_backArrow.FlatAppearance.BorderSize = 0;
-            this.button_ucSearchScreen_backArrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_ucSearchScreen_backArrow.Image = ((System.Drawing.Image)(resources.GetObject("button_ucSearchScreen_backArrow.Image")));
-            this.button_ucSearchScreen_backArrow.Location = new System.Drawing.Point(12, 9);
-            this.button_ucSearchScreen_backArrow.Name = "button_ucSearchScreen_backArrow";
-            this.button_ucSearchScreen_backArrow.Size = new System.Drawing.Size(29, 29);
-            this.button_ucSearchScreen_backArrow.TabIndex = 4;
-            this.button_ucSearchScreen_backArrow.UseVisualStyleBackColor = true;
-            this.button_ucSearchScreen_backArrow.Click += new System.EventHandler(this.button_click_ucSearchScreen_backArrow);
-            // 
-            // button_ucSearchScreen_notification
-            // 
-            this.button_ucSearchScreen_notification.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_ucSearchScreen_notification.BackgroundImage")));
-            this.button_ucSearchScreen_notification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button_ucSearchScreen_notification.FlatAppearance.BorderSize = 0;
-            this.button_ucSearchScreen_notification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_ucSearchScreen_notification.Location = new System.Drawing.Point(337, 9);
-            this.button_ucSearchScreen_notification.Name = "button_ucSearchScreen_notification";
-            this.button_ucSearchScreen_notification.Size = new System.Drawing.Size(32, 28);
-            this.button_ucSearchScreen_notification.TabIndex = 5;
-            this.button_ucSearchScreen_notification.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel_ucSearchScreen
             // 
@@ -122,10 +124,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.flowLayoutPanel_ucSearchScreen);
-            this.Controls.Add(this.panel_uciTech_menuTopBar);
+            this.Controls.Add(this.panel_ucSearchScreen_menuTopBar);
             this.Name = "ucSearchScreen";
             this.Size = new System.Drawing.Size(377, 560);
-            this.panel_uciTech_menuTopBar.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.ucSearchScreen_Load);
+            this.panel_ucSearchScreen_menuTopBar.ResumeLayout(false);
             this.panel_ucSearchScreen_searchBar.ResumeLayout(false);
             this.panel_ucSearchScreen_searchBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ucSearchScreen_magnifiyingGlass)).EndInit();
@@ -135,7 +138,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel_uciTech_menuTopBar;
+        private System.Windows.Forms.Panel panel_ucSearchScreen_menuTopBar;
         private System.Windows.Forms.Panel panel_ucSearchScreen_searchBar;
         private System.Windows.Forms.TextBox textBox_ucSearchScreen_searchBar;
         private System.Windows.Forms.PictureBox pictureBox_ucSearchScreen_magnifiyingGlass;

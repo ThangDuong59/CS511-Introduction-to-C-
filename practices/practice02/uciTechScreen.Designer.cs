@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uciTechScreen));
-            this.panel_uciTech_menuTopBar = new System.Windows.Forms.Panel();
+            this.panel_uciTechScreen_menuTopBar = new System.Windows.Forms.Panel();
             this.button_uniTechScreen_notification = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel_uciTechScreen_searchBar = new System.Windows.Forms.Panel();
             this.textBox_uciTechScreen_searchBar = new System.Windows.Forms.TextBox();
             this.pictureBox_uciTechScreen_magnifiyingGlass = new System.Windows.Forms.PictureBox();
             this.pictureBox_uciTechScreen_logo = new System.Windows.Forms.PictureBox();
             this.panel_uciTechScreen_mainContainer = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel_uciTechScreen_youMayLikeItems = new System.Windows.Forms.FlowLayoutPanel();
             this.labelText_uciTechScreen_youMayLike = new System.Windows.Forms.Label();
             this.labelText_uciTechScreen_category = new System.Windows.Forms.Label();
             this.panel_uciTechScreen_category = new System.Windows.Forms.Panel();
@@ -48,9 +49,8 @@
             this.button_uciTechScreen_pcCategory = new System.Windows.Forms.Button();
             this.button_uciTechScreen_telephoneCategory = new System.Windows.Forms.Button();
             this.pictureBox_uciTech_panelScreen_advertisement = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel_uciTechScreen_youMayLikeItems = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel_uciTech_menuTopBar.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel_uciTechScreen_menuTopBar.SuspendLayout();
+            this.panel_uciTechScreen_searchBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_uciTechScreen_magnifiyingGlass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_uciTechScreen_logo)).BeginInit();
             this.panel_uciTechScreen_mainContainer.SuspendLayout();
@@ -58,17 +58,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_uciTech_panelScreen_advertisement)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel_uciTech_menuTopBar
+            // panel_uciTechScreen_menuTopBar
             // 
-            this.panel_uciTech_menuTopBar.BackColor = System.Drawing.Color.Thistle;
-            this.panel_uciTech_menuTopBar.Controls.Add(this.button_uniTechScreen_notification);
-            this.panel_uciTech_menuTopBar.Controls.Add(this.panel2);
-            this.panel_uciTech_menuTopBar.Controls.Add(this.pictureBox_uciTechScreen_logo);
-            this.panel_uciTech_menuTopBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_uciTech_menuTopBar.Location = new System.Drawing.Point(0, 0);
-            this.panel_uciTech_menuTopBar.Name = "panel_uciTech_menuTopBar";
-            this.panel_uciTech_menuTopBar.Size = new System.Drawing.Size(377, 49);
-            this.panel_uciTech_menuTopBar.TabIndex = 0;
+            this.panel_uciTechScreen_menuTopBar.BackColor = System.Drawing.Color.Thistle;
+            this.panel_uciTechScreen_menuTopBar.Controls.Add(this.button_uniTechScreen_notification);
+            this.panel_uciTechScreen_menuTopBar.Controls.Add(this.panel_uciTechScreen_searchBar);
+            this.panel_uciTechScreen_menuTopBar.Controls.Add(this.pictureBox_uciTechScreen_logo);
+            this.panel_uciTechScreen_menuTopBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_uciTechScreen_menuTopBar.Location = new System.Drawing.Point(0, 0);
+            this.panel_uciTechScreen_menuTopBar.Name = "panel_uciTechScreen_menuTopBar";
+            this.panel_uciTechScreen_menuTopBar.Size = new System.Drawing.Size(377, 49);
+            this.panel_uciTechScreen_menuTopBar.TabIndex = 0;
             // 
             // button_uniTechScreen_notification
             // 
@@ -81,17 +81,18 @@
             this.button_uniTechScreen_notification.Size = new System.Drawing.Size(32, 28);
             this.button_uniTechScreen_notification.TabIndex = 4;
             this.button_uniTechScreen_notification.UseVisualStyleBackColor = true;
+            this.button_uniTechScreen_notification.Click += new System.EventHandler(this.button_click_uniTechScreen_notification);
             // 
-            // panel2
+            // panel_uciTechScreen_searchBar
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.textBox_uciTechScreen_searchBar);
-            this.panel2.Controls.Add(this.pictureBox_uciTechScreen_magnifiyingGlass);
-            this.panel2.Location = new System.Drawing.Point(55, 9);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(280, 29);
-            this.panel2.TabIndex = 3;
+            this.panel_uciTechScreen_searchBar.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel_uciTechScreen_searchBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_uciTechScreen_searchBar.Controls.Add(this.textBox_uciTechScreen_searchBar);
+            this.panel_uciTechScreen_searchBar.Controls.Add(this.pictureBox_uciTechScreen_magnifiyingGlass);
+            this.panel_uciTechScreen_searchBar.Location = new System.Drawing.Point(55, 9);
+            this.panel_uciTechScreen_searchBar.Name = "panel_uciTechScreen_searchBar";
+            this.panel_uciTechScreen_searchBar.Size = new System.Drawing.Size(280, 29);
+            this.panel_uciTechScreen_searchBar.TabIndex = 3;
             // 
             // textBox_uciTechScreen_searchBar
             // 
@@ -101,6 +102,8 @@
             this.textBox_uciTechScreen_searchBar.Size = new System.Drawing.Size(242, 23);
             this.textBox_uciTechScreen_searchBar.TabIndex = 1;
             this.textBox_uciTechScreen_searchBar.Text = "Nhập sản phẩm bạn cần tìm...";
+            this.textBox_uciTechScreen_searchBar.Click += new System.EventHandler(this.textBox_click_uciTechScreen_searchBar);
+            this.textBox_uciTechScreen_searchBar.TextChanged += new System.EventHandler(this.textBox_textChanged_uciTechScreen_searchBar);
             this.textBox_uciTechScreen_searchBar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_keyDown_uciTechScreen_searchBar);
             // 
             // pictureBox_uciTechScreen_magnifiyingGlass
@@ -137,6 +140,13 @@
             this.panel_uciTechScreen_mainContainer.Name = "panel_uciTechScreen_mainContainer";
             this.panel_uciTechScreen_mainContainer.Size = new System.Drawing.Size(394, 514);
             this.panel_uciTechScreen_mainContainer.TabIndex = 1;
+            // 
+            // flowLayoutPanel_uciTechScreen_youMayLikeItems
+            // 
+            this.flowLayoutPanel_uciTechScreen_youMayLikeItems.Location = new System.Drawing.Point(0, 372);
+            this.flowLayoutPanel_uciTechScreen_youMayLikeItems.Name = "flowLayoutPanel_uciTechScreen_youMayLikeItems";
+            this.flowLayoutPanel_uciTechScreen_youMayLikeItems.Size = new System.Drawing.Size(377, 231);
+            this.flowLayoutPanel_uciTechScreen_youMayLikeItems.TabIndex = 4;
             // 
             // labelText_uciTechScreen_youMayLike
             // 
@@ -188,6 +198,7 @@
             this.button_uciTechScreen_speakerCategory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button_uciTechScreen_speakerCategory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_uciTechScreen_speakerCategory.UseVisualStyleBackColor = true;
+            this.button_uciTechScreen_speakerCategory.Click += new System.EventHandler(this.button_click_uciTechScreen_speakerCategory);
             // 
             // button_uciTechScreen_mouseCategory
             // 
@@ -204,6 +215,7 @@
             this.button_uciTechScreen_mouseCategory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button_uciTechScreen_mouseCategory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_uciTechScreen_mouseCategory.UseVisualStyleBackColor = true;
+            this.button_uciTechScreen_mouseCategory.Click += new System.EventHandler(this.button_click_uciTechScreen_mouseCategory);
             // 
             // button_uciTechScreen_keyBoardCategory
             // 
@@ -219,6 +231,7 @@
             this.button_uciTechScreen_keyBoardCategory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button_uciTechScreen_keyBoardCategory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_uciTechScreen_keyBoardCategory.UseVisualStyleBackColor = true;
+            this.button_uciTechScreen_keyBoardCategory.Click += new System.EventHandler(this.button_click_uciTechScreen_keyBoardCategory);
             // 
             // button_uciTechScreen_headPhoneCategory
             // 
@@ -234,6 +247,7 @@
             this.button_uciTechScreen_headPhoneCategory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button_uciTechScreen_headPhoneCategory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_uciTechScreen_headPhoneCategory.UseVisualStyleBackColor = true;
+            this.button_uciTechScreen_headPhoneCategory.Click += new System.EventHandler(this.button_click_uciTechScreen_headPhoneCategory);
             // 
             // button_uciTechScreen_tabletCateogry
             // 
@@ -249,6 +263,7 @@
             this.button_uciTechScreen_tabletCateogry.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button_uciTechScreen_tabletCateogry.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_uciTechScreen_tabletCateogry.UseVisualStyleBackColor = true;
+            this.button_uciTechScreen_tabletCateogry.Click += new System.EventHandler(this.button_click_uciTechScreen_tabletCateogry);
             // 
             // button_uciTechScreen_laptopCategory
             // 
@@ -264,6 +279,7 @@
             this.button_uciTechScreen_laptopCategory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button_uciTechScreen_laptopCategory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_uciTechScreen_laptopCategory.UseVisualStyleBackColor = true;
+            this.button_uciTechScreen_laptopCategory.Click += new System.EventHandler(this.button_click_uciTechScreen_laptopCategory);
             // 
             // button_uciTechScreen_pcCategory
             // 
@@ -279,6 +295,7 @@
             this.button_uciTechScreen_pcCategory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button_uciTechScreen_pcCategory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_uciTechScreen_pcCategory.UseVisualStyleBackColor = true;
+            this.button_uciTechScreen_pcCategory.Click += new System.EventHandler(this.button_click_uciTechScreen_pcCategory);
             // 
             // button_uciTechScreen_telephoneCategory
             // 
@@ -294,6 +311,7 @@
             this.button_uciTechScreen_telephoneCategory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button_uciTechScreen_telephoneCategory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_uciTechScreen_telephoneCategory.UseVisualStyleBackColor = true;
+            this.button_uciTechScreen_telephoneCategory.Click += new System.EventHandler(this.button_click_uciTechScreen_telephoneCategory);
             // 
             // pictureBox_uciTech_panelScreen_advertisement
             // 
@@ -306,25 +324,18 @@
             this.pictureBox_uciTech_panelScreen_advertisement.TabIndex = 0;
             this.pictureBox_uciTech_panelScreen_advertisement.TabStop = false;
             // 
-            // flowLayoutPanel_uciTechScreen_youMayLikeItems
-            // 
-            this.flowLayoutPanel_uciTechScreen_youMayLikeItems.Location = new System.Drawing.Point(0, 372);
-            this.flowLayoutPanel_uciTechScreen_youMayLikeItems.Name = "flowLayoutPanel_uciTechScreen_youMayLikeItems";
-            this.flowLayoutPanel_uciTechScreen_youMayLikeItems.Size = new System.Drawing.Size(377, 231);
-            this.flowLayoutPanel_uciTechScreen_youMayLikeItems.TabIndex = 4;
-            // 
             // uciTechScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel_uciTechScreen_mainContainer);
-            this.Controls.Add(this.panel_uciTech_menuTopBar);
+            this.Controls.Add(this.panel_uciTechScreen_menuTopBar);
             this.Name = "uciTechScreen";
             this.Size = new System.Drawing.Size(377, 560);
-            this.panel_uciTech_menuTopBar.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panel_uciTechScreen_menuTopBar.ResumeLayout(false);
+            this.panel_uciTechScreen_searchBar.ResumeLayout(false);
+            this.panel_uciTechScreen_searchBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_uciTechScreen_magnifiyingGlass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_uciTechScreen_logo)).EndInit();
             this.panel_uciTechScreen_mainContainer.ResumeLayout(false);
@@ -336,7 +347,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel_uciTech_menuTopBar;
+        private System.Windows.Forms.Panel panel_uciTechScreen_menuTopBar;
         private System.Windows.Forms.PictureBox pictureBox_uciTechScreen_logo;
         private System.Windows.Forms.Panel panel_uciTechScreen_mainContainer;
         private System.Windows.Forms.TextBox textBox_uciTechScreen_searchBar;
@@ -351,7 +362,7 @@
         private System.Windows.Forms.Button button_uciTechScreen_pcCategory;
         private System.Windows.Forms.Button button_uciTechScreen_telephoneCategory;
         private System.Windows.Forms.Label labelText_uciTechScreen_category;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel_uciTechScreen_searchBar;
         private System.Windows.Forms.PictureBox pictureBox_uciTechScreen_magnifiyingGlass;
         private System.Windows.Forms.Button button_uniTechScreen_notification;
         private System.Windows.Forms.Label labelText_uciTechScreen_youMayLike;

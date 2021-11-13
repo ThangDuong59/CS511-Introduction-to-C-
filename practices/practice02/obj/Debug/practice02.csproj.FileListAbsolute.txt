@@ -11,3 +11,12 @@ D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practi
 D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.ucSellItemUI.resources
 D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.ucSearchScreen.resources
 D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.csprojAssemblyReference.cache
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.ucNotificationScreen.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.ucItemDetailScreen.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.ucHistoryScreen.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.ucPayingScreen.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.ucPersonalScreen.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.ucOrderedItemUI.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.csproj.ResolveComReference.cache
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.ucItemShippingStatus.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\practices\practice02\obj\Debug\practice02.ucStatisticScreen.resources
