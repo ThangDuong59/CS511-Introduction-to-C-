@@ -1,0 +1,16 @@
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise10\bin\Debug\exercise10.exe.config
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise10\bin\Debug\exercise10.exe
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise10\bin\Debug\exercise10.pdb
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise10\obj\Debug\exercise10.csprojAssemblyReference.cache
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise10\obj\Debug\exercise10.Properties.Resources.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise10\obj\Debug\exercise10.csproj.GenerateResource.cache
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise10\obj\Debug\exercise10.exe
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise10\obj\Debug\exercise10.pdb
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise10\obj\Debug\exercise10.FormMain.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise10\obj\Debug\exercise10.FormAbout.resources
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise10\bin\Debug\Interop.WMPLib.dll
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise10\bin\Debug\AxInterop.WMPLib.dll
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise10\obj\Debug\Interop.WMPLib.dll
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise10\obj\Debug\AxInterop.WMPLib.dll
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise10\obj\Debug\exercise10.csproj.ResolveComReference.cache
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\exercises\exercise10\obj\Debug\exercise10.FormAddPlaylist.resources
