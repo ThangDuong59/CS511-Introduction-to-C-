@@ -36,10 +36,6 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelDashBoard_form1_daily = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelDashBoard_form1_home = new System.Windows.Forms.PictureBox();
             this.panelFunction_form1 = new System.Windows.Forms.Panel();
-            this.button_click_panelFuntion_form1_submit = new System.Windows.Forms.Button();
-            this.button_click_panelFuntion_form1_account = new System.Windows.Forms.Button();
-            this.button_click_panelFuntion_form1_notification = new System.Windows.Forms.Button();
-            this.button_click_panelFuntion_form1_chat = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button_click_panelFuntion_form1_search = new System.Windows.Forms.Button();
             this.richTextBox_panelFunction_form1_search = new System.Windows.Forms.RichTextBox();
@@ -85,8 +81,12 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelExploreTopics_flowLayoutPanelMain_form1_categorizedInterior = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanelDetailPicture_form1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1 = new System.Windows.Forms.Panel();
+            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture = new System.Windows.Forms.Panel();
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG = new System.Windows.Forms.Button();
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1 = new System.Windows.Forms.Panel();
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download = new System.Windows.Forms.Button();
             this.linkLabel_panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1_share = new System.Windows.Forms.LinkLabel();
             this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_post = new System.Windows.Forms.Button();
             this.flowLayoutPanelComment_panelDetailPicture_flowLayoutPanelDetailPicture_form1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -307,10 +307,62 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_2 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_1 = new System.Windows.Forms.PictureBox();
-            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download = new System.Windows.Forms.Button();
-            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture = new System.Windows.Forms.Panel();
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG = new System.Windows.Forms.Button();
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG = new System.Windows.Forms.Button();
+            this.flowLayoutPanel_searchResult = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelSortBy_flowLayoutPanelResult_form1 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE = new System.Windows.Forms.Button();
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK = new System.Windows.Forms.Button();
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE = new System.Windows.Forms.Button();
+            this.panelShowResult_flowLayoutPanelResult_form1 = new System.Windows.Forms.Panel();
+            this.pictureBox48 = new System.Windows.Forms.PictureBox();
+            this.pictureBox47 = new System.Windows.Forms.PictureBox();
+            this.pictureBox46 = new System.Windows.Forms.PictureBox();
+            this.pictureBox45 = new System.Windows.Forms.PictureBox();
+            this.pictureBox44 = new System.Windows.Forms.PictureBox();
+            this.pictureBox43 = new System.Windows.Forms.PictureBox();
+            this.pictureBox41 = new System.Windows.Forms.PictureBox();
+            this.pictureBox40 = new System.Windows.Forms.PictureBox();
+            this.pictureBox39 = new System.Windows.Forms.PictureBox();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.panelSortBySize_flowLayoutPanelResult_form1 = new System.Windows.Forms.Panel();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.panelSortByTypeOf_flowLayoutPanelResult_form1 = new System.Windows.Forms.Panel();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
             this.panelDashBoard_form1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_trending)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_topics)).BeginInit();
@@ -353,6 +405,7 @@ namespace doAnC_Sharp_Finale
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelExploreTopics_flowLayoutPanelMain_form1_categorizedInterior)).BeginInit();
             this.flowLayoutPanelDetailPicture_form1.SuspendLayout();
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.SuspendLayout();
+            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1.SuspendLayout();
             this.flowLayoutPanelComment_panelDetailPicture_flowLayoutPanelDetailPicture_form1.SuspendLayout();
@@ -480,7 +533,43 @@ namespace doAnC_Sharp_Finale
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_1)).BeginInit();
-            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.SuspendLayout();
+            this.flowLayoutPanel_searchResult.SuspendLayout();
+            this.panelSortBy_flowLayoutPanelResult_form1.SuspendLayout();
+            this.panelShowResult_flowLayoutPanelResult_form1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panelSortBySize_flowLayoutPanelResult_form1.SuspendLayout();
+            this.panelSortByTypeOf_flowLayoutPanelResult_form1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelDashBoard_form1
@@ -548,10 +637,6 @@ namespace doAnC_Sharp_Finale
             // 
             // panelFunction_form1
             // 
-            this.panelFunction_form1.Controls.Add(this.button_click_panelFuntion_form1_submit);
-            this.panelFunction_form1.Controls.Add(this.button_click_panelFuntion_form1_account);
-            this.panelFunction_form1.Controls.Add(this.button_click_panelFuntion_form1_notification);
-            this.panelFunction_form1.Controls.Add(this.button_click_panelFuntion_form1_chat);
             this.panelFunction_form1.Controls.Add(this.pictureBox2);
             this.panelFunction_form1.Controls.Add(this.button_click_panelFuntion_form1_search);
             this.panelFunction_form1.Controls.Add(this.richTextBox_panelFunction_form1_search);
@@ -561,59 +646,10 @@ namespace doAnC_Sharp_Finale
             this.panelFunction_form1.Size = new System.Drawing.Size(1224, 66);
             this.panelFunction_form1.TabIndex = 1;
             // 
-            // button_click_panelFuntion_form1_submit
-            // 
-            this.button_click_panelFuntion_form1_submit.FlatAppearance.BorderSize = 0;
-            this.button_click_panelFuntion_form1_submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_click_panelFuntion_form1_submit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button_click_panelFuntion_form1_submit.ForeColor = System.Drawing.Color.Cyan;
-            this.button_click_panelFuntion_form1_submit.Location = new System.Drawing.Point(1114, 17);
-            this.button_click_panelFuntion_form1_submit.Name = "button_click_panelFuntion_form1_submit";
-            this.button_click_panelFuntion_form1_submit.Size = new System.Drawing.Size(96, 29);
-            this.button_click_panelFuntion_form1_submit.TabIndex = 8;
-            this.button_click_panelFuntion_form1_submit.Text = "Submit";
-            this.button_click_panelFuntion_form1_submit.UseVisualStyleBackColor = true;
-            // 
-            // button_click_panelFuntion_form1_account
-            // 
-            this.button_click_panelFuntion_form1_account.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_click_panelFuntion_form1_account.BackgroundImage")));
-            this.button_click_panelFuntion_form1_account.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_click_panelFuntion_form1_account.FlatAppearance.BorderSize = 0;
-            this.button_click_panelFuntion_form1_account.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_click_panelFuntion_form1_account.Location = new System.Drawing.Point(1035, 15);
-            this.button_click_panelFuntion_form1_account.Name = "button_click_panelFuntion_form1_account";
-            this.button_click_panelFuntion_form1_account.Size = new System.Drawing.Size(58, 35);
-            this.button_click_panelFuntion_form1_account.TabIndex = 7;
-            this.button_click_panelFuntion_form1_account.UseVisualStyleBackColor = true;
-            // 
-            // button_click_panelFuntion_form1_notification
-            // 
-            this.button_click_panelFuntion_form1_notification.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_click_panelFuntion_form1_notification.BackgroundImage")));
-            this.button_click_panelFuntion_form1_notification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_click_panelFuntion_form1_notification.FlatAppearance.BorderSize = 0;
-            this.button_click_panelFuntion_form1_notification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_click_panelFuntion_form1_notification.Location = new System.Drawing.Point(967, 15);
-            this.button_click_panelFuntion_form1_notification.Name = "button_click_panelFuntion_form1_notification";
-            this.button_click_panelFuntion_form1_notification.Size = new System.Drawing.Size(50, 35);
-            this.button_click_panelFuntion_form1_notification.TabIndex = 6;
-            this.button_click_panelFuntion_form1_notification.UseVisualStyleBackColor = true;
-            // 
-            // button_click_panelFuntion_form1_chat
-            // 
-            this.button_click_panelFuntion_form1_chat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_click_panelFuntion_form1_chat.BackgroundImage")));
-            this.button_click_panelFuntion_form1_chat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_click_panelFuntion_form1_chat.FlatAppearance.BorderSize = 0;
-            this.button_click_panelFuntion_form1_chat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_click_panelFuntion_form1_chat.Location = new System.Drawing.Point(895, 16);
-            this.button_click_panelFuntion_form1_chat.Name = "button_click_panelFuntion_form1_chat";
-            this.button_click_panelFuntion_form1_chat.Size = new System.Drawing.Size(54, 35);
-            this.button_click_panelFuntion_form1_chat.TabIndex = 5;
-            this.button_click_panelFuntion_form1_chat.UseVisualStyleBackColor = true;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(683, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(946, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(104, 59);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1127,9 +1163,9 @@ namespace doAnC_Sharp_Finale
             this.flowLayoutPanelDetailPicture_form1.BackColor = System.Drawing.Color.Yellow;
             this.flowLayoutPanelDetailPicture_form1.Controls.Add(this.panelDetailPicture_flowLayoutPanelDetailPicture_form1);
             this.flowLayoutPanelDetailPicture_form1.Controls.Add(this.panelSeeMore_flowLayoutPanelDetailPicture_form1);
-            this.flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(0, 74);
+            this.flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(1003, 74);
             this.flowLayoutPanelDetailPicture_form1.Name = "flowLayoutPanelDetailPicture_form1";
-            this.flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(1274, 570);
+            this.flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(36, 570);
             this.flowLayoutPanelDetailPicture_form1.TabIndex = 7;
             this.flowLayoutPanelDetailPicture_form1.Visible = false;
             // 
@@ -1174,6 +1210,41 @@ namespace doAnC_Sharp_Finale
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(843, 1681);
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.TabIndex = 0;
             // 
+            // panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture
+            // 
+            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.Controls.Add(this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG);
+            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.Controls.Add(this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG);
+            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.Location = new System.Drawing.Point(450, 522);
+            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.Name = "panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture";
+            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.Size = new System.Drawing.Size(150, 80);
+            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.TabIndex = 46;
+            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.Visible = false;
+            // 
+            // button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG
+            // 
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG.Location = new System.Drawing.Point(18, 44);
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG.Name = "button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PN" +
+    "G";
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG.Size = new System.Drawing.Size(109, 28);
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG.TabIndex = 1;
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG.Text = "PNG";
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG.UseVisualStyleBackColor = true;
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG.Click += new System.EventHandler(this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG_Click);
+            // 
+            // button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG
+            // 
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG.Location = new System.Drawing.Point(18, 10);
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG.Name = "button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JP" +
+    "EG";
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG.Size = new System.Drawing.Size(109, 28);
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG.TabIndex = 0;
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG.Text = "JPG";
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG.UseVisualStyleBackColor = true;
+            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Location = new System.Drawing.Point(-26, 432);
@@ -1193,6 +1264,18 @@ namespace doAnC_Sharp_Finale
             this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1.TabIndex = 41;
             this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1.Visible = false;
             this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
+            // 
+            // button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download
+            // 
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.Location = new System.Drawing.Point(3, 38);
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.Name = "button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download";
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.Size = new System.Drawing.Size(142, 34);
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.TabIndex = 3;
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.Text = "Download";
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.UseVisualStyleBackColor = true;
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.Click += new System.EventHandler(this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download_Click);
             // 
             // linkLabel_panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1_share
             // 
@@ -1874,7 +1957,7 @@ namespace doAnC_Sharp_Finale
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Controls.Add(this.pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_6);
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Controls.Add(this.pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_5);
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Controls.Add(this.pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_4);
-            this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(852, 3);
+            this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(3, 1690);
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Name = "panelSeeMore_flowLayoutPanelDetailPicture_form1";
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(402, 1692);
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.TabIndex = 1;
@@ -3461,7 +3544,7 @@ namespace doAnC_Sharp_Finale
             this.flowLayoutPanelTopics_form1.Controls.Add(this.panelAllTopics_flowLayoutPanelTopics_form1);
             this.flowLayoutPanelTopics_form1.Location = new System.Drawing.Point(1210, 71);
             this.flowLayoutPanelTopics_form1.Name = "flowLayoutPanelTopics_form1";
-            this.flowLayoutPanelTopics_form1.Size = new System.Drawing.Size(30, 573);
+            this.flowLayoutPanelTopics_form1.Size = new System.Drawing.Size(19, 443);
             this.flowLayoutPanelTopics_form1.TabIndex = 15;
             this.flowLayoutPanelTopics_form1.Visible = false;
             // 
@@ -3479,7 +3562,7 @@ namespace doAnC_Sharp_Finale
             this.panelTopTopics_flowLayoutPanelTopics_form1.Controls.Add(this.label30);
             this.panelTopTopics_flowLayoutPanelTopics_form1.Location = new System.Drawing.Point(3, 3);
             this.panelTopTopics_flowLayoutPanelTopics_form1.Name = "panelTopTopics_flowLayoutPanelTopics_form1";
-            this.panelTopTopics_flowLayoutPanelTopics_form1.Size = new System.Drawing.Size(1265, 317);
+            this.panelTopTopics_flowLayoutPanelTopics_form1.Size = new System.Drawing.Size(10, 317);
             this.panelTopTopics_flowLayoutPanelTopics_form1.TabIndex = 1;
             // 
             // label34
@@ -3599,7 +3682,7 @@ namespace doAnC_Sharp_Finale
             this.panelAllTopics_flowLayoutPanelTopics_form1.Controls.Add(this.pictureBox_click_panelAllTopics_flowLayoutPanelTopics_form1_categorizedFlower);
             this.panelAllTopics_flowLayoutPanelTopics_form1.Location = new System.Drawing.Point(3, 326);
             this.panelAllTopics_flowLayoutPanelTopics_form1.Name = "panelAllTopics_flowLayoutPanelTopics_form1";
-            this.panelAllTopics_flowLayoutPanelTopics_form1.Size = new System.Drawing.Size(1262, 236);
+            this.panelAllTopics_flowLayoutPanelTopics_form1.Size = new System.Drawing.Size(10, 396);
             this.panelAllTopics_flowLayoutPanelTopics_form1.TabIndex = 2;
             // 
             // label40
@@ -3747,7 +3830,7 @@ namespace doAnC_Sharp_Finale
             this.flowLayoutPanelDetailTopics_form1.Controls.Add(this.panelShowPics_flowLayoutPanelDetailTopics_form1);
             this.flowLayoutPanelDetailTopics_form1.Location = new System.Drawing.Point(1185, 71);
             this.flowLayoutPanelDetailTopics_form1.Name = "flowLayoutPanelDetailTopics_form1";
-            this.flowLayoutPanelDetailTopics_form1.Size = new System.Drawing.Size(15, 570);
+            this.flowLayoutPanelDetailTopics_form1.Size = new System.Drawing.Size(15, 544);
             this.flowLayoutPanelDetailTopics_form1.TabIndex = 16;
             this.flowLayoutPanelDetailTopics_form1.Visible = false;
             // 
@@ -3759,7 +3842,7 @@ namespace doAnC_Sharp_Finale
             this.panelBackGround_flowLayoutPanelDetailTopics_form1.Controls.Add(this.pictureBox_panelBackGround_flowLayoutPanelDetailTopics_form1_showingBackGroundTopics);
             this.panelBackGround_flowLayoutPanelDetailTopics_form1.Location = new System.Drawing.Point(3, 3);
             this.panelBackGround_flowLayoutPanelDetailTopics_form1.Name = "panelBackGround_flowLayoutPanelDetailTopics_form1";
-            this.panelBackGround_flowLayoutPanelDetailTopics_form1.Size = new System.Drawing.Size(1265, 502);
+            this.panelBackGround_flowLayoutPanelDetailTopics_form1.Size = new System.Drawing.Size(10, 502);
             this.panelBackGround_flowLayoutPanelDetailTopics_form1.TabIndex = 1;
             // 
             // label_panelBackGround_flowLayoutPanelDetailTopics_form1_describetopics
@@ -3815,7 +3898,7 @@ namespace doAnC_Sharp_Finale
             this.panelShowPics_flowLayoutPanelDetailTopics_form1.Controls.Add(this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_1);
             this.panelShowPics_flowLayoutPanelDetailTopics_form1.Location = new System.Drawing.Point(3, 511);
             this.panelShowPics_flowLayoutPanelDetailTopics_form1.Name = "panelShowPics_flowLayoutPanelDetailTopics_form1";
-            this.panelShowPics_flowLayoutPanelDetailTopics_form1.Size = new System.Drawing.Size(1271, 423);
+            this.panelShowPics_flowLayoutPanelDetailTopics_form1.Size = new System.Drawing.Size(1015, 405);
             this.panelShowPics_flowLayoutPanelDetailTopics_form1.TabIndex = 2;
             // 
             // button_click_panelShowPics_flowLayoutPanelDetailTopics_form1_back
@@ -3979,52 +4062,627 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_1.TabStop = false;
             this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_1.Click += new System.EventHandler(this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_1_Click);
             // 
-            // button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download
+            // flowLayoutPanel_searchResult
             // 
-            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.Location = new System.Drawing.Point(3, 38);
-            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.Name = "button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download";
-            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.Size = new System.Drawing.Size(142, 34);
-            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.TabIndex = 3;
-            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.Text = "Download";
-            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.UseVisualStyleBackColor = true;
-            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download.Click += new System.EventHandler(this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download_Click);
+            this.flowLayoutPanel_searchResult.AutoScroll = true;
+            this.flowLayoutPanel_searchResult.BackColor = System.Drawing.Color.Black;
+            this.flowLayoutPanel_searchResult.Controls.Add(this.panelSortBy_flowLayoutPanelResult_form1);
+            this.flowLayoutPanel_searchResult.Controls.Add(this.panelShowResult_flowLayoutPanelResult_form1);
+            this.flowLayoutPanel_searchResult.Location = new System.Drawing.Point(43, 71);
+            this.flowLayoutPanel_searchResult.Name = "flowLayoutPanel_searchResult";
+            this.flowLayoutPanel_searchResult.Size = new System.Drawing.Size(1231, 573);
+            this.flowLayoutPanel_searchResult.TabIndex = 17;
             // 
-            // panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture
+            // panelSortBy_flowLayoutPanelResult_form1
             // 
-            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.Controls.Add(this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG);
-            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.Controls.Add(this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG);
-            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.Location = new System.Drawing.Point(450, 522);
-            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.Name = "panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture";
-            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.Size = new System.Drawing.Size(150, 80);
-            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.TabIndex = 46;
-            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.Visible = false;
+            this.panelSortBy_flowLayoutPanelResult_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label16);
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE);
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK);
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF);
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label5);
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE);
+            this.panelSortBy_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(3, 3);
+            this.panelSortBy_flowLayoutPanelResult_form1.Name = "panelSortBy_flowLayoutPanelResult_form1";
+            this.panelSortBy_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(1226, 60);
+            this.panelSortBy_flowLayoutPanelResult_form1.TabIndex = 0;
             // 
-            // button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG
+            // label16
             // 
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG.Location = new System.Drawing.Point(18, 10);
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG.Name = "button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JP" +
-    "EG";
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG.Size = new System.Drawing.Size(109, 28);
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG.TabIndex = 0;
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG.Text = "JPG";
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG.UseVisualStyleBackColor = true;
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG.Click += new System.EventHandler(this.button1_Click_1);
+            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label16.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label16.Location = new System.Drawing.Point(123, 11);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(100, 37);
+            this.label16.TabIndex = 5;
+            this.label16.Text = "Relative";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG
+            // button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE
             // 
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG.Location = new System.Drawing.Point(18, 44);
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG.Name = "button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PN" +
-    "G";
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG.Size = new System.Drawing.Size(109, 28);
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG.TabIndex = 1;
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG.Text = "PNG";
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG.UseVisualStyleBackColor = true;
-            this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG.Click += new System.EventHandler(this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG_Click);
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.FlatAppearance.BorderSize = 0;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Image = ((System.Drawing.Image)(resources.GetObject("button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Image")));
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Location = new System.Drawing.Point(584, 13);
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Name = "button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE";
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Size = new System.Drawing.Size(76, 32);
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.TabIndex = 4;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Text = "Price";
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.UseVisualStyleBackColor = true;
+            // 
+            // button_click_panelSortBy_flowLayoutPanelResult_form1_RANK
+            // 
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.FlatAppearance.BorderSize = 0;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Image = ((System.Drawing.Image)(resources.GetObject("button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Image")));
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Location = new System.Drawing.Point(469, 14);
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Name = "button_click_panelSortBy_flowLayoutPanelResult_form1_RANK";
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Size = new System.Drawing.Size(74, 32);
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.TabIndex = 3;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Text = "Rank";
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.UseVisualStyleBackColor = true;
+            // 
+            // button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF
+            // 
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.FlatAppearance.BorderSize = 0;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Image = ((System.Drawing.Image)(resources.GetObject("button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Image")));
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Location = new System.Drawing.Point(348, 10);
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Name = "button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF";
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Size = new System.Drawing.Size(94, 37);
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.TabIndex = 2;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Text = "Type of";
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.Location = new System.Drawing.Point(14, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 32);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Sort By";
+            // 
+            // button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE
+            // 
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.FlatAppearance.BorderSize = 0;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Image = ((System.Drawing.Image)(resources.GetObject("button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Image")));
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Location = new System.Drawing.Point(258, 15);
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Name = "button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE";
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Size = new System.Drawing.Size(68, 31);
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.TabIndex = 0;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Text = "Size";
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.UseVisualStyleBackColor = true;
+            // 
+            // panelShowResult_flowLayoutPanelResult_form1
+            // 
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox48);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox47);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox46);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox45);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox44);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox43);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox41);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox40);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox39);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox26);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox25);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox24);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox23);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox22);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox21);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox19);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox18);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox17);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox16);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox15);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox14);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox13);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox12);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox11);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox10);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox9);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox8);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox7);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox6);
+            this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox5);
+            this.panelShowResult_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(3, 69);
+            this.panelShowResult_flowLayoutPanelResult_form1.Name = "panelShowResult_flowLayoutPanelResult_form1";
+            this.panelShowResult_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(1220, 1190);
+            this.panelShowResult_flowLayoutPanelResult_form1.TabIndex = 1;
+            // 
+            // pictureBox48
+            // 
+            this.pictureBox48.Location = new System.Drawing.Point(1033, 979);
+            this.pictureBox48.Name = "pictureBox48";
+            this.pictureBox48.Size = new System.Drawing.Size(178, 194);
+            this.pictureBox48.TabIndex = 29;
+            this.pictureBox48.TabStop = false;
+            // 
+            // pictureBox47
+            // 
+            this.pictureBox47.Location = new System.Drawing.Point(817, 979);
+            this.pictureBox47.Name = "pictureBox47";
+            this.pictureBox47.Size = new System.Drawing.Size(207, 194);
+            this.pictureBox47.TabIndex = 28;
+            this.pictureBox47.TabStop = false;
+            // 
+            // pictureBox46
+            // 
+            this.pictureBox46.Location = new System.Drawing.Point(548, 979);
+            this.pictureBox46.Name = "pictureBox46";
+            this.pictureBox46.Size = new System.Drawing.Size(261, 194);
+            this.pictureBox46.TabIndex = 27;
+            this.pictureBox46.TabStop = false;
+            // 
+            // pictureBox45
+            // 
+            this.pictureBox45.Location = new System.Drawing.Point(298, 979);
+            this.pictureBox45.Name = "pictureBox45";
+            this.pictureBox45.Size = new System.Drawing.Size(245, 194);
+            this.pictureBox45.TabIndex = 26;
+            this.pictureBox45.TabStop = false;
+            // 
+            // pictureBox44
+            // 
+            this.pictureBox44.Location = new System.Drawing.Point(7, 979);
+            this.pictureBox44.Name = "pictureBox44";
+            this.pictureBox44.Size = new System.Drawing.Size(285, 194);
+            this.pictureBox44.TabIndex = 25;
+            this.pictureBox44.TabStop = false;
+            // 
+            // pictureBox43
+            // 
+            this.pictureBox43.Location = new System.Drawing.Point(923, 767);
+            this.pictureBox43.Name = "pictureBox43";
+            this.pictureBox43.Size = new System.Drawing.Size(288, 201);
+            this.pictureBox43.TabIndex = 24;
+            this.pictureBox43.TabStop = false;
+            // 
+            // pictureBox41
+            // 
+            this.pictureBox41.Location = new System.Drawing.Point(704, 767);
+            this.pictureBox41.Name = "pictureBox41";
+            this.pictureBox41.Size = new System.Drawing.Size(210, 203);
+            this.pictureBox41.TabIndex = 23;
+            this.pictureBox41.TabStop = false;
+            // 
+            // pictureBox40
+            // 
+            this.pictureBox40.Location = new System.Drawing.Point(469, 767);
+            this.pictureBox40.Name = "pictureBox40";
+            this.pictureBox40.Size = new System.Drawing.Size(227, 204);
+            this.pictureBox40.TabIndex = 22;
+            this.pictureBox40.TabStop = false;
+            // 
+            // pictureBox39
+            // 
+            this.pictureBox39.Location = new System.Drawing.Point(248, 767);
+            this.pictureBox39.Name = "pictureBox39";
+            this.pictureBox39.Size = new System.Drawing.Size(214, 203);
+            this.pictureBox39.TabIndex = 21;
+            this.pictureBox39.TabStop = false;
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Location = new System.Drawing.Point(7, 764);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(235, 206);
+            this.pictureBox26.TabIndex = 20;
+            this.pictureBox26.TabStop = false;
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Location = new System.Drawing.Point(1010, 540);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(201, 221);
+            this.pictureBox25.TabIndex = 19;
+            this.pictureBox25.TabStop = false;
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Location = new System.Drawing.Point(781, 540);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(223, 221);
+            this.pictureBox24.TabIndex = 18;
+            this.pictureBox24.TabStop = false;
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Location = new System.Drawing.Point(514, 540);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(261, 221);
+            this.pictureBox23.TabIndex = 17;
+            this.pictureBox23.TabStop = false;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Location = new System.Drawing.Point(248, 540);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(260, 221);
+            this.pictureBox22.TabIndex = 16;
+            this.pictureBox22.TabStop = false;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Location = new System.Drawing.Point(7, 540);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(235, 221);
+            this.pictureBox21.TabIndex = 15;
+            this.pictureBox21.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Location = new System.Drawing.Point(971, 369);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(237, 166);
+            this.pictureBox19.TabIndex = 14;
+            this.pictureBox19.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Location = new System.Drawing.Point(769, 369);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(196, 165);
+            this.pictureBox18.TabIndex = 13;
+            this.pictureBox18.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Location = new System.Drawing.Point(535, 369);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(228, 165);
+            this.pictureBox17.TabIndex = 12;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Location = new System.Drawing.Point(279, 369);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(250, 165);
+            this.pictureBox16.TabIndex = 11;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Location = new System.Drawing.Point(7, 369);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(266, 165);
+            this.pictureBox15.TabIndex = 10;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Location = new System.Drawing.Point(971, 189);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(237, 174);
+            this.pictureBox14.TabIndex = 9;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Location = new System.Drawing.Point(740, 189);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(225, 174);
+            this.pictureBox13.TabIndex = 8;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Location = new System.Drawing.Point(514, 190);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(220, 173);
+            this.pictureBox12.TabIndex = 7;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Location = new System.Drawing.Point(229, 190);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(279, 173);
+            this.pictureBox11.TabIndex = 6;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Location = new System.Drawing.Point(7, 190);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(216, 173);
+            this.pictureBox10.TabIndex = 5;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Location = new System.Drawing.Point(946, 3);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(262, 180);
+            this.pictureBox9.TabIndex = 4;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Location = new System.Drawing.Point(689, 3);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(251, 180);
+            this.pictureBox8.TabIndex = 3;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(468, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(215, 180);
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(257, 3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(205, 180);
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(4, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(247, 180);
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            // 
+            // panelSortBySize_flowLayoutPanelResult_form1
+            // 
+            this.panelSortBySize_flowLayoutPanelResult_form1.BackColor = System.Drawing.Color.Salmon;
+            this.panelSortBySize_flowLayoutPanelResult_form1.Controls.Add(this.checkBox4);
+            this.panelSortBySize_flowLayoutPanelResult_form1.Controls.Add(this.checkBox3);
+            this.panelSortBySize_flowLayoutPanelResult_form1.Controls.Add(this.checkBox2);
+            this.panelSortBySize_flowLayoutPanelResult_form1.Controls.Add(this.checkBox1);
+            this.panelSortBySize_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(253, 120);
+            this.panelSortBySize_flowLayoutPanelResult_form1.Name = "panelSortBySize_flowLayoutPanelResult_form1";
+            this.panelSortBySize_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(151, 178);
+            this.panelSortBySize_flowLayoutPanelResult_form1.TabIndex = 18;
+            this.panelSortBySize_flowLayoutPanelResult_form1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSortBySize_flowLayoutPanelResult_form1_Paint);
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.FlatAppearance.BorderSize = 0;
+            this.checkBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.checkBox4.Location = new System.Drawing.Point(11, 132);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(132, 24);
+            this.checkBox4.TabIndex = 3;
+            this.checkBox4.Text = "Small";
+            this.checkBox4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.FlatAppearance.BorderSize = 0;
+            this.checkBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.checkBox3.Location = new System.Drawing.Point(10, 83);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(133, 43);
+            this.checkBox3.TabIndex = 2;
+            this.checkBox3.Text = "Medium";
+            this.checkBox3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.FlatAppearance.BorderSize = 0;
+            this.checkBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.checkBox2.Location = new System.Drawing.Point(10, 48);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(132, 29);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "Large";
+            this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.FlatAppearance.BorderSize = 0;
+            this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.checkBox1.Location = new System.Drawing.Point(10, 11);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(132, 24);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "Any Size";
+            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // panelSortByTypeOf_flowLayoutPanelResult_form1
+            // 
+            this.panelSortByTypeOf_flowLayoutPanelResult_form1.BackColor = System.Drawing.Color.Sienna;
+            this.panelSortByTypeOf_flowLayoutPanelResult_form1.Controls.Add(this.checkBox6);
+            this.panelSortByTypeOf_flowLayoutPanelResult_form1.Controls.Add(this.checkBox5);
+            this.panelSortByTypeOf_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(344, 120);
+            this.panelSortByTypeOf_flowLayoutPanelResult_form1.Name = "panelSortByTypeOf_flowLayoutPanelResult_form1";
+            this.panelSortByTypeOf_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(165, 96);
+            this.panelSortByTypeOf_flowLayoutPanelResult_form1.TabIndex = 19;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.checkBox6.Location = new System.Drawing.Point(27, 48);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(91, 24);
+            this.checkBox6.TabIndex = 1;
+            this.checkBox6.Text = "PNG";
+            this.checkBox6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.Checked = true;
+            this.checkBox5.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox5.FlatAppearance.BorderSize = 0;
+            this.checkBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.checkBox5.Location = new System.Drawing.Point(27, 11);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(91, 24);
+            this.checkBox5.TabIndex = 0;
+            this.checkBox5.Text = "JPG";
+            this.checkBox5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.BurlyWood;
+            this.panel1.Controls.Add(this.checkBox10);
+            this.panel1.Controls.Add(this.checkBox9);
+            this.panel1.Controls.Add(this.checkBox8);
+            this.panel1.Controls.Add(this.checkBox7);
+            this.panel1.Location = new System.Drawing.Point(439, 119);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(192, 179);
+            this.panel1.TabIndex = 20;
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.FlatAppearance.BorderSize = 0;
+            this.checkBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox9.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.checkBox9.Location = new System.Drawing.Point(20, 84);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(165, 34);
+            this.checkBox9.TabIndex = 2;
+            this.checkBox9.Text = "Comments";
+            this.checkBox9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.FlatAppearance.BorderSize = 0;
+            this.checkBox8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox8.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox8.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.checkBox8.Location = new System.Drawing.Point(20, 47);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(165, 30);
+            this.checkBox8.TabIndex = 1;
+            this.checkBox8.Text = "Favourites";
+            this.checkBox8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.Checked = true;
+            this.checkBox7.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox7.FlatAppearance.BorderSize = 0;
+            this.checkBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox7.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.checkBox7.Location = new System.Drawing.Point(20, 12);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(148, 24);
+            this.checkBox7.TabIndex = 0;
+            this.checkBox7.Text = "Any";
+            this.checkBox7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.FlatAppearance.BorderSize = 0;
+            this.checkBox10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox10.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox10.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.checkBox10.Location = new System.Drawing.Point(20, 124);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(165, 33);
+            this.checkBox10.TabIndex = 3;
+            this.checkBox10.Text = "Views";
+            this.checkBox10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.YellowGreen;
+            this.panel2.Controls.Add(this.checkBox13);
+            this.panel2.Controls.Add(this.checkBox12);
+            this.panel2.Controls.Add(this.checkBox11);
+            this.panel2.Location = new System.Drawing.Point(560, 119);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(220, 126);
+            this.panel2.TabIndex = 21;
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.FlatAppearance.BorderSize = 0;
+            this.checkBox11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox11.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox11.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.checkBox11.Location = new System.Drawing.Point(13, 12);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(188, 24);
+            this.checkBox11.TabIndex = 0;
+            this.checkBox11.Text = "Any Price";
+            this.checkBox11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.FlatAppearance.BorderSize = 0;
+            this.checkBox12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox12.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox12.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.checkBox12.Location = new System.Drawing.Point(13, 83);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(188, 24);
+            this.checkBox12.TabIndex = 1;
+            this.checkBox12.Text = "Premium";
+            this.checkBox12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox12.UseVisualStyleBackColor = true;
+            // 
+            // checkBox13
+            // 
+            this.checkBox13.FlatAppearance.BorderSize = 0;
+            this.checkBox13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox13.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox13.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.checkBox13.Location = new System.Drawing.Point(13, 47);
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.Size = new System.Drawing.Size(188, 24);
+            this.checkBox13.TabIndex = 2;
+            this.checkBox13.Text = "Free";
+            this.checkBox13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox13.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 
@@ -4032,6 +4690,11 @@ namespace doAnC_Sharp_Finale
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1386, 722);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelSortByTypeOf_flowLayoutPanelResult_form1);
+            this.Controls.Add(this.panelSortBySize_flowLayoutPanelResult_form1);
+            this.Controls.Add(this.flowLayoutPanel_searchResult);
             this.Controls.Add(this.flowLayoutPanelDetailTopics_form1);
             this.Controls.Add(this.flowLayoutPanelTopics_form1);
             this.Controls.Add(this.flowLayoutPanelDailyAndTrending_form1);
@@ -4094,6 +4757,7 @@ namespace doAnC_Sharp_Finale
             this.flowLayoutPanelDetailPicture_form1.ResumeLayout(false);
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.ResumeLayout(false);
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.PerformLayout();
+            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1.ResumeLayout(false);
             this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1.PerformLayout();
@@ -4230,7 +4894,43 @@ namespace doAnC_Sharp_Finale
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_1)).EndInit();
-            this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.ResumeLayout(false);
+            this.flowLayoutPanel_searchResult.ResumeLayout(false);
+            this.panelSortBy_flowLayoutPanelResult_form1.ResumeLayout(false);
+            this.panelShowResult_flowLayoutPanelResult_form1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panelSortBySize_flowLayoutPanelResult_form1.ResumeLayout(false);
+            this.panelSortByTypeOf_flowLayoutPanelResult_form1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -4243,10 +4943,6 @@ namespace doAnC_Sharp_Finale
         private System.Windows.Forms.PictureBox pictureBox_click_panelDashBoard_form1_daily;
         private System.Windows.Forms.PictureBox pictureBox_click_panelDashBoard_form1_home;
         private System.Windows.Forms.Panel panelFunction_form1;
-        private System.Windows.Forms.Button button_click_panelFuntion_form1_submit;
-        private System.Windows.Forms.Button button_click_panelFuntion_form1_account;
-        private System.Windows.Forms.Button button_click_panelFuntion_form1_notification;
-        private System.Windows.Forms.Button button_click_panelFuntion_form1_chat;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button_click_panelFuntion_form1_search;
         private System.Windows.Forms.RichTextBox richTextBox_panelFunction_form1_search;
@@ -4495,7 +5191,6 @@ namespace doAnC_Sharp_Finale
         private System.Windows.Forms.PictureBox pictureBox_click_panelAllTopics_flowLayoutPanelTopics_form1_categorizedFlower;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelDetailTopics_form1;
         private System.Windows.Forms.Panel panelBackGround_flowLayoutPanelDetailTopics_form1;
-        private System.Windows.Forms.Label label_panelBackGround_flowLayoutPanelDetailTopics_form1_describetopics;
         private System.Windows.Forms.Label label_panelBackGround_flowLayoutPanelDetailTopics_form1_nameTopics;
         private System.Windows.Forms.PictureBox pictureBox_panelBackGround_flowLayoutPanelDetailTopics_form1_showingBackGroundTopics;
         private System.Windows.Forms.Panel panelShowPics_flowLayoutPanelDetailTopics_form1;
@@ -4518,6 +5213,63 @@ namespace doAnC_Sharp_Finale
         private System.Windows.Forms.Panel panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture;
         private System.Windows.Forms.Button button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG;
         private System.Windows.Forms.Button button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG;
+        private System.Windows.Forms.Label label_panelBackGround_flowLayoutPanelDetailTopics_form1_describetopics;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_searchResult;
+        private System.Windows.Forms.Panel panelSortBy_flowLayoutPanelResult_form1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE;
+        private System.Windows.Forms.Button button_click_panelSortBy_flowLayoutPanelResult_form1_RANK;
+        private System.Windows.Forms.Button button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF;
+        private System.Windows.Forms.Panel panelShowResult_flowLayoutPanelResult_form1;
+        private System.Windows.Forms.PictureBox pictureBox45;
+        private System.Windows.Forms.PictureBox pictureBox44;
+        private System.Windows.Forms.PictureBox pictureBox43;
+        private System.Windows.Forms.PictureBox pictureBox41;
+        private System.Windows.Forms.PictureBox pictureBox40;
+        private System.Windows.Forms.PictureBox pictureBox39;
+        private System.Windows.Forms.PictureBox pictureBox26;
+        private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.PictureBox pictureBox24;
+        private System.Windows.Forms.PictureBox pictureBox23;
+        private System.Windows.Forms.PictureBox pictureBox22;
+        private System.Windows.Forms.PictureBox pictureBox21;
+        private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox48;
+        private System.Windows.Forms.PictureBox pictureBox47;
+        private System.Windows.Forms.PictureBox pictureBox46;
+        private System.Windows.Forms.Panel panelSortBySize_flowLayoutPanelResult_form1;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Panel panelSortByTypeOf_flowLayoutPanelResult_form1;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.CheckBox checkBox13;
+        private System.Windows.Forms.CheckBox checkBox12;
+        private System.Windows.Forms.CheckBox checkBox11;
     }
 }
 
