@@ -243,7 +243,7 @@
             this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1.Controls.Add(this.linkLabel_panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1_share);
             this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(541, 481);
             this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1.Name = "panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1";
-            this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(150, 38);
+            this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(150, 41);
             this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1.TabIndex = 41;
             this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1.Visible = false;
             // 

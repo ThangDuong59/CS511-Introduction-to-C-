@@ -7,7 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 using System.Diagnostics;
+using System.Drawing.Imaging;
+using System.Text;
+
 
 namespace doAnC_Sharp_Finale
 {
@@ -26,7 +30,7 @@ namespace doAnC_Sharp_Finale
         DataTable dtForest = new DataTable();
         DataTable dtFlower = new DataTable();
 
-
+        int saveimgnumber = 0;
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -5822,6 +5826,65 @@ namespace doAnC_Sharp_Finale
         {
             flowLayoutPanelDetailTopics_form1.Visible = false;
             flowLayoutPanelMain_form1.Visible = true;
+        }
+        int down = 0;
+        private void button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download_Click(object sender, EventArgs e)
+        {
+
+            if(down  %2 ==0)
+            {
+                panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.Visible = true;
+                down++;
+            }
+            else
+            {
+                panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture.Visible = false;
+                down++;
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            FolderBrowserDialog fd = new FolderBrowserDialog();
+            if (fd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                ++saveimgnumber;
+                string imgname = " ";
+                if (saveimgnumber == 1)
+                {
+                    imgname = "download.jpg";
+                }
+                else
+                {
+                    int index = saveimgnumber - 1;
+                    imgname = "download (" + index.ToString() + ").jpg";
+                }
+                string savepath = Path.Combine(fd.SelectedPath, imgname);
+                pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image.Save(@savepath, ImageFormat.Jpeg);
+            }
+
+        }
+
+        private void button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog fd = new FolderBrowserDialog();
+            if (fd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                ++saveimgnumber;
+                string imgname = " ";
+                if (saveimgnumber == 1)
+                {
+                    imgname = "download.png";
+                }
+                else
+                {
+                    int index = saveimgnumber - 1;
+                    imgname = "download (" + index.ToString() + ").png";
+                }
+                string savepath = Path.Combine(fd.SelectedPath, imgname);
+                pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image.Save(@savepath, ImageFormat.Png);
+            }
+
         }
     }
 }
