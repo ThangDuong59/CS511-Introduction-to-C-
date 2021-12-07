@@ -1186,7 +1186,6 @@ namespace doAnC_Sharp_Finale
             this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(150, 80);
             this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1.TabIndex = 41;
             this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1.Visible = false;
-
             // 
             // button_click_panelDetailPicture_flowLayoutPanelDetailPicture_Download
             // 
@@ -3582,9 +3581,9 @@ namespace doAnC_Sharp_Finale
             this.flowLayoutPanel_searchResult.BackColor = System.Drawing.Color.Black;
             this.flowLayoutPanel_searchResult.Controls.Add(this.panelSortBy_flowLayoutPanelResult_form1);
             this.flowLayoutPanel_searchResult.Controls.Add(this.panelShowResult_flowLayoutPanelResult_form1);
-            this.flowLayoutPanel_searchResult.Location = new System.Drawing.Point(893, 71);
+            this.flowLayoutPanel_searchResult.Location = new System.Drawing.Point(3, 71);
             this.flowLayoutPanel_searchResult.Name = "flowLayoutPanel_searchResult";
-            this.flowLayoutPanel_searchResult.Size = new System.Drawing.Size(36, 573);
+            this.flowLayoutPanel_searchResult.Size = new System.Drawing.Size(1271, 573);
             this.flowLayoutPanel_searchResult.TabIndex = 17;
             // 
             // panelSortBy_flowLayoutPanelResult_form1
@@ -3628,6 +3627,7 @@ namespace doAnC_Sharp_Finale
             this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Text = "Price";
             this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.UseVisualStyleBackColor = true;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Click += new System.EventHandler(this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE_Click);
             // 
             // button_click_panelSortBy_flowLayoutPanelResult_form1_RANK
             // 
@@ -3644,6 +3644,7 @@ namespace doAnC_Sharp_Finale
             this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Text = "Rank";
             this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.UseVisualStyleBackColor = true;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Click += new System.EventHandler(this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK_Click);
             // 
             // button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF
             // 
@@ -3660,6 +3661,7 @@ namespace doAnC_Sharp_Finale
             this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Text = "Type of";
             this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.UseVisualStyleBackColor = true;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Click += new System.EventHandler(this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF_Click);
             // 
             // label5
             // 
@@ -3687,6 +3689,7 @@ namespace doAnC_Sharp_Finale
             this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Text = "Size";
             this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.UseVisualStyleBackColor = true;
+            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Click += new System.EventHandler(this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE_Click);
             // 
             // panelShowResult_flowLayoutPanelResult_form1
             // 
@@ -3975,7 +3978,7 @@ namespace doAnC_Sharp_Finale
             this.panelSortBySize_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize);
             this.panelSortBySize_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(253, 120);
             this.panelSortBySize_flowLayoutPanelResult_form1.Name = "panelSortBySize_flowLayoutPanelResult_form1";
-            this.panelSortBySize_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(151, 39);
+            this.panelSortBySize_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(151, 169);
             this.panelSortBySize_flowLayoutPanelResult_form1.TabIndex = 18;
             this.panelSortBySize_flowLayoutPanelResult_form1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSortBySize_flowLayoutPanelResult_form1_Paint);
             // 
@@ -4044,7 +4047,7 @@ namespace doAnC_Sharp_Finale
             this.panelSortByTypeOf_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG);
             this.panelSortByTypeOf_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(344, 120);
             this.panelSortByTypeOf_flowLayoutPanelResult_form1.Name = "panelSortByTypeOf_flowLayoutPanelResult_form1";
-            this.panelSortByTypeOf_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(165, 35);
+            this.panelSortByTypeOf_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(165, 169);
             this.panelSortByTypeOf_flowLayoutPanelResult_form1.TabIndex = 19;
             // 
             // checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_PNG
@@ -4085,7 +4088,7 @@ namespace doAnC_Sharp_Finale
             this.panelSortByRank_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank);
             this.panelSortByRank_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(439, 119);
             this.panelSortByRank_flowLayoutPanelResult_form1.Name = "panelSortByRank_flowLayoutPanelResult_form1";
-            this.panelSortByRank_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(192, 27);
+            this.panelSortByRank_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(192, 170);
             this.panelSortByRank_flowLayoutPanelResult_form1.TabIndex = 20;
             // 
             // checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews
@@ -4154,7 +4157,7 @@ namespace doAnC_Sharp_Finale
             this.panelSortByPrice_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice);
             this.panelSortByPrice_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(560, 119);
             this.panelSortByPrice_flowLayoutPanelResult_form1.Name = "panelSortByPrice_flowLayoutPanelResult_form1";
-            this.panelSortByPrice_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(220, 27);
+            this.panelSortByPrice_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(220, 170);
             this.panelSortByPrice_flowLayoutPanelResult_form1.TabIndex = 21;
             // 
             // checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free

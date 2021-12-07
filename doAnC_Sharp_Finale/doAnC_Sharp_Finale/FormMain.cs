@@ -6966,6 +6966,83 @@ namespace doAnC_Sharp_Finale
         {
 
         }
+        int PRICE = 0;
+        int SIZE = 0;
+        int RANK = 0;
+        int TYPEOF = 0;
+        private void button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE_Click(object sender, EventArgs e)
+        {
+
+            if (SIZE % 2 == 0)
+            {
+
+                panelSortBySize_flowLayoutPanelResult_form1.Visible = true;
+                SIZE++;
+
+            }
+            else if (SIZE % 2 != 0)
+            {
+
+                panelSortBySize_flowLayoutPanelResult_form1.Visible = false;
+                SIZE++;
+
+            }
+        }
+
+        private void button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF_Click(object sender, EventArgs e)
+        {
+            if (TYPEOF % 2 == 0)
+            {
+
+                panelSortByTypeOf_flowLayoutPanelResult_form1.Visible = true;
+                TYPEOF++;
+
+            }
+            else if (TYPEOF % 2 != 0)
+            {
+
+                panelSortByTypeOf_flowLayoutPanelResult_form1.Visible = false;
+                TYPEOF++;
+
+            }
+        }
+
+        private void button_click_panelSortBy_flowLayoutPanelResult_form1_RANK_Click(object sender, EventArgs e)
+        {
+            if (RANK % 2 == 0)
+            {
+
+                panelSortByRank_flowLayoutPanelResult_form1.Visible = true;
+                RANK++;
+
+            }
+            else if (RANK % 2 != 0)
+            {
+
+                panelSortByRank_flowLayoutPanelResult_form1.Visible = false;
+                RANK++;
+
+            }
+        }
+
+        private void button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE_Click(object sender, EventArgs e)
+        {
+
+            if (PRICE % 2 == 0)
+            {
+
+                panelSortByPrice_flowLayoutPanelResult_form1.Visible = true;
+                PRICE++;
+
+            }
+            else if (PRICE % 2 != 0)
+            {
+
+                panelSortByPrice_flowLayoutPanelResult_form1.Visible = false;
+                PRICE++;
+
+            }
+        }
     }
 }
 
