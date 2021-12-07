@@ -29,6 +29,7 @@ namespace doAnC_Sharp_Finale
         DataTable dtMotoBike = new DataTable();
         DataTable dtForest = new DataTable();
         DataTable dtFlower = new DataTable();
+        DataTable dtAll = new DataTable();
 
         int saveimgnumber = 0;
         private void Form1_Load(object sender, EventArgs e)
@@ -82,6 +83,15 @@ namespace doAnC_Sharp_Finale
             dtFlower.Columns.Add("Comments", typeof(int));
             dtFlower.Columns.Add("Views", typeof(int));
             dtFlower.Columns.Add("Price", typeof(int));
+
+            dtAll.Columns.Add("STT", typeof(string));
+            dtAll.Columns.Add("Categorized", typeof(string));
+            dtAll.Columns.Add("Path", typeof(string));
+            dtAll.Columns.Add("Favorites", typeof(int));
+            dtAll.Columns.Add("Comments", typeof(int));
+            dtAll.Columns.Add("Views", typeof(int));
+            dtAll.Columns.Add("Price", typeof(int));
+
             //////////////////////////////////////////// ADD THE DATA FOR CAR CATEGORIZED /////////////////////////////////////////////////////////////
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             dtCar.Rows.Add("1", "CAR", @"../../UsedForResource/Car/Car_1.jpg", 141, 226, 168, 0);
@@ -2612,61 +2622,6 @@ namespace doAnC_Sharp_Finale
                     pictureBoxShowingMain_24.Image = Image.FromFile(Convert.ToString(dtFlower.Rows[numrandomFlower_4 - 1]["Path"]));
                 }
             }
-
-
-            Random randomCategorizedToPutPictureInPanelSeeMoreAtYouMightLike = new Random();
-            int randomCar_youmightlike = randomCategorizedToPutPictureInPanelSeeMoreAtYouMightLike.Next(1, 158);
-            int randomInterior_youmightlike = randomCategorizedToPutPictureInPanelSeeMoreAtYouMightLike.Next(1, 230);
-            int randomOceans_youmightlike = randomCategorizedToPutPictureInPanelSeeMoreAtYouMightLike.Next(1, 187);
-            int randomFlower_youmightlike = randomCategorizedToPutPictureInPanelSeeMoreAtYouMightLike.Next(1, 160);
-            int randomMotoBike_youmightlike = randomCategorizedToPutPictureInPanelSeeMoreAtYouMightLike.Next(1, 243);
-            int randomForest_youmightlike = randomCategorizedToPutPictureInPanelSeeMoreAtYouMightLike.Next(1, 206);
-            for (int i = 1; i <= 157; i++)
-            {
-                if (randomCar_youmightlike == i)
-                {
-                    pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_19.Image = Image.FromFile(Convert.ToString(dtCar.Rows[randomCar_youmightlike - 1]["Path"]));
-                }
-
-            }
-            for (int j = 1; j <= 229; j++)
-            {
-                if (randomInterior_youmightlike == j)
-                {
-                    pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_20.Image = Image.FromFile(Convert.ToString(dtInterior.Rows[randomInterior_youmightlike - 1]["Path"]));
-                }
-            }
-            for (int k = 1; k <= 186; k++)
-            {
-                if (randomOceans_youmightlike == k)
-                {
-                    pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_21.Image = Image.FromFile(Convert.ToString(dtOceans.Rows[randomOceans_youmightlike - 1]["Path"]));
-                }
-            }
-            for (int p = 1; p <= 159; p++)
-            {
-                if (randomFlower_youmightlike == p)
-                {
-                    pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_22.Image = Image.FromFile(Convert.ToString(dtFlower.Rows[randomFlower_youmightlike - 1]["Path"]));
-                }
-            }
-            for (int o = 1; o <= 242; o++)
-            {
-                if (randomMotoBike_youmightlike == o)
-                {
-                    pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_23.Image = Image.FromFile(Convert.ToString(dtMotoBike.Rows[randomMotoBike_youmightlike - 1]["Path"]));
-                }
-            }
-            for (int u = 1; u <= 205; u++)
-            {
-                if (randomForest_youmightlike == u)
-                {
-                    pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_24.Image = Image.FromFile(Convert.ToString(dtForest.Rows[randomForest_youmightlike - 1]["Path"]));
-                }
-            }
-
-
-
         }
 
         private void pictureBox_click_panelDashBoard_form1_home_MouseEnter(object sender, EventArgs e)
@@ -2714,13 +2669,6 @@ namespace doAnC_Sharp_Finale
         {
 
         }
-
-        private void pictureBox23_Click(object sender, EventArgs e)
-        {
-            pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_21.Image;
-            button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "OCEANS";
-            danhgiau_pictureBoxShowing = 60;
-        }
         /// <summary>
         /// KHAI BÁO BIẾN ĐẾM PICTUREBOX ĐỂ XÁC ĐỊNH VỊ TRÍ CỦA PICBOX ĐÃ ĐƯỢC CLICK
         /// </summary>
@@ -2736,7 +2684,7 @@ namespace doAnC_Sharp_Finale
 
         private void button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_detailPictureBack_Click(object sender, EventArgs e)
         {
-            if((danhgiau_pictureBoxShowing>=1 && danhgiau_pictureBoxShowing <=24) || (danhgiau_pictureBoxShowing >= 40 && danhgiau_pictureBoxShowing <= 63))
+            if((danhgiau_pictureBoxShowing>=1 && danhgiau_pictureBoxShowing <=24) || (danhgiau_pictureBoxShowing >= 40 && danhgiau_pictureBoxShowing <= 57))
             {
                 flowLayoutPanelDetailPicture_form1.Visible = false;
                 flowLayoutPanelMain_form1.Visible = true;
@@ -2895,37 +2843,8 @@ namespace doAnC_Sharp_Finale
         /// KHAI BÁO BIẾN COMMENT ĐỂ LẤY SỐ LẦN NGƯỜI DÙNG BẤM NÚT POST COMMENT.NẾU POST 1 LẦN THÌ PANELCOMMENT 1 HIỆN,POST 2 LÀN THÌ PANEL COMMENT 2 HIỆN LÊN...SEE BELOW!!
         /// </summary>
         int cmt_panelComment_flowLayoutPanelComment_panelDetailPicture_flowLayoutPanelDetailPicture_form1 = 0;
-        private void button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_post_Click(object sender, EventArgs e)
-        {
-            if (cmt_panelComment_flowLayoutPanelComment_panelDetailPicture_flowLayoutPanelDetailPicture_form1 % 2 == 0)
-            {
-                richTextBox_panelComment_1_flowLayoutPanelComment_panelDetailPicture_flowLayoutPanelDetailPicture_form1_comment_1.Text = " Nakaramiurenaruto                                                                              Dember,13,21\n" + " " + richTextBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_yourcomment.Text;
-                panelComment_1_flowLayoutPanelComment_panelDetailPicture_flowLayoutPanelDetailPicture_form1.Visible = true;
-                cmt_panelComment_flowLayoutPanelComment_panelDetailPicture_flowLayoutPanelDetailPicture_form1++;
-            }
-            else if (cmt_panelComment_flowLayoutPanelComment_panelDetailPicture_flowLayoutPanelDetailPicture_form1 % 2 != 0)
-            {
-                richTextBox_panelComment_2_flowLayoutPanelComment_panelDetailPicture_flowLayoutPanelDetailPicture_form1_comment_2.Text = " Nakaramiurenaruto                                                                              Dember,13,21\n" + " " + richTextBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_yourcomment.Text;
-                panelComment_2_flowLayoutPanelComment_panelDetailPicture_flowLayoutPanelDetailPicture_form1.Visible = true;
-                cmt_panelComment_flowLayoutPanelComment_panelDetailPicture_flowLayoutPanelDetailPicture_form1++;
-            }
 
-        }
 
-        private void panel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
         /// lINKELABEL của button share_panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -3391,24 +3310,6 @@ namespace doAnC_Sharp_Finale
                 case 57:
                     pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_18.Image;
                     break;
-                case 58:
-                    pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_19.Image;
-                    break;
-                case 59:
-                    pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_20.Image;
-                    break;
-                case 60:
-                    pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_21.Image;
-                    break;
-                case 61:
-                    pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_22.Image;
-                    break;
-                case 62:
-                    pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_23.Image;
-                    break;
-                case 63:
-                    pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_24.Image;
-                    break;
                 case 64:
                     pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_flowLayoutPanelDailyAndTrending_form1_showingDailyandTrending_1.Image;
                     break;
@@ -3668,24 +3569,6 @@ namespace doAnC_Sharp_Finale
                     break;
                 case 57:
                     pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_18.Image;
-                    break;
-                case 58:
-                    pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_19.Image;
-                    break;
-                case 59:
-                    pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_20.Image;
-                    break;
-                case 60:
-                    pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_21.Image;
-                    break;
-                case 61:
-                    pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_22.Image;
-                    break;
-                case 62:
-                    pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_23.Image;
-                    break;
-                case 63:
-                    pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_24.Image;
                     break;
                 case 64:
                     pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_flowLayoutPanelDailyAndTrending_form1_showingDailyandTrending_1.Image;
@@ -4814,40 +4697,6 @@ namespace doAnC_Sharp_Finale
             }
         }
 
-        private void pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_19_Click(object sender, EventArgs e)
-        {
-            pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_19.Image;
-            button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "CAR";
-            danhgiau_pictureBoxShowing = 58;
-        }
-
-        private void pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_20_Click(object sender, EventArgs e)
-        {
-            pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_20.Image;
-            button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "INTERIOR";
-            danhgiau_pictureBoxShowing = 59;
-        }
-
-        private void pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_22_Click(object sender, EventArgs e)
-        {
-            pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_22.Image;
-            button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "FLOWER";
-            danhgiau_pictureBoxShowing = 61;
-        }
-
-        private void pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_23_Click(object sender, EventArgs e)
-        {
-            pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_23.Image;
-            button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "MOTOBIKE";
-            danhgiau_pictureBoxShowing = 62;
-        }
-
-        private void pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_24_Click(object sender, EventArgs e)
-        {
-            pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_24.Image;
-            button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "FOREST";
-            danhgiau_pictureBoxShowing = 63;
-        }
 
         private void button_click_panelSeeMore_flowLayoutPanelDetailPicture_form1_categorizeRandomByAuthorTri2_Click(object sender, EventArgs e)
         {
@@ -5914,6 +5763,11 @@ namespace doAnC_Sharp_Finale
         }
 
         private void panelSortBySize_flowLayoutPanelResult_form1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button_click_panelFuntion_form1_search_Click(object sender, EventArgs e)
         {
 
         }
