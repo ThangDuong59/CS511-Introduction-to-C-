@@ -31,6 +31,7 @@ namespace doAnC_Sharp_Finale
         DataTable dtFlower = new DataTable();
         DataTable dtAll = new DataTable();
         DataTable dtSearched = new DataTable();
+        DataTable dtType = new DataTable();
         List<Dictionary<string, string>> lstImageInfoScreenMain = new List<Dictionary<string, string>> ();
 
         int saveimgnumber = 0;
@@ -6914,6 +6915,252 @@ namespace doAnC_Sharp_Finale
 
         private void label17_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void materialComboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(materialComboBox4.SelectedIndex==1)
+            {
+                string arrange = "Price='0'";
+                DataRow[] Found_free = dtAll.Select(arrange);
+                int j = 0;
+                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                {
+                    if (control1 is PictureBox)
+                    {
+                        ((PictureBox)control1).Image = Image.FromFile(Found_free[j]["Path"].ToString());
+                        j += 1;
+                    }
+                }
+                if (j <= 29)
+                {
+                    foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                    {
+                        if (control1 is PictureBox)
+                        {
+                            ((PictureBox)control1).Visible = false;
+                            j += 1;
+                        }
+                    }
+                }
+            }
+            else if(materialComboBox4.SelectedIndex == 2)
+            {
+                string arrange = "Price='1'";
+                DataRow[] Found_free = dtAll.Select(arrange);
+                int j = 0;
+                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                {
+                    if (control1 is PictureBox)
+                    {
+                        ((PictureBox)control1).Image = Image.FromFile(Found_free[j]["Path"].ToString());
+                        j += 1;
+                    }
+                }
+                if (j <= 29)
+                {
+                    foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                    {
+                        if (control1 is PictureBox)
+                        {
+                            ((PictureBox)control1).Visible = false;
+                            j += 1;
+                        }
+                    }
+                }
+            }
+            else if(materialComboBox4.SelectedIndex == 0)
+            {
+                string Search_string = richTextBox_panelFunction_form1_search.Text;
+                Search_string = Search_string.ToUpper();
+                Search_string = Search_string.Trim();
+                string search_expression = "Categorized='" + Search_string + "'";
+                DataRow[] Found_Rows = dtAll.Select(search_expression);
+                //for(int i=0;i<Found_Rows.Length;i++)
+                //{
+                //    PictureBox temp = new PictureBox();
+                //    temp.Image = Image.FromFile(Convert.ToString(Found_Rows[i]["Path"]));
+                //    temp.Visible = true;
+                //    panelShowResult_flowLayoutPanelResult_form1.Controls.Add(temp);
+
+                //}
+                int i = 0;
+                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                {
+                    if (control1 is PictureBox)
+                    {
+                        ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
+                        i += 1;
+                    }
+                }
+                dtSearched = new DataTable();
+                dtSearched = Found_Rows.CopyToDataTable();
+
+
+            }
+        }
+
+        private void materialComboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(materialComboBox3.SelectedIndex==1)
+            {
+                dtAll.DefaultView.Sort = "Favorites DESC";
+                dtAll = dtAll.DefaultView.ToTable();
+                string Search_string = richTextBox_panelFunction_form1_search.Text;
+                Search_string = Search_string.ToUpper();
+                Search_string = Search_string.Trim();
+                string search_expression = "Categorized='" + Search_string + "'";
+                DataRow[] Found_Rows = dtAll.Select(search_expression);
+                //for(int i=0;i<Found_Rows.Length;i++)
+                //{
+                //    PictureBox temp = new PictureBox();
+                //    temp.Image = Image.FromFile(Convert.ToString(Found_Rows[i]["Path"]));
+                //    temp.Visible = true;
+                //    panelShowResult_flowLayoutPanelResult_form1.Controls.Add(temp);
+
+                //}
+                int i = 0;
+                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                {
+                    if (control1 is PictureBox)
+                    {
+                        ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
+                        i += 1;
+                    }
+                }
+            }
+            else if(materialComboBox3.SelectedIndex == 2)
+            {
+                dtAll.DefaultView.Sort = "Comments DESC";
+                dtAll = dtAll.DefaultView.ToTable();
+                string Search_string = richTextBox_panelFunction_form1_search.Text;
+                Search_string = Search_string.ToUpper();
+                Search_string = Search_string.Trim();
+                string search_expression = "Categorized='" + Search_string + "'";
+                DataRow[] Found_Rows = dtAll.Select(search_expression);
+                //for(int i=0;i<Found_Rows.Length;i++)
+                //{
+                //    PictureBox temp = new PictureBox();
+                //    temp.Image = Image.FromFile(Convert.ToString(Found_Rows[i]["Path"]));
+                //    temp.Visible = true;
+                //    panelShowResult_flowLayoutPanelResult_form1.Controls.Add(temp);
+
+                //}
+                int i = 0;
+                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                {
+                    if (control1 is PictureBox)
+                    {
+                        ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
+                        i += 1;
+                    }
+                }
+            }
+            else if (materialComboBox3.SelectedIndex == 3)
+            {
+                dtAll.DefaultView.Sort = "Views DESC";
+                dtAll = dtAll.DefaultView.ToTable();
+                string Search_string = richTextBox_panelFunction_form1_search.Text;
+                Search_string = Search_string.ToUpper();
+                Search_string = Search_string.Trim();
+                string search_expression = "Categorized='" + Search_string + "'";
+                DataRow[] Found_Rows = dtAll.Select(search_expression);
+                //for(int i=0;i<Found_Rows.Length;i++)
+                //{
+                //    PictureBox temp = new PictureBox();
+                //    temp.Image = Image.FromFile(Convert.ToString(Found_Rows[i]["Path"]));
+                //    temp.Visible = true;
+                //    panelShowResult_flowLayoutPanelResult_form1.Controls.Add(temp);
+
+                //}
+                int i = 0;
+                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                {
+                    if (control1 is PictureBox)
+                    {
+                        ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
+                        i += 1;
+                    }
+                }
+            }
+        }
+        private void materialComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(materialComboBox2.SelectedIndex==1)
+            {
+                string Search_string = richTextBox_panelFunction_form1_search.Text;
+                Search_string = Search_string.ToUpper();
+                Search_string = Search_string.Trim();
+                string search_expression = "Categorized='" + Search_string + "'";
+                DataRow[] Found_Rows = dtAll.Select(search_expression);
+                int i = 0;
+                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                {
+                    string s = Found_Rows[i]["Path"].ToString().Substring(Found_Rows[i]["Path"].ToString().Length - 3, 3);
+                    if (s == "jpg")
+                    {
+                        if (control1 is PictureBox)
+                        {
+                            ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
+                        }
+                    }
+                    i += 1;  
+                }
+            }
+            else if(materialComboBox2.SelectedIndex == 2)
+            {
+                string Search_string = richTextBox_panelFunction_form1_search.Text;
+                Search_string = Search_string.ToUpper();
+                Search_string = Search_string.Trim();
+                string search_expression = "Categorized='" + Search_string + "'";
+                DataRow[] Found_Rows = dtAll.Select(search_expression);
+                int i = 0;
+                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                {
+                    string s = Found_Rows[i]["Path"].ToString().Substring(Found_Rows[i]["Path"].ToString().Length - 3, 3);
+                    if (s == "png")
+                    {
+                        if (control1 is PictureBox)
+                        {
+                            ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
+                        }
+                    }
+                    i += 1;
+                }
+            }
+        }
+
+        private void materialComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(materialComboBox1.SelectedIndex==1)
+            {
+                string Search_string = richTextBox_panelFunction_form1_search.Text;
+                Search_string = Search_string.ToUpper();
+                Search_string = Search_string.Trim();
+                string search_expression = "Categorized='" + Search_string + "'";
+                DataRow[] Found_Rows = dtAll.Select(search_expression);
+                dtSearched = new DataTable();
+                for (int j=0;j<Found_Rows.Length;j++)
+                {
+                   
+                    Image img= Image.FromFile(Found_Rows[j]["Path"].ToString());
+                    if(img.Width==236 && img.Height==354)
+                    {
+                        dtSearched.ImportRow(Found_Rows[j]);
+                    }
+                }
+                int i = 1;
+                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                {
+                    
+                   if (control1 is PictureBox)
+                   {
+                       ((PictureBox)control1).Image = Image.FromFile(dtSearched.Rows[i]["Path"].ToString());
+                   }
+                   i += 1;
+                }
+            }
 
         }
     }
