@@ -272,11 +272,7 @@ namespace doAnC_Sharp_Finale
             this.flowLayoutPanel_searchResult = new System.Windows.Forms.FlowLayoutPanel();
             this.panelSortBy_flowLayoutPanelResult_form1 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE = new System.Windows.Forms.Button();
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK = new System.Windows.Forms.Button();
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE = new System.Windows.Forms.Button();
             this.panelShowResult_flowLayoutPanelResult_form1 = new System.Windows.Forms.Panel();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_29 = new System.Windows.Forms.PictureBox();
@@ -308,23 +304,14 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1 = new System.Windows.Forms.PictureBox();
-            this.panelSortBySize_flowLayoutPanelResult_form1 = new System.Windows.Forms.Panel();
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_SmallSize = new System.Windows.Forms.CheckBox();
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_MediumSize = new System.Windows.Forms.CheckBox();
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_LargeSize = new System.Windows.Forms.CheckBox();
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize = new System.Windows.Forms.CheckBox();
-            this.panelSortByTypeOf_flowLayoutPanelResult_form1 = new System.Windows.Forms.Panel();
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_PNG = new System.Windows.Forms.CheckBox();
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG = new System.Windows.Forms.CheckBox();
-            this.panelSortByRank_flowLayoutPanelResult_form1 = new System.Windows.Forms.Panel();
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews = new System.Windows.Forms.CheckBox();
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByComments = new System.Windows.Forms.CheckBox();
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByFavourites = new System.Windows.Forms.CheckBox();
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank = new System.Windows.Forms.CheckBox();
-            this.panelSortByPrice_flowLayoutPanelResult_form1 = new System.Windows.Forms.Panel();
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free = new System.Windows.Forms.CheckBox();
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Preimum = new System.Windows.Forms.CheckBox();
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice = new System.Windows.Forms.CheckBox();
+            this.materialComboBox1 = new ReaLTaiizor.Controls.MaterialComboBox();
+            this.materialComboBox2 = new ReaLTaiizor.Controls.MaterialComboBox();
+            this.materialComboBox3 = new ReaLTaiizor.Controls.MaterialComboBox();
+            this.materialComboBox4 = new ReaLTaiizor.Controls.MaterialComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
             this.panelDashBoard_form1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_trending)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_topics)).BeginInit();
@@ -502,10 +489,6 @@ namespace doAnC_Sharp_Finale
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1)).BeginInit();
-            this.panelSortBySize_flowLayoutPanelResult_form1.SuspendLayout();
-            this.panelSortByTypeOf_flowLayoutPanelResult_form1.SuspendLayout();
-            this.panelSortByRank_flowLayoutPanelResult_form1.SuspendLayout();
-            this.panelSortByPrice_flowLayoutPanelResult_form1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelDashBoard_form1
@@ -615,6 +598,7 @@ namespace doAnC_Sharp_Finale
             this.richTextBox_panelFunction_form1_search.Size = new System.Drawing.Size(255, 36);
             this.richTextBox_panelFunction_form1_search.TabIndex = 1;
             this.richTextBox_panelFunction_form1_search.Text = "";
+            this.richTextBox_panelFunction_form1_search.KeyDown += new System.Windows.Forms.KeyEventHandler(this.richTextBox_panelFunction_form1_search_KeyDown);
             // 
             // pictureBox1
             // 
@@ -3588,16 +3572,20 @@ namespace doAnC_Sharp_Finale
             // 
             // panelSortBy_flowLayoutPanelResult_form1
             // 
-            this.panelSortBy_flowLayoutPanelResult_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.panelSortBy_flowLayoutPanelResult_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label41);
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label17);
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label9);
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label4);
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.materialComboBox4);
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.materialComboBox3);
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.materialComboBox2);
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.materialComboBox1);
             this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label16);
-            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE);
-            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK);
-            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF);
             this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label5);
-            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE);
             this.panelSortBy_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(3, 3);
             this.panelSortBy_flowLayoutPanelResult_form1.Name = "panelSortBy_flowLayoutPanelResult_form1";
-            this.panelSortBy_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(1226, 60);
+            this.panelSortBy_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(1239, 60);
             this.panelSortBy_flowLayoutPanelResult_form1.TabIndex = 0;
             // 
             // label16
@@ -3612,57 +3600,6 @@ namespace doAnC_Sharp_Finale
             this.label16.Text = "Relative";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE
-            // 
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.FlatAppearance.BorderSize = 0;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Image = ((System.Drawing.Image)(resources.GetObject("button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Image")));
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Location = new System.Drawing.Point(584, 13);
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Name = "button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE";
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Size = new System.Drawing.Size(76, 32);
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.TabIndex = 4;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Text = "Price";
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.UseVisualStyleBackColor = true;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE.Click += new System.EventHandler(this.button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE_Click);
-            // 
-            // button_click_panelSortBy_flowLayoutPanelResult_form1_RANK
-            // 
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.FlatAppearance.BorderSize = 0;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Image = ((System.Drawing.Image)(resources.GetObject("button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Image")));
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Location = new System.Drawing.Point(469, 14);
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Name = "button_click_panelSortBy_flowLayoutPanelResult_form1_RANK";
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Size = new System.Drawing.Size(74, 32);
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.TabIndex = 3;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Text = "Rank";
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.UseVisualStyleBackColor = true;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK.Click += new System.EventHandler(this.button_click_panelSortBy_flowLayoutPanelResult_form1_RANK_Click);
-            // 
-            // button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF
-            // 
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.FlatAppearance.BorderSize = 0;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Image = ((System.Drawing.Image)(resources.GetObject("button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Image")));
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Location = new System.Drawing.Point(348, 10);
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Name = "button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF";
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Size = new System.Drawing.Size(94, 37);
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.TabIndex = 2;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Text = "Type of";
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.UseVisualStyleBackColor = true;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF.Click += new System.EventHandler(this.button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF_Click);
-            // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -3672,24 +3609,6 @@ namespace doAnC_Sharp_Finale
             this.label5.Size = new System.Drawing.Size(80, 32);
             this.label5.TabIndex = 1;
             this.label5.Text = "Sort By";
-            // 
-            // button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE
-            // 
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.FlatAppearance.BorderSize = 0;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Image = ((System.Drawing.Image)(resources.GetObject("button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Image")));
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Location = new System.Drawing.Point(258, 15);
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Name = "button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE";
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Size = new System.Drawing.Size(68, 31);
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.TabIndex = 0;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Text = "Size";
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.UseVisualStyleBackColor = true;
-            this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE.Click += new System.EventHandler(this.button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE_Click);
             // 
             // panelShowResult_flowLayoutPanelResult_form1
             // 
@@ -3726,7 +3645,7 @@ namespace doAnC_Sharp_Finale
             this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1);
             this.panelShowResult_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(3, 69);
             this.panelShowResult_flowLayoutPanelResult_form1.Name = "panelShowResult_flowLayoutPanelResult_form1";
-            this.panelShowResult_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(1220, 1190);
+            this.panelShowResult_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(1239, 1190);
             this.panelShowResult_flowLayoutPanelResult_form1.TabIndex = 1;
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30
@@ -3963,244 +3882,167 @@ namespace doAnC_Sharp_Finale
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1
             // 
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.Imag" +
+        "e")));
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.Location = new System.Drawing.Point(4, 3);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.Name = "pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1";
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.Size = new System.Drawing.Size(247, 180);
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.TabIndex = 0;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1_Click);
             // 
-            // panelSortBySize_flowLayoutPanelResult_form1
+            // materialComboBox1
             // 
-            this.panelSortBySize_flowLayoutPanelResult_form1.BackColor = System.Drawing.Color.Salmon;
-            this.panelSortBySize_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_SmallSize);
-            this.panelSortBySize_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_MediumSize);
-            this.panelSortBySize_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_LargeSize);
-            this.panelSortBySize_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize);
-            this.panelSortBySize_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(253, 120);
-            this.panelSortBySize_flowLayoutPanelResult_form1.Name = "panelSortBySize_flowLayoutPanelResult_form1";
-            this.panelSortBySize_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(151, 169);
-            this.panelSortBySize_flowLayoutPanelResult_form1.TabIndex = 18;
-            this.panelSortBySize_flowLayoutPanelResult_form1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSortBySize_flowLayoutPanelResult_form1_Paint);
+            this.materialComboBox1.AutoResize = false;
+            this.materialComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.materialComboBox1.Depth = 0;
+            this.materialComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.materialComboBox1.DropDownHeight = 174;
+            this.materialComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.materialComboBox1.DropDownWidth = 115;
+            this.materialComboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.materialComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.materialComboBox1.FormattingEnabled = true;
+            this.materialComboBox1.IntegralHeight = false;
+            this.materialComboBox1.ItemHeight = 43;
+            this.materialComboBox1.Items.AddRange(new object[] {
+            "Any Size",
+            "Large ",
+            "Medium ",
+            "Small"});
+            this.materialComboBox1.Location = new System.Drawing.Point(310, 6);
+            this.materialComboBox1.MaxDropDownItems = 4;
+            this.materialComboBox1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.materialComboBox1.Name = "materialComboBox1";
+            this.materialComboBox1.Size = new System.Drawing.Size(126, 49);
+            this.materialComboBox1.StartIndex = 0;
+            this.materialComboBox1.TabIndex = 6;
             // 
-            // checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_SmallSize
+            // materialComboBox2
             // 
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_SmallSize.FlatAppearance.BorderSize = 0;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_SmallSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_SmallSize.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_SmallSize.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_SmallSize.Location = new System.Drawing.Point(11, 132);
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_SmallSize.Name = "checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_SmallSize";
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_SmallSize.Size = new System.Drawing.Size(132, 24);
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_SmallSize.TabIndex = 3;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_SmallSize.Text = "Small";
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_SmallSize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_SmallSize.UseVisualStyleBackColor = true;
+            this.materialComboBox2.AutoResize = false;
+            this.materialComboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialComboBox2.Depth = 0;
+            this.materialComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.materialComboBox2.DropDownHeight = 174;
+            this.materialComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.materialComboBox2.DropDownWidth = 121;
+            this.materialComboBox2.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialComboBox2.FormattingEnabled = true;
+            this.materialComboBox2.IntegralHeight = false;
+            this.materialComboBox2.ItemHeight = 43;
+            this.materialComboBox2.Items.AddRange(new object[] {
+            "Any Type",
+            "JPG",
+            "PNG"});
+            this.materialComboBox2.Location = new System.Drawing.Point(549, 6);
+            this.materialComboBox2.MaxDropDownItems = 4;
+            this.materialComboBox2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.materialComboBox2.Name = "materialComboBox2";
+            this.materialComboBox2.Size = new System.Drawing.Size(121, 49);
+            this.materialComboBox2.StartIndex = 0;
+            this.materialComboBox2.TabIndex = 7;
             // 
-            // checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_MediumSize
+            // materialComboBox3
             // 
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_MediumSize.FlatAppearance.BorderSize = 0;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_MediumSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_MediumSize.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_MediumSize.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_MediumSize.Location = new System.Drawing.Point(10, 83);
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_MediumSize.Name = "checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_MediumSize";
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_MediumSize.Size = new System.Drawing.Size(133, 43);
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_MediumSize.TabIndex = 2;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_MediumSize.Text = "Medium";
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_MediumSize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_MediumSize.UseVisualStyleBackColor = true;
+            this.materialComboBox3.AutoResize = false;
+            this.materialComboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialComboBox3.Depth = 0;
+            this.materialComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.materialComboBox3.DropDownHeight = 174;
+            this.materialComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.materialComboBox3.DropDownWidth = 121;
+            this.materialComboBox3.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialComboBox3.FormattingEnabled = true;
+            this.materialComboBox3.IntegralHeight = false;
+            this.materialComboBox3.ItemHeight = 43;
+            this.materialComboBox3.Items.AddRange(new object[] {
+            "Any ",
+            "Favorites",
+            "Comments",
+            "Views"});
+            this.materialComboBox3.Location = new System.Drawing.Point(781, 8);
+            this.materialComboBox3.MaxDropDownItems = 4;
+            this.materialComboBox3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.materialComboBox3.Name = "materialComboBox3";
+            this.materialComboBox3.Size = new System.Drawing.Size(121, 49);
+            this.materialComboBox3.StartIndex = 0;
+            this.materialComboBox3.TabIndex = 8;
             // 
-            // checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_LargeSize
+            // materialComboBox4
             // 
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_LargeSize.FlatAppearance.BorderSize = 0;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_LargeSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_LargeSize.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_LargeSize.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_LargeSize.Location = new System.Drawing.Point(10, 48);
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_LargeSize.Name = "checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_LargeSize";
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_LargeSize.Size = new System.Drawing.Size(132, 29);
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_LargeSize.TabIndex = 1;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_LargeSize.Text = "Large";
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_LargeSize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_LargeSize.UseVisualStyleBackColor = true;
+            this.materialComboBox4.AutoResize = false;
+            this.materialComboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialComboBox4.Depth = 0;
+            this.materialComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.materialComboBox4.DropDownHeight = 174;
+            this.materialComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.materialComboBox4.DropDownWidth = 121;
+            this.materialComboBox4.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialComboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialComboBox4.FormattingEnabled = true;
+            this.materialComboBox4.IntegralHeight = false;
+            this.materialComboBox4.ItemHeight = 43;
+            this.materialComboBox4.Items.AddRange(new object[] {
+            "Any Price",
+            "Free ",
+            "Premium"});
+            this.materialComboBox4.Location = new System.Drawing.Point(1013, 5);
+            this.materialComboBox4.MaxDropDownItems = 4;
+            this.materialComboBox4.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.materialComboBox4.Name = "materialComboBox4";
+            this.materialComboBox4.Size = new System.Drawing.Size(121, 49);
+            this.materialComboBox4.StartIndex = 0;
+            this.materialComboBox4.TabIndex = 9;
             // 
-            // checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize
+            // label4
             // 
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize.Checked = true;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize.FlatAppearance.BorderSize = 0;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize.Location = new System.Drawing.Point(10, 11);
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize.Name = "checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize";
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize.Size = new System.Drawing.Size(132, 24);
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize.TabIndex = 0;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize.Text = "Any Size";
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label4.Location = new System.Drawing.Point(252, 18);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 25);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Size";
             // 
-            // panelSortByTypeOf_flowLayoutPanelResult_form1
+            // label9
             // 
-            this.panelSortByTypeOf_flowLayoutPanelResult_form1.BackColor = System.Drawing.Color.Sienna;
-            this.panelSortByTypeOf_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_PNG);
-            this.panelSortByTypeOf_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG);
-            this.panelSortByTypeOf_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(344, 120);
-            this.panelSortByTypeOf_flowLayoutPanelResult_form1.Name = "panelSortByTypeOf_flowLayoutPanelResult_form1";
-            this.panelSortByTypeOf_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(165, 169);
-            this.panelSortByTypeOf_flowLayoutPanelResult_form1.TabIndex = 19;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label9.Location = new System.Drawing.Point(463, 18);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(80, 25);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Type Of";
             // 
-            // checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_PNG
+            // label17
             // 
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_PNG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_PNG.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_PNG.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_PNG.Location = new System.Drawing.Point(27, 48);
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_PNG.Name = "checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_PNG";
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_PNG.Size = new System.Drawing.Size(91, 24);
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_PNG.TabIndex = 1;
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_PNG.Text = "PNG";
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_PNG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_PNG.UseVisualStyleBackColor = true;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label17.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label17.Location = new System.Drawing.Point(718, 19);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(57, 25);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "Rank";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
-            // checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG
+            // label41
             // 
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG.Checked = true;
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG.FlatAppearance.BorderSize = 0;
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG.Location = new System.Drawing.Point(27, 11);
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG.Name = "checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG";
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG.Size = new System.Drawing.Size(91, 24);
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG.TabIndex = 0;
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG.Text = "JPG";
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG.UseVisualStyleBackColor = true;
-            // 
-            // panelSortByRank_flowLayoutPanelResult_form1
-            // 
-            this.panelSortByRank_flowLayoutPanelResult_form1.BackColor = System.Drawing.Color.BurlyWood;
-            this.panelSortByRank_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews);
-            this.panelSortByRank_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByComments);
-            this.panelSortByRank_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByFavourites);
-            this.panelSortByRank_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank);
-            this.panelSortByRank_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(439, 119);
-            this.panelSortByRank_flowLayoutPanelResult_form1.Name = "panelSortByRank_flowLayoutPanelResult_form1";
-            this.panelSortByRank_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(192, 170);
-            this.panelSortByRank_flowLayoutPanelResult_form1.TabIndex = 20;
-            // 
-            // checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews
-            // 
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews.FlatAppearance.BorderSize = 0;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews.Location = new System.Drawing.Point(20, 124);
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews.Name = "checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews";
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews.Size = new System.Drawing.Size(165, 33);
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews.TabIndex = 3;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews.Text = "Views";
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByComments
-            // 
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByComments.FlatAppearance.BorderSize = 0;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByComments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByComments.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByComments.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByComments.Location = new System.Drawing.Point(20, 84);
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByComments.Name = "checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByComments";
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByComments.Size = new System.Drawing.Size(165, 34);
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByComments.TabIndex = 2;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByComments.Text = "Comments";
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByComments.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByComments.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByFavourites
-            // 
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByFavourites.FlatAppearance.BorderSize = 0;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByFavourites.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByFavourites.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByFavourites.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByFavourites.Location = new System.Drawing.Point(20, 47);
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByFavourites.Name = "checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByFavourites";
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByFavourites.Size = new System.Drawing.Size(165, 30);
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByFavourites.TabIndex = 1;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByFavourites.Text = "Favourites";
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByFavourites.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByFavourites.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank
-            // 
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank.Checked = true;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank.FlatAppearance.BorderSize = 0;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank.Location = new System.Drawing.Point(20, 12);
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank.Name = "checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank";
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank.Size = new System.Drawing.Size(148, 24);
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank.TabIndex = 0;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank.Text = "Any";
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank.UseVisualStyleBackColor = true;
-            // 
-            // panelSortByPrice_flowLayoutPanelResult_form1
-            // 
-            this.panelSortByPrice_flowLayoutPanelResult_form1.BackColor = System.Drawing.Color.YellowGreen;
-            this.panelSortByPrice_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free);
-            this.panelSortByPrice_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Preimum);
-            this.panelSortByPrice_flowLayoutPanelResult_form1.Controls.Add(this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice);
-            this.panelSortByPrice_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(560, 119);
-            this.panelSortByPrice_flowLayoutPanelResult_form1.Name = "panelSortByPrice_flowLayoutPanelResult_form1";
-            this.panelSortByPrice_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(220, 170);
-            this.panelSortByPrice_flowLayoutPanelResult_form1.TabIndex = 21;
-            // 
-            // checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free
-            // 
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free.FlatAppearance.BorderSize = 0;
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free.Location = new System.Drawing.Point(13, 47);
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free.Name = "checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free";
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free.Size = new System.Drawing.Size(188, 24);
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free.TabIndex = 2;
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free.Text = "Free";
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Preimum
-            // 
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Preimum.FlatAppearance.BorderSize = 0;
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Preimum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Preimum.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Preimum.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Preimum.Location = new System.Drawing.Point(13, 83);
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Preimum.Name = "checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Preimum";
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Preimum.Size = new System.Drawing.Size(188, 24);
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Preimum.TabIndex = 1;
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Preimum.Text = "Premium";
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Preimum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Preimum.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice
-            // 
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice.FlatAppearance.BorderSize = 0;
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice.Location = new System.Drawing.Point(13, 12);
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice.Name = "checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice";
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice.Size = new System.Drawing.Size(188, 24);
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice.TabIndex = 0;
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice.Text = "Any Price";
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice.UseVisualStyleBackColor = true;
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label41.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label41.Location = new System.Drawing.Point(947, 19);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(56, 25);
+            this.label41.TabIndex = 10;
+            this.label41.Text = "Price";
+            this.label41.Click += new System.EventHandler(this.label17_Click);
             // 
             // FormMain
             // 
@@ -4208,10 +4050,6 @@ namespace doAnC_Sharp_Finale
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1386, 722);
-            this.Controls.Add(this.panelSortByPrice_flowLayoutPanelResult_form1);
-            this.Controls.Add(this.panelSortByRank_flowLayoutPanelResult_form1);
-            this.Controls.Add(this.panelSortByTypeOf_flowLayoutPanelResult_form1);
-            this.Controls.Add(this.panelSortBySize_flowLayoutPanelResult_form1);
             this.Controls.Add(this.flowLayoutPanel_searchResult);
             this.Controls.Add(this.flowLayoutPanelDetailTopics_form1);
             this.Controls.Add(this.flowLayoutPanelTopics_form1);
@@ -4388,6 +4226,7 @@ namespace doAnC_Sharp_Finale
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_1)).EndInit();
             this.flowLayoutPanel_searchResult.ResumeLayout(false);
             this.panelSortBy_flowLayoutPanelResult_form1.ResumeLayout(false);
+            this.panelSortBy_flowLayoutPanelResult_form1.PerformLayout();
             this.panelShowResult_flowLayoutPanelResult_form1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_29)).EndInit();
@@ -4419,10 +4258,6 @@ namespace doAnC_Sharp_Finale
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1)).EndInit();
-            this.panelSortBySize_flowLayoutPanelResult_form1.ResumeLayout(false);
-            this.panelSortByTypeOf_flowLayoutPanelResult_form1.ResumeLayout(false);
-            this.panelSortByRank_flowLayoutPanelResult_form1.ResumeLayout(false);
-            this.panelSortByPrice_flowLayoutPanelResult_form1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -4671,11 +4506,7 @@ namespace doAnC_Sharp_Finale
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_searchResult;
         private System.Windows.Forms.Panel panelSortBy_flowLayoutPanelResult_form1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE;
-        private System.Windows.Forms.Button button_click_panelSortBy_flowLayoutPanelResult_form1_RANK;
-        private System.Windows.Forms.Button button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF;
         private System.Windows.Forms.Panel panelShowResult_flowLayoutPanelResult_form1;
         private System.Windows.Forms.PictureBox pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_27;
         private System.Windows.Forms.PictureBox pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_26;
@@ -4707,23 +4538,14 @@ namespace doAnC_Sharp_Finale
         private System.Windows.Forms.PictureBox pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30;
         private System.Windows.Forms.PictureBox pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_29;
         private System.Windows.Forms.PictureBox pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_28;
-        private System.Windows.Forms.Panel panelSortBySize_flowLayoutPanelResult_form1;
-        private System.Windows.Forms.CheckBox checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_SmallSize;
-        private System.Windows.Forms.CheckBox checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_MediumSize;
-        private System.Windows.Forms.CheckBox checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_LargeSize;
-        private System.Windows.Forms.CheckBox checkBox_click_panelSortBySize_flowLayoutPanelResult_form1_AnySize;
-        private System.Windows.Forms.Panel panelSortByTypeOf_flowLayoutPanelResult_form1;
-        private System.Windows.Forms.CheckBox checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_PNG;
-        private System.Windows.Forms.CheckBox checkBox_click_panelSortByTypeOf_flowLayoutPanelResult_form1_JPG;
-        private System.Windows.Forms.Panel panelSortByRank_flowLayoutPanelResult_form1;
-        private System.Windows.Forms.CheckBox checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByComments;
-        private System.Windows.Forms.CheckBox checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByFavourites;
-        private System.Windows.Forms.CheckBox checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_AnyRank;
-        private System.Windows.Forms.CheckBox checkBox_click_panelSortByRank_flowLayoutPanelResult_form1_RankByViews;
-        private System.Windows.Forms.Panel panelSortByPrice_flowLayoutPanelResult_form1;
-        private System.Windows.Forms.CheckBox checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Free;
-        private System.Windows.Forms.CheckBox checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_Preimum;
-        private System.Windows.Forms.CheckBox checkBox_click_panelSortByPrice_flowLayoutPanelResult_form1_AnyPrice;
+        private ReaLTaiizor.Controls.MaterialComboBox materialComboBox1;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label4;
+        private ReaLTaiizor.Controls.MaterialComboBox materialComboBox4;
+        private ReaLTaiizor.Controls.MaterialComboBox materialComboBox3;
+        private ReaLTaiizor.Controls.MaterialComboBox materialComboBox2;
+        private System.Windows.Forms.Label label41;
     }
 }
 

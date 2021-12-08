@@ -30,6 +30,8 @@ namespace doAnC_Sharp_Finale
         DataTable dtForest = new DataTable();
         DataTable dtFlower = new DataTable();
         DataTable dtAll = new DataTable();
+        DataTable dtSearched = new DataTable();
+        List<Dictionary<string, string>> lstImageInfoScreenMain = new List<Dictionary<string, string>> ();
 
         int saveimgnumber = 0;
         private void Form1_Load(object sender, EventArgs e)
@@ -91,353 +93,338 @@ namespace doAnC_Sharp_Finale
             dtAll.Columns.Add("Comments", typeof(int));
             dtAll.Columns.Add("Views", typeof(int));
             dtAll.Columns.Add("Price", typeof(int));
+            dtCar.Rows.Add("1", "CAR", @"../../UsedForResource/Car/Car_1.jpg", 141, 226, 168, 0);
+            dtCar.Rows.Add("2", "CAR", @"../../UsedForResource/Car/Car_2.jpg", 59, 245, 261, 1);
+            dtCar.Rows.Add("3", "CAR", @"../../UsedForResource/Car/Car_3.jpg", 11, 121, 121, 0);
+            dtCar.Rows.Add("4", "CAR", @"../../UsedForResource/Car/Car_4.jpg", 185, 218, 111, 1);
+            dtCar.Rows.Add("5", "CAR", @"../../UsedForResource/Car/Car_5.jpg", 125, 205, 270, 1);
+            dtCar.Rows.Add("6", "CAR", @"../../UsedForResource/Car/Car_6.jpg", 120, 235, 213, 1);
+            dtCar.Rows.Add("7", "CAR", @"../../UsedForResource/Car/Car_7.jpg", 195, 181, 123, 0);
+            dtCar.Rows.Add("8", "CAR", @"../../UsedForResource/Car/Car_8.jpg", 166, 97, 294, 0);
+            dtCar.Rows.Add("9", "CAR", @"../../UsedForResource/Car/Car_9.jpg", 70, 63, 73, 0);
+            dtCar.Rows.Add("10", "CAR", @"../../UsedForResource/Car/Car_10.jpg", 108, 179, 217, 0);
+            dtCar.Rows.Add("11", "CAR", @"../../UsedForResource/Car/Car_11.jpg", 118, 158, 140, 1);
+            dtCar.Rows.Add("12", "CAR", @"../../UsedForResource/Car/Car_12.jpg", 94, 161, 138, 1);
+            dtCar.Rows.Add("13", "CAR", @"../../UsedForResource/Car/Car_13.jpg", 48, 105, 240, 0);
+            dtCar.Rows.Add("14", "CAR", @"../../UsedForResource/Car/Car_14.jpg", 144, 107, 190, 0);
+            dtCar.Rows.Add("15", "CAR", @"../../UsedForResource/Car/Car_15.jpg", 55, 151, 166, 0);
+            dtCar.Rows.Add("16", "CAR", @"../../UsedForResource/Car/Car_16.jpg", 45, 243, 289, 1);
+            dtCar.Rows.Add("17", "CAR", @"../../UsedForResource/Car/Car_17.jpg", 63, 210, 215, 1);
+            dtCar.Rows.Add("18", "CAR", @"../../UsedForResource/Car/Car_18.jpg", 187, 214, 174, 0);
+            dtCar.Rows.Add("19", "CAR", @"../../UsedForResource/Car/Car_19.jpg", 69, 234, 192, 1);
+            dtCar.Rows.Add("20", "CAR", @"../../UsedForResource/Car/Car_20.jpg", 111, 195, 239, 0);
+            dtCar.Rows.Add("21", "CAR", @"../../UsedForResource/Car/Car_21.jpg", 171, 224, 188, 0);
+            dtCar.Rows.Add("22", "CAR", @"../../UsedForResource/Car/Car_22.jpg", 39, 165, 100, 1);
+            dtCar.Rows.Add("23", "CAR", @"../../UsedForResource/Car/Car_23.jpg", 159, 246, 274, 1);
+            dtCar.Rows.Add("24", "CAR", @"../../UsedForResource/Car/Car_24.jpg", 41, 124, 287, 0);
+            dtCar.Rows.Add("25", "CAR", @"../../UsedForResource/Car/Car_25.jpg", 25, 91, 84, 1);
+            dtCar.Rows.Add("26", "CAR", @"../../UsedForResource/Car/Car_26.jpg", 16, 73, 237, 0);
+            dtCar.Rows.Add("27", "CAR", @"../../UsedForResource/Car/Car_27.jpg", 29, 123, 171, 1);
+            dtCar.Rows.Add("28", "CAR", @"../../UsedForResource/Car/Car_28.jpg", 183, 51, 252, 1);
+            dtCar.Rows.Add("29", "CAR", @"../../UsedForResource/Car/Car_29.jpg", 123, 176, 116, 1);
+            dtCar.Rows.Add("30", "CAR", @"../../UsedForResource/Car/Car_30.jpg", 92, 62, 136, 1);
+            dtCar.Rows.Add("31", "CAR", @"../../UsedForResource/Car/Car_31.jpg", 190, 228, 187, 1);
+            dtCar.Rows.Add("32", "CAR", @"../../UsedForResource/Car/Car_32.jpg", 155, 104, 144, 1);
+            dtCar.Rows.Add("33", "CAR", @"../../UsedForResource/Car/Car_33.jpg", 74, 186, 79, 0);
+            dtCar.Rows.Add("34", "CAR", @"../../UsedForResource/Car/Car_34.jpg", 15, 113, 167, 1);
+            dtCar.Rows.Add("35", "CAR", @"../../UsedForResource/Car/Car_35.jpg", 130, 191, 120, 1);
+            dtCar.Rows.Add("36", "CAR", @"../../UsedForResource/Car/Car_36.jpg", 132, 174, 283, 1);
+            dtCar.Rows.Add("37", "CAR", @"../../UsedForResource/Car/Car_37.jpg", 177, 143, 161, 0);
+            dtCar.Rows.Add("38", "CAR", @"../../UsedForResource/Car/Car_38.jpg", 143, 57, 247, 1);
+            dtCar.Rows.Add("39", "CAR", @"../../UsedForResource/Car/Car_39.jpg", 149, 160, 295, 0);
+            dtCar.Rows.Add("40", "CAR", @"../../UsedForResource/Car/Car_40.jpg", 164, 146, 262, 1);
+            dtCar.Rows.Add("41", "CAR", @"../../UsedForResource/Car/Car_41.jpg", 100, 220, 207, 1);
+            dtCar.Rows.Add("42", "CAR", @"../../UsedForResource/Car/Car_42.jpg", 197, 120, 135, 0);
+            dtCar.Rows.Add("43", "CAR", @"../../UsedForResource/Car/Car_43.jpg", 32, 173, 137, 1);
+            dtCar.Rows.Add("44", "CAR", @"../../UsedForResource/Car/Car_44.jpg", 12, 70, 119, 1);
+            dtCar.Rows.Add("45", "CAR", @"../../UsedForResource/Car/Car_45.jpg", 98, 201, 243, 1);
+            dtCar.Rows.Add("46", "CAR", @"../../UsedForResource/Car/Car_46.jpg", 154, 101, 205, 1);
+            dtCar.Rows.Add("47", "CAR", @"../../UsedForResource/Car/Car_47.jpg", 112, 170, 208, 1);
+            dtCar.Rows.Add("48", "CAR", @"../../UsedForResource/Car/Car_48.jpg", 93, 231, 103, 0);
+            dtCar.Rows.Add("49", "CAR", @"../../UsedForResource/Car/Car_49.jpg", 170, 147, 114, 0);
+            dtCar.Rows.Add("50", "CAR", @"../../UsedForResource/Car/Car_50.jpg", 196, 66, 163, 0);
+            dtCar.Rows.Add("51", "CAR", @"../../UsedForResource/Car/Car_51.jpg", 176, 213, 71, 1);
+            dtCar.Rows.Add("52", "CAR", @"../../UsedForResource/Car/Car_52.jpg", 22, 241, 260, 0);
+            dtCar.Rows.Add("53", "CAR", @"../../UsedForResource/Car/Car_53.jpg", 104, 83, 281, 1);
+            dtCar.Rows.Add("54", "CAR", @"../../UsedForResource/Car/Car_54.jpg", 194, 162, 278, 0);
+            dtCar.Rows.Add("55", "CAR", @"../../UsedForResource/Car/Car_55.jpg", 113, 230, 195, 1);
+            dtCar.Rows.Add("56", "CAR", @"../../UsedForResource/Car/Car_56.jpg", 44, 110, 178, 0);
+            dtCar.Rows.Add("57", "CAR", @"../../UsedForResource/Car/Car_57.jpg", 129, 152, 86, 0);
+            dtCar.Rows.Add("58", "CAR", @"../../UsedForResource/Car/Car_58.jpg", 20, 74, 259, 1);
+            dtCar.Rows.Add("59", "CAR", @"../../UsedForResource/Car/Car_59.jpg", 28, 227, 214, 0);
+            dtCar.Rows.Add("60", "CAR", @"../../UsedForResource/Car/Car_60.jpg", 101, 156, 104, 1);
+            dtCar.Rows.Add("61", "CAR", @"../../UsedForResource/Car/Car_61.jpg", 75, 84, 267, 1);
+            dtCar.Rows.Add("62", "CAR", @"../../UsedForResource/Car/Car_62.jpg", 54, 202, 241, 0);
+            dtCar.Rows.Add("63", "CAR", @"../../UsedForResource/Car/Car_63.jpg", 88, 119, 158, 0);
+            dtCar.Rows.Add("64", "CAR", @"../../UsedForResource/Car/Car_64.jpg", 34, 58, 112, 0);
+            dtCar.Rows.Add("65", "CAR", @"../../UsedForResource/Car/Car_65.jpg", 184, 112, 146, 1);
+            dtCar.Rows.Add("66", "CAR", @"../../UsedForResource/Car/Car_66.jpg", 106, 108, 141, 1);
+            dtCar.Rows.Add("67", "CAR", @"../../UsedForResource/Car/Car_67.jpg", 158, 125, 276, 0);
+            dtCar.Rows.Add("68", "CAR", @"../../UsedForResource/Car/Car_68.jpg", 119, 82, 85, 1);
+            dtCar.Rows.Add("69", "CAR", @"../../UsedForResource/Car/Car_69.jpg", 78, 222, 234, 0);
+            dtCar.Rows.Add("70", "CAR", @"../../UsedForResource/Car/Car_70.jpg", 116, 52, 164, 0);
+            dtCar.Rows.Add("71", "CAR", @"../../UsedForResource/Car/Car_71.jpg", 82, 164, 288, 0);
+            dtCar.Rows.Add("72", "CAR", @"../../UsedForResource/Car/Car_72.jpg", 172, 56, 154, 0);
+            dtCar.Rows.Add("73", "CAR", @"../../UsedForResource/Car/Car_73.jpg", 91, 209, 143, 0);
+            dtCar.Rows.Add("74", "CAR", @"../../UsedForResource/Car/Car_74.jpg", 156, 96, 291, 0);
+            dtCar.Rows.Add("75", "CAR", @"../../UsedForResource/Car/Car_75.jpg", 162, 215, 92, 1);
+            dtCar.Rows.Add("76", "CAR", @"../../UsedForResource/Car/Car_76.jpg", 189, 111, 210, 1);
+            dtCar.Rows.Add("77", "CAR", @"../../UsedForResource/Car/Car_77.jpg", 56, 199, 255, 1);
+            dtCar.Rows.Add("78", "CAR", @"../../UsedForResource/Car/Car_78.jpg", 165, 197, 113, 1);
+            dtCar.Rows.Add("79", "CAR", @"../../UsedForResource/Car/Car_79.jpg", 26, 238, 176, 0);
+            dtCar.Rows.Add("80", "CAR", @"../../UsedForResource/Car/Car_80.jpg", 10, 78, 284, 1);
+            dtCar.Rows.Add("81", "CAR", @"../../UsedForResource/Car/Car_81.jpg", 103, 145, 93, 1);
+            dtCar.Rows.Add("82", "CAR", @"../../UsedForResource/Car/Car_82.jpg", 50, 138, 273, 1);
+            dtCar.Rows.Add("83", "CAR", @"../../UsedForResource/Car/Car_83.jpg", 24, 81, 218, 1);
+            dtCar.Rows.Add("84", "CAR", @"../../UsedForResource/Car/Car_84.jpg", 76, 225, 139, 0);
+            dtCar.Rows.Add("85", "CAR", @"../../UsedForResource/Car/Car_85.jpg", 179, 61, 223, 1);
+            dtCar.Rows.Add("86", "CAR", @"../../UsedForResource/Car/Car_86.jpg", 161, 114, 106, 1);
+            dtCar.Rows.Add("87", "CAR", @"../../UsedForResource/Car/Car_87.jpg", 124, 90, 90, 1);
+            dtCar.Rows.Add("88", "CAR", @"../../UsedForResource/Car/Car_88.jpg", 199, 233, 292, 1);
+            dtCar.Rows.Add("89", "CAR", @"../../UsedForResource/Car/Car_89.jpg", 23, 60, 285, 0);
+            dtCar.Rows.Add("90", "CAR", @"../../UsedForResource/Car/Car_90.jpg", 198, 248, 271, 0);
+            dtCar.Rows.Add("91", "CAR", @"../../UsedForResource/Car/Car_91.jpg", 134, 122, 162, 1);
+            dtCar.Rows.Add("92", "CAR", @"../../UsedForResource/Car/Car_92.jpg", 49, 139, 280, 0);
+            dtCar.Rows.Add("93", "CAR", @"../../UsedForResource/Car/Car_93.jpg", 30, 117, 128, 1);
+            dtCar.Rows.Add("94", "CAR", @"../../UsedForResource/Car/Car_94.jpg", 81, 167, 194, 1);
+            dtCar.Rows.Add("95", "CAR", @"../../UsedForResource/Car/Car_95.jpg", 151, 86, 107, 0);
+            dtCar.Rows.Add("96", "CAR", @"../../UsedForResource/Car/Car_96.jpg", 186, 126, 204, 1);
+            dtCar.Rows.Add("97", "CAR", @"../../UsedForResource/Car/Car_97.jpg", 139, 180, 156, 0);
+            dtCar.Rows.Add("98", "CAR", @"../../UsedForResource/Car/Car_98.jpg", 43, 153, 181, 0);
+            dtCar.Rows.Add("99", "CAR", @"../../UsedForResource/Car/Car_99.jpg", 14, 211, 201, 1);
+            dtCar.Rows.Add("100", "CAR", @"../../UsedForResource/Car/Car_100.jpg", 192, 128, 245, 0);
+            dtCar.Rows.Add("101", "CAR", @"../../UsedForResource/Car/Car_101.jpg", 140, 212, 264, 1);
+            dtCar.Rows.Add("102", "CAR", @"../../UsedForResource/Car/Car_102.jpg", 97, 127, 258, 1);
+            dtCar.Rows.Add("103", "CAR", @"../../UsedForResource/Car/Car_103.jpg", 18, 137, 197, 1);
+            dtCar.Rows.Add("104", "CAR", @"../../UsedForResource/Car/Car_104.jpg", 174, 207, 115, 0);
+            dtCar.Rows.Add("105", "CAR", @"../../UsedForResource/Car/Car_105.jpg", 83, 178, 129, 0);
+            dtCar.Rows.Add("106", "CAR", @"../../UsedForResource/Car/Car_106.jpg", 163, 236, 172, 0);
+            dtCar.Rows.Add("107", "CAR", @"../../UsedForResource/Car/Car_107.jpg", 145, 116, 170, 1);
+            dtCar.Rows.Add("108", "CAR", @"../../UsedForResource/Car/Car_108.jpg", 193, 192, 269, 0);
+            dtCar.Rows.Add("109", "CAR", @"../../UsedForResource/Car/Car_109.jpg", 137, 109, 290, 0);
+            dtCar.Rows.Add("110", "CAR", @"../../UsedForResource/Car/Car_110.jpg", 37, 144, 242, 1);
+            dtCar.Rows.Add("111", "CAR", @"../../UsedForResource/Car/Car_111.jpg", 109, 217, 108, 0);
+            dtCar.Rows.Add("112", "CAR", @"../../UsedForResource/Car/Car_112.jpg", 126, 80, 77, 1);
+            dtCar.Rows.Add("113", "CAR", @"../../UsedForResource/Car/Car_113.jpg", 33, 50, 256, 1);
+            dtCar.Rows.Add("114", "CAR", @"../../UsedForResource/Car/Car_114.jpg", 47, 131, 134, 1);
+            dtCar.Rows.Add("115", "CAR", @"../../UsedForResource/Car/Car_115.jpg", 58, 141, 293, 1);
+            dtCar.Rows.Add("116", "CAR", @"../../UsedForResource/Car/Car_116.jpg", 64, 203, 76, 1);
+            dtCar.Rows.Add("117", "CAR", @"../../UsedForResource/Car/Car_117.jpg", 147, 132, 133, 1);
+            dtCar.Rows.Add("118", "CAR", @"../../UsedForResource/Car/Car_118.jpg", 13, 171, 88, 0);
+            dtCar.Rows.Add("119", "CAR", @"../../UsedForResource/Car/Car_119.jpg", 148, 182, 117, 0);
+            dtCar.Rows.Add("120", "CAR", @"../../UsedForResource/Car/Car_120.jpg", 72, 103, 130, 0);
+            dtCar.Rows.Add("121", "CAR", @"../../UsedForResource/Car/Car_121.jpg", 84, 102, 199, 0);
+            dtCar.Rows.Add("122", "CAR", @"../../UsedForResource/Car/Car_122.jpg", 19, 64, 198, 0);
+            dtCar.Rows.Add("123", "CAR", @"../../UsedForResource/Car/Car_123.jpg", 67, 87, 297, 1);
+            dtCar.Rows.Add("124", "CAR", @"../../UsedForResource/Car/Car_124.jpg", 79, 244, 226, 1);
+            dtCar.Rows.Add("125", "CAR", @"../../UsedForResource/Car/Car_125.jpg", 60, 249, 265, 1);
+            dtCar.Rows.Add("126", "CAR", @"../../UsedForResource/Car/Car_126.jpg", 153, 72, 173, 1);
+            dtCar.Rows.Add("127", "CAR", @"../../UsedForResource/Car/Car_127.jpg", 150, 163, 212, 1);
+            dtCar.Rows.Add("128", "CAR", @"../../UsedForResource/Car/Car_128.jpg", 107, 247, 189, 0);
+            dtCar.Rows.Add("129", "CAR", @"../../UsedForResource/Car/Car_129.jpg", 52, 94, 229, 0);
+            dtCar.Rows.Add("130", "CAR", @"../../UsedForResource/Car/Car_130.jpg", 73, 175, 282, 0);
+            dtCar.Rows.Add("131", "CAR", @"../../UsedForResource/Car/Car_131.jpg", 65, 130, 206, 1);
+            dtCar.Rows.Add("132", "CAR", @"../../UsedForResource/Car/Car_132.jpg", 77, 142, 233, 0);
+            dtCar.Rows.Add("133", "CAR", @"../../UsedForResource/Car/Car_133.jpg", 53, 95, 95, 0);
+            dtCar.Rows.Add("134", "CAR", @"../../UsedForResource/Car/Car_134.jpg", 17, 185, 165, 1);
+            dtCar.Rows.Add("135", "CAR", @"../../UsedForResource/Car/Car_135.jpg", 35, 154, 224, 0);
+            dtCar.Rows.Add("136", "CAR", @"../../UsedForResource/Car/Car_136.jpg", 122, 55, 191, 0);
+            dtCar.Rows.Add("137", "CAR", @"../../UsedForResource/Car/Car_137.jpg", 71, 168, 238, 0);
+            dtCar.Rows.Add("138", "CAR", @"../../UsedForResource/Car/Car_138.jpg", 86, 134, 81, 1);
+            dtCar.Rows.Add("139", "CAR", @"../../UsedForResource/Car/Car_139.jpg", 21, 150, 70, 0);
+            dtCar.Rows.Add("140", "CAR", @"../../UsedForResource/Car/Car_140.jpg", 57, 221, 131, 1);
+            dtCar.Rows.Add("141", "CAR", @"../../UsedForResource/Car/Car_141.jpg", 80, 194, 160, 1);
+            dtCar.Rows.Add("142", "CAR", @"../../UsedForResource/Car/Car_142.jpg", 87, 239, 268, 1);
+            dtCar.Rows.Add("143", "CAR", @"../../UsedForResource/Car/Car_143.jpg", 175, 169, 94, 1);
+            dtCar.Rows.Add("144", "CAR", @"../../UsedForResource/Car/Car_144.jpg", 110, 92, 279, 0);
+            dtCar.Rows.Add("145", "CAR", @"../../UsedForResource/Car/Car_145.jpg", 133, 189, 150, 0);
+            dtCar.Rows.Add("146", "CAR", @"../../UsedForResource/Car/Car_146.jpg", 167, 67, 220, 1);
+            dtCar.Rows.Add("147", "CAR", @"../../UsedForResource/Car/Car_147.jpg", 168, 79, 186, 1);
+            dtCar.Rows.Add("148", "CAR", @"../../UsedForResource/Car/Car_148.jpg", 96, 54, 169, 1);
+            dtCar.Rows.Add("149", "CAR", @"../../UsedForResource/Car/Car_149.jpg", 40, 68, 99, 1);
+            dtCar.Rows.Add("150", "CAR", @"../../UsedForResource/Car/Car_150.jpg", 152, 106, 185, 0);
+            dtCar.Rows.Add("151", "CAR", @"../../UsedForResource/Car/Car_151.jpg", 46, 187, 251, 0);
+            dtCar.Rows.Add("152", "CAR", @"../../UsedForResource/Car/Car_152.jpg", 142, 216, 109, 0);
+            dtCar.Rows.Add("153", "CAR", @"../../UsedForResource/Car/Car_153.jpg", 117, 196, 277, 1);
+            dtCar.Rows.Add("154", "CAR", @"../../UsedForResource/Car/Car_154.jpg", 99, 69, 74, 1);
+            dtCar.Rows.Add("155", "CAR", @"../../UsedForResource/Car/Car_155.jpg", 128, 166, 244, 1);
+            dtCar.Rows.Add("156", "CAR", @"../../UsedForResource/Car/Car_156.jpg", 61, 157, 222, 0);
+            dtCar.Rows.Add("157", "CAR", @"../../UsedForResource/Car/Car_157.jpg", 181, 172, 145, 1);
+
 
             dtAll.Rows.Add("1", "CAR", @"../../UsedForResource/Car/Car_1.jpg", 141, 226, 168, 0);
-
             dtAll.Rows.Add("2", "CAR", @"../../UsedForResource/Car/Car_2.jpg", 59, 245, 261, 1);
-
             dtAll.Rows.Add("3", "CAR", @"../../UsedForResource/Car/Car_3.jpg", 11, 121, 121, 0);
-
             dtAll.Rows.Add("4", "CAR", @"../../UsedForResource/Car/Car_4.jpg", 185, 218, 111, 1);
-
             dtAll.Rows.Add("5", "CAR", @"../../UsedForResource/Car/Car_5.jpg", 125, 205, 270, 1);
-
             dtAll.Rows.Add("6", "CAR", @"../../UsedForResource/Car/Car_6.jpg", 120, 235, 213, 1);
-
             dtAll.Rows.Add("7", "CAR", @"../../UsedForResource/Car/Car_7.jpg", 195, 181, 123, 0);
-
             dtAll.Rows.Add("8", "CAR", @"../../UsedForResource/Car/Car_8.jpg", 166, 97, 294, 0);
-
             dtAll.Rows.Add("9", "CAR", @"../../UsedForResource/Car/Car_9.jpg", 70, 63, 73, 0);
-
             dtAll.Rows.Add("10", "CAR", @"../../UsedForResource/Car/Car_10.jpg", 108, 179, 217, 0);
-
             dtAll.Rows.Add("11", "CAR", @"../../UsedForResource/Car/Car_11.jpg", 118, 158, 140, 1);
-
             dtAll.Rows.Add("12", "CAR", @"../../UsedForResource/Car/Car_12.jpg", 94, 161, 138, 1);
-
             dtAll.Rows.Add("13", "CAR", @"../../UsedForResource/Car/Car_13.jpg", 48, 105, 240, 0);
-
             dtAll.Rows.Add("14", "CAR", @"../../UsedForResource/Car/Car_14.jpg", 144, 107, 190, 0);
-
             dtAll.Rows.Add("15", "CAR", @"../../UsedForResource/Car/Car_15.jpg", 55, 151, 166, 0);
-
             dtAll.Rows.Add("16", "CAR", @"../../UsedForResource/Car/Car_16.jpg", 45, 243, 289, 1);
-
             dtAll.Rows.Add("17", "CAR", @"../../UsedForResource/Car/Car_17.jpg", 63, 210, 215, 1);
-
             dtAll.Rows.Add("18", "CAR", @"../../UsedForResource/Car/Car_18.jpg", 187, 214, 174, 0);
-
             dtAll.Rows.Add("19", "CAR", @"../../UsedForResource/Car/Car_19.jpg", 69, 234, 192, 1);
-
             dtAll.Rows.Add("20", "CAR", @"../../UsedForResource/Car/Car_20.jpg", 111, 195, 239, 0);
-
             dtAll.Rows.Add("21", "CAR", @"../../UsedForResource/Car/Car_21.jpg", 171, 224, 188, 0);
-
             dtAll.Rows.Add("22", "CAR", @"../../UsedForResource/Car/Car_22.jpg", 39, 165, 100, 1);
-
             dtAll.Rows.Add("23", "CAR", @"../../UsedForResource/Car/Car_23.jpg", 159, 246, 274, 1);
-
             dtAll.Rows.Add("24", "CAR", @"../../UsedForResource/Car/Car_24.jpg", 41, 124, 287, 0);
-
             dtAll.Rows.Add("25", "CAR", @"../../UsedForResource/Car/Car_25.jpg", 25, 91, 84, 1);
-
             dtAll.Rows.Add("26", "CAR", @"../../UsedForResource/Car/Car_26.jpg", 16, 73, 237, 0);
-
             dtAll.Rows.Add("27", "CAR", @"../../UsedForResource/Car/Car_27.jpg", 29, 123, 171, 1);
-
             dtAll.Rows.Add("28", "CAR", @"../../UsedForResource/Car/Car_28.jpg", 183, 51, 252, 1);
-
             dtAll.Rows.Add("29", "CAR", @"../../UsedForResource/Car/Car_29.jpg", 123, 176, 116, 1);
-
             dtAll.Rows.Add("30", "CAR", @"../../UsedForResource/Car/Car_30.jpg", 92, 62, 136, 1);
-
             dtAll.Rows.Add("31", "CAR", @"../../UsedForResource/Car/Car_31.jpg", 190, 228, 187, 1);
-
             dtAll.Rows.Add("32", "CAR", @"../../UsedForResource/Car/Car_32.jpg", 155, 104, 144, 1);
-
             dtAll.Rows.Add("33", "CAR", @"../../UsedForResource/Car/Car_33.jpg", 74, 186, 79, 0);
-
             dtAll.Rows.Add("34", "CAR", @"../../UsedForResource/Car/Car_34.jpg", 15, 113, 167, 1);
-
             dtAll.Rows.Add("35", "CAR", @"../../UsedForResource/Car/Car_35.jpg", 130, 191, 120, 1);
-
             dtAll.Rows.Add("36", "CAR", @"../../UsedForResource/Car/Car_36.jpg", 132, 174, 283, 1);
-
             dtAll.Rows.Add("37", "CAR", @"../../UsedForResource/Car/Car_37.jpg", 177, 143, 161, 0);
-
             dtAll.Rows.Add("38", "CAR", @"../../UsedForResource/Car/Car_38.jpg", 143, 57, 247, 1);
-
             dtAll.Rows.Add("39", "CAR", @"../../UsedForResource/Car/Car_39.jpg", 149, 160, 295, 0);
-
             dtAll.Rows.Add("40", "CAR", @"../../UsedForResource/Car/Car_40.jpg", 164, 146, 262, 1);
-
             dtAll.Rows.Add("41", "CAR", @"../../UsedForResource/Car/Car_41.jpg", 100, 220, 207, 1);
-
             dtAll.Rows.Add("42", "CAR", @"../../UsedForResource/Car/Car_42.jpg", 197, 120, 135, 0);
-
             dtAll.Rows.Add("43", "CAR", @"../../UsedForResource/Car/Car_43.jpg", 32, 173, 137, 1);
-
             dtAll.Rows.Add("44", "CAR", @"../../UsedForResource/Car/Car_44.jpg", 12, 70, 119, 1);
-
             dtAll.Rows.Add("45", "CAR", @"../../UsedForResource/Car/Car_45.jpg", 98, 201, 243, 1);
-
             dtAll.Rows.Add("46", "CAR", @"../../UsedForResource/Car/Car_46.jpg", 154, 101, 205, 1);
-
             dtAll.Rows.Add("47", "CAR", @"../../UsedForResource/Car/Car_47.jpg", 112, 170, 208, 1);
-
             dtAll.Rows.Add("48", "CAR", @"../../UsedForResource/Car/Car_48.jpg", 93, 231, 103, 0);
-
             dtAll.Rows.Add("49", "CAR", @"../../UsedForResource/Car/Car_49.jpg", 170, 147, 114, 0);
-
             dtAll.Rows.Add("50", "CAR", @"../../UsedForResource/Car/Car_50.jpg", 196, 66, 163, 0);
-
             dtAll.Rows.Add("51", "CAR", @"../../UsedForResource/Car/Car_51.jpg", 176, 213, 71, 1);
-
             dtAll.Rows.Add("52", "CAR", @"../../UsedForResource/Car/Car_52.jpg", 22, 241, 260, 0);
-
             dtAll.Rows.Add("53", "CAR", @"../../UsedForResource/Car/Car_53.jpg", 104, 83, 281, 1);
-
             dtAll.Rows.Add("54", "CAR", @"../../UsedForResource/Car/Car_54.jpg", 194, 162, 278, 0);
-
             dtAll.Rows.Add("55", "CAR", @"../../UsedForResource/Car/Car_55.jpg", 113, 230, 195, 1);
-
             dtAll.Rows.Add("56", "CAR", @"../../UsedForResource/Car/Car_56.jpg", 44, 110, 178, 0);
-
             dtAll.Rows.Add("57", "CAR", @"../../UsedForResource/Car/Car_57.jpg", 129, 152, 86, 0);
-
             dtAll.Rows.Add("58", "CAR", @"../../UsedForResource/Car/Car_58.jpg", 20, 74, 259, 1);
-
             dtAll.Rows.Add("59", "CAR", @"../../UsedForResource/Car/Car_59.jpg", 28, 227, 214, 0);
-
             dtAll.Rows.Add("60", "CAR", @"../../UsedForResource/Car/Car_60.jpg", 101, 156, 104, 1);
-
             dtAll.Rows.Add("61", "CAR", @"../../UsedForResource/Car/Car_61.jpg", 75, 84, 267, 1);
-
             dtAll.Rows.Add("62", "CAR", @"../../UsedForResource/Car/Car_62.jpg", 54, 202, 241, 0);
-
             dtAll.Rows.Add("63", "CAR", @"../../UsedForResource/Car/Car_63.jpg", 88, 119, 158, 0);
-
             dtAll.Rows.Add("64", "CAR", @"../../UsedForResource/Car/Car_64.jpg", 34, 58, 112, 0);
-
             dtAll.Rows.Add("65", "CAR", @"../../UsedForResource/Car/Car_65.jpg", 184, 112, 146, 1);
-
             dtAll.Rows.Add("66", "CAR", @"../../UsedForResource/Car/Car_66.jpg", 106, 108, 141, 1);
-
             dtAll.Rows.Add("67", "CAR", @"../../UsedForResource/Car/Car_67.jpg", 158, 125, 276, 0);
-
             dtAll.Rows.Add("68", "CAR", @"../../UsedForResource/Car/Car_68.jpg", 119, 82, 85, 1);
-
             dtAll.Rows.Add("69", "CAR", @"../../UsedForResource/Car/Car_69.jpg", 78, 222, 234, 0);
-
             dtAll.Rows.Add("70", "CAR", @"../../UsedForResource/Car/Car_70.jpg", 116, 52, 164, 0);
-
             dtAll.Rows.Add("71", "CAR", @"../../UsedForResource/Car/Car_71.jpg", 82, 164, 288, 0);
-
             dtAll.Rows.Add("72", "CAR", @"../../UsedForResource/Car/Car_72.jpg", 172, 56, 154, 0);
-
             dtAll.Rows.Add("73", "CAR", @"../../UsedForResource/Car/Car_73.jpg", 91, 209, 143, 0);
-
             dtAll.Rows.Add("74", "CAR", @"../../UsedForResource/Car/Car_74.jpg", 156, 96, 291, 0);
-
             dtAll.Rows.Add("75", "CAR", @"../../UsedForResource/Car/Car_75.jpg", 162, 215, 92, 1);
-
             dtAll.Rows.Add("76", "CAR", @"../../UsedForResource/Car/Car_76.jpg", 189, 111, 210, 1);
-
             dtAll.Rows.Add("77", "CAR", @"../../UsedForResource/Car/Car_77.jpg", 56, 199, 255, 1);
-
             dtAll.Rows.Add("78", "CAR", @"../../UsedForResource/Car/Car_78.jpg", 165, 197, 113, 1);
-
             dtAll.Rows.Add("79", "CAR", @"../../UsedForResource/Car/Car_79.jpg", 26, 238, 176, 0);
-
             dtAll.Rows.Add("80", "CAR", @"../../UsedForResource/Car/Car_80.jpg", 10, 78, 284, 1);
-
             dtAll.Rows.Add("81", "CAR", @"../../UsedForResource/Car/Car_81.jpg", 103, 145, 93, 1);
-
             dtAll.Rows.Add("82", "CAR", @"../../UsedForResource/Car/Car_82.jpg", 50, 138, 273, 1);
-
             dtAll.Rows.Add("83", "CAR", @"../../UsedForResource/Car/Car_83.jpg", 24, 81, 218, 1);
-
             dtAll.Rows.Add("84", "CAR", @"../../UsedForResource/Car/Car_84.jpg", 76, 225, 139, 0);
-
             dtAll.Rows.Add("85", "CAR", @"../../UsedForResource/Car/Car_85.jpg", 179, 61, 223, 1);
-
             dtAll.Rows.Add("86", "CAR", @"../../UsedForResource/Car/Car_86.jpg", 161, 114, 106, 1);
-
             dtAll.Rows.Add("87", "CAR", @"../../UsedForResource/Car/Car_87.jpg", 124, 90, 90, 1);
-
             dtAll.Rows.Add("88", "CAR", @"../../UsedForResource/Car/Car_88.jpg", 199, 233, 292, 1);
-
             dtAll.Rows.Add("89", "CAR", @"../../UsedForResource/Car/Car_89.jpg", 23, 60, 285, 0);
-
             dtAll.Rows.Add("90", "CAR", @"../../UsedForResource/Car/Car_90.jpg", 198, 248, 271, 0);
-
             dtAll.Rows.Add("91", "CAR", @"../../UsedForResource/Car/Car_91.jpg", 134, 122, 162, 1);
-
             dtAll.Rows.Add("92", "CAR", @"../../UsedForResource/Car/Car_92.jpg", 49, 139, 280, 0);
-
             dtAll.Rows.Add("93", "CAR", @"../../UsedForResource/Car/Car_93.jpg", 30, 117, 128, 1);
-
             dtAll.Rows.Add("94", "CAR", @"../../UsedForResource/Car/Car_94.jpg", 81, 167, 194, 1);
-
             dtAll.Rows.Add("95", "CAR", @"../../UsedForResource/Car/Car_95.jpg", 151, 86, 107, 0);
-
             dtAll.Rows.Add("96", "CAR", @"../../UsedForResource/Car/Car_96.jpg", 186, 126, 204, 1);
-
             dtAll.Rows.Add("97", "CAR", @"../../UsedForResource/Car/Car_97.jpg", 139, 180, 156, 0);
-
             dtAll.Rows.Add("98", "CAR", @"../../UsedForResource/Car/Car_98.jpg", 43, 153, 181, 0);
-
             dtAll.Rows.Add("99", "CAR", @"../../UsedForResource/Car/Car_99.jpg", 14, 211, 201, 1);
-
             dtAll.Rows.Add("100", "CAR", @"../../UsedForResource/Car/Car_100.jpg", 192, 128, 245, 0);
-
             dtAll.Rows.Add("101", "CAR", @"../../UsedForResource/Car/Car_101.jpg", 140, 212, 264, 1);
-
             dtAll.Rows.Add("102", "CAR", @"../../UsedForResource/Car/Car_102.jpg", 97, 127, 258, 1);
-
             dtAll.Rows.Add("103", "CAR", @"../../UsedForResource/Car/Car_103.jpg", 18, 137, 197, 1);
-
             dtAll.Rows.Add("104", "CAR", @"../../UsedForResource/Car/Car_104.jpg", 174, 207, 115, 0);
-
             dtAll.Rows.Add("105", "CAR", @"../../UsedForResource/Car/Car_105.jpg", 83, 178, 129, 0);
-
             dtAll.Rows.Add("106", "CAR", @"../../UsedForResource/Car/Car_106.jpg", 163, 236, 172, 0);
-
             dtAll.Rows.Add("107", "CAR", @"../../UsedForResource/Car/Car_107.jpg", 145, 116, 170, 1);
-
             dtAll.Rows.Add("108", "CAR", @"../../UsedForResource/Car/Car_108.jpg", 193, 192, 269, 0);
-
             dtAll.Rows.Add("109", "CAR", @"../../UsedForResource/Car/Car_109.jpg", 137, 109, 290, 0);
-
             dtAll.Rows.Add("110", "CAR", @"../../UsedForResource/Car/Car_110.jpg", 37, 144, 242, 1);
-
             dtAll.Rows.Add("111", "CAR", @"../../UsedForResource/Car/Car_111.jpg", 109, 217, 108, 0);
-
             dtAll.Rows.Add("112", "CAR", @"../../UsedForResource/Car/Car_112.jpg", 126, 80, 77, 1);
-
             dtAll.Rows.Add("113", "CAR", @"../../UsedForResource/Car/Car_113.jpg", 33, 50, 256, 1);
-
             dtAll.Rows.Add("114", "CAR", @"../../UsedForResource/Car/Car_114.jpg", 47, 131, 134, 1);
-
             dtAll.Rows.Add("115", "CAR", @"../../UsedForResource/Car/Car_115.jpg", 58, 141, 293, 1);
-
             dtAll.Rows.Add("116", "CAR", @"../../UsedForResource/Car/Car_116.jpg", 64, 203, 76, 1);
-
             dtAll.Rows.Add("117", "CAR", @"../../UsedForResource/Car/Car_117.jpg", 147, 132, 133, 1);
-
             dtAll.Rows.Add("118", "CAR", @"../../UsedForResource/Car/Car_118.jpg", 13, 171, 88, 0);
-
             dtAll.Rows.Add("119", "CAR", @"../../UsedForResource/Car/Car_119.jpg", 148, 182, 117, 0);
-
             dtAll.Rows.Add("120", "CAR", @"../../UsedForResource/Car/Car_120.jpg", 72, 103, 130, 0);
-
             dtAll.Rows.Add("121", "CAR", @"../../UsedForResource/Car/Car_121.jpg", 84, 102, 199, 0);
-
             dtAll.Rows.Add("122", "CAR", @"../../UsedForResource/Car/Car_122.jpg", 19, 64, 198, 0);
-
             dtAll.Rows.Add("123", "CAR", @"../../UsedForResource/Car/Car_123.jpg", 67, 87, 297, 1);
-
             dtAll.Rows.Add("124", "CAR", @"../../UsedForResource/Car/Car_124.jpg", 79, 244, 226, 1);
-
             dtAll.Rows.Add("125", "CAR", @"../../UsedForResource/Car/Car_125.jpg", 60, 249, 265, 1);
-
             dtAll.Rows.Add("126", "CAR", @"../../UsedForResource/Car/Car_126.jpg", 153, 72, 173, 1);
-
             dtAll.Rows.Add("127", "CAR", @"../../UsedForResource/Car/Car_127.jpg", 150, 163, 212, 1);
-
             dtAll.Rows.Add("128", "CAR", @"../../UsedForResource/Car/Car_128.jpg", 107, 247, 189, 0);
-
             dtAll.Rows.Add("129", "CAR", @"../../UsedForResource/Car/Car_129.jpg", 52, 94, 229, 0);
-
             dtAll.Rows.Add("130", "CAR", @"../../UsedForResource/Car/Car_130.jpg", 73, 175, 282, 0);
-
             dtAll.Rows.Add("131", "CAR", @"../../UsedForResource/Car/Car_131.jpg", 65, 130, 206, 1);
-
             dtAll.Rows.Add("132", "CAR", @"../../UsedForResource/Car/Car_132.jpg", 77, 142, 233, 0);
-
             dtAll.Rows.Add("133", "CAR", @"../../UsedForResource/Car/Car_133.jpg", 53, 95, 95, 0);
-
             dtAll.Rows.Add("134", "CAR", @"../../UsedForResource/Car/Car_134.jpg", 17, 185, 165, 1);
-
             dtAll.Rows.Add("135", "CAR", @"../../UsedForResource/Car/Car_135.jpg", 35, 154, 224, 0);
-
             dtAll.Rows.Add("136", "CAR", @"../../UsedForResource/Car/Car_136.jpg", 122, 55, 191, 0);
-
             dtAll.Rows.Add("137", "CAR", @"../../UsedForResource/Car/Car_137.jpg", 71, 168, 238, 0);
-
             dtAll.Rows.Add("138", "CAR", @"../../UsedForResource/Car/Car_138.jpg", 86, 134, 81, 1);
-
             dtAll.Rows.Add("139", "CAR", @"../../UsedForResource/Car/Car_139.jpg", 21, 150, 70, 0);
-
             dtAll.Rows.Add("140", "CAR", @"../../UsedForResource/Car/Car_140.jpg", 57, 221, 131, 1);
-
             dtAll.Rows.Add("141", "CAR", @"../../UsedForResource/Car/Car_141.jpg", 80, 194, 160, 1);
-
             dtAll.Rows.Add("142", "CAR", @"../../UsedForResource/Car/Car_142.jpg", 87, 239, 268, 1);
-
             dtAll.Rows.Add("143", "CAR", @"../../UsedForResource/Car/Car_143.jpg", 175, 169, 94, 1);
-
             dtAll.Rows.Add("144", "CAR", @"../../UsedForResource/Car/Car_144.jpg", 110, 92, 279, 0);
-
             dtAll.Rows.Add("145", "CAR", @"../../UsedForResource/Car/Car_145.jpg", 133, 189, 150, 0);
-
             dtAll.Rows.Add("146", "CAR", @"../../UsedForResource/Car/Car_146.jpg", 167, 67, 220, 1);
-
             dtAll.Rows.Add("147", "CAR", @"../../UsedForResource/Car/Car_147.jpg", 168, 79, 186, 1);
-
             dtAll.Rows.Add("148", "CAR", @"../../UsedForResource/Car/Car_148.jpg", 96, 54, 169, 1);
-
             dtAll.Rows.Add("149", "CAR", @"../../UsedForResource/Car/Car_149.jpg", 40, 68, 99, 1);
-
             dtAll.Rows.Add("150", "CAR", @"../../UsedForResource/Car/Car_150.jpg", 152, 106, 185, 0);
-
             dtAll.Rows.Add("151", "CAR", @"../../UsedForResource/Car/Car_151.jpg", 46, 187, 251, 0);
-
             dtAll.Rows.Add("152", "CAR", @"../../UsedForResource/Car/Car_152.jpg", 142, 216, 109, 0);
-
             dtAll.Rows.Add("153", "CAR", @"../../UsedForResource/Car/Car_153.jpg", 117, 196, 277, 1);
-
             dtAll.Rows.Add("154", "CAR", @"../../UsedForResource/Car/Car_154.jpg", 99, 69, 74, 1);
-
             dtAll.Rows.Add("155", "CAR", @"../../UsedForResource/Car/Car_155.jpg", 128, 166, 244, 1);
-
             dtAll.Rows.Add("156", "CAR", @"../../UsedForResource/Car/Car_156.jpg", 61, 157, 222, 0);
-
             dtAll.Rows.Add("157", "CAR", @"../../UsedForResource/Car/Car_157.jpg", 181, 172, 145, 1);
-
             dtAll.Rows.Add("158", "INTERIOR", @"../../UsedForResource/Interior/Interior_1.jpg", 114, 181, 280, 0);
-
             dtAll.Rows.Add("159", "INTERIOR", @"../../UsedForResource/Interior/Interior_2.jpg", 118, 282, 130, 0);
-
             dtAll.Rows.Add("160", "INTERIOR", @"../../UsedForResource/Interior/Interior_3.jpg", 161, 171, 178, 1);
-
             dtAll.Rows.Add("161", "INTERIOR", @"../../UsedForResource/Interior/Interior_4.jpg", 78, 130, 284, 0);
-
             dtAll.Rows.Add("162", "INTERIOR", @"../../UsedForResource/Interior/Interior_5.jpg", 236, 87, 129, 1);
-
             dtAll.Rows.Add("163", "INTERIOR", @"../../UsedForResource/Interior/Interior_6.jpg", 49, 99, 68, 0);
-
             dtAll.Rows.Add("164", "INTERIOR", @"../../UsedForResource/Interior/Interior_7.jpg", 126, 262, 267, 0);
-
             dtAll.Rows.Add("165", "INTERIOR", @"../../UsedForResource/Interior/Interior_8.jpg", 101, 72, 64, 1);
-
             dtAll.Rows.Add("166", "INTERIOR", @"../../UsedForResource/Interior/Interior_9.jpg", 211, 280, 65, 1);
-
             dtAll.Rows.Add("167", "INTERIOR", @"../../UsedForResource/Interior/Interior_10.jpg", 68, 169, 253, 1);
-
             dtAll.Rows.Add("168", "INTERIOR", @"../../UsedForResource/Interior/Interior_11.jpg", 219, 270, 238, 0);
-
             dtAll.Rows.Add("169", "INTERIOR", @"../../UsedForResource/Interior/Interior_12.jpg", 62, 195, 61, 0);
-
             dtAll.Rows.Add("170", "INTERIOR", @"../../UsedForResource/Interior/Interior_13.jpg", 129, 278, 275, 1);
-
             dtAll.Rows.Add("171", "INTERIOR", @"../../UsedForResource/Interior/Interior_14.jpg", 218, 133, 63, 1);
-
             dtAll.Rows.Add("172", "INTERIOR", @"../../UsedForResource/Interior/Interior_15.jpg", 156, 190, 209, 1);
-
             dtAll.Rows.Add("173", "INTERIOR", @"../../UsedForResource/Interior/Interior_16.jpg", 58, 269, 105, 0);
-
             dtAll.Rows.Add("174", "INTERIOR", @"../../UsedForResource/Interior/Interior_17.jpg", 109, 253, 247, 1);
             dtAll.Rows.Add("175", "INTERIOR", @"../../UsedForResource/Interior/Interior_18.jpg", 182, 273, 184, 0);
             dtAll.Rows.Add("176", "INTERIOR", @"../../UsedForResource/Interior/Interior_19.jpg", 117, 158, 98, 1);
@@ -1443,163 +1430,6 @@ namespace doAnC_Sharp_Finale
             dtAll.Rows.Add("1176", "FLOWER", @"../../UsedForResource/Flower/Flower_157.jpg", 204, 141, 352, 0);
             dtAll.Rows.Add("1177", "FLOWER", @"../../UsedForResource/Flower/Flower_158.jpg", 56, 387, 154, 0);
             dtAll.Rows.Add("1178", "FLOWER", @"../../UsedForResource/Flower/Flower_159.jpg", 63, 129, 178, 1);
-            dtAll.Rows.Add("1179", "CAR", @"../../UsedForResource/Car/Car_1.jpg", 141, 226, 168, 0);
-            dtAll.Rows.Add("1180", "CAR", @"../../UsedForResource/Car/Car_2.jpg", 59, 245, 261, 1);
-            dtAll.Rows.Add("1181", "CAR", @"../../UsedForResource/Car/Car_3.jpg", 11, 121, 121, 0);
-            dtAll.Rows.Add("1182", "CAR", @"../../UsedForResource/Car/Car_4.jpg", 185, 218, 111, 1);
-            dtAll.Rows.Add("1183", "CAR", @"../../UsedForResource/Car/Car_5.jpg", 125, 205, 270, 1);
-            dtAll.Rows.Add("1184", "CAR", @"../../UsedForResource/Car/Car_6.jpg", 120, 235, 213, 1);
-            dtAll.Rows.Add("1185", "CAR", @"../../UsedForResource/Car/Car_7.jpg", 195, 181, 123, 0);
-            dtAll.Rows.Add("1186", "CAR", @"../../UsedForResource/Car/Car_8.jpg", 166, 97, 294, 0);
-            dtAll.Rows.Add("1187", "CAR", @"../../UsedForResource/Car/Car_9.jpg", 70, 63, 73, 0);
-            dtAll.Rows.Add("1188", "CAR", @"../../UsedForResource/Car/Car_10.jpg", 108, 179, 217, 0);
-            dtAll.Rows.Add("1189", "CAR", @"../../UsedForResource/Car/Car_11.jpg", 118, 158, 140, 1);
-            dtAll.Rows.Add("1190", "CAR", @"../../UsedForResource/Car/Car_12.jpg", 94, 161, 138, 1);
-            dtAll.Rows.Add("1191", "CAR", @"../../UsedForResource/Car/Car_13.jpg", 48, 105, 240, 0);
-            dtAll.Rows.Add("1192", "CAR", @"../../UsedForResource/Car/Car_14.jpg", 144, 107, 190, 0);
-            dtAll.Rows.Add("1193", "CAR", @"../../UsedForResource/Car/Car_15.jpg", 55, 151, 166, 0);
-            dtAll.Rows.Add("1194", "CAR", @"../../UsedForResource/Car/Car_16.jpg", 45, 243, 289, 1);
-            dtAll.Rows.Add("1195", "CAR", @"../../UsedForResource/Car/Car_17.jpg", 63, 210, 215, 1);
-            dtAll.Rows.Add("1196", "CAR", @"../../UsedForResource/Car/Car_18.jpg", 187, 214, 174, 0);
-            dtAll.Rows.Add("1197", "CAR", @"../../UsedForResource/Car/Car_19.jpg", 69, 234, 192, 1);
-            dtAll.Rows.Add("1198", "CAR", @"../../UsedForResource/Car/Car_20.jpg", 111, 195, 239, 0);
-            dtAll.Rows.Add("1199", "CAR", @"../../UsedForResource/Car/Car_21.jpg", 171, 224, 188, 0);
-            dtAll.Rows.Add("1200", "CAR", @"../../UsedForResource/Car/Car_22.jpg", 39, 165, 100, 1);
-            dtAll.Rows.Add("1201", "CAR", @"../../UsedForResource/Car/Car_23.jpg", 159, 246, 274, 1);
-            dtAll.Rows.Add("1202", "CAR", @"../../UsedForResource/Car/Car_24.jpg", 41, 124, 287, 0);
-            dtAll.Rows.Add("1203", "CAR", @"../../UsedForResource/Car/Car_25.jpg", 25, 91, 84, 1);
-            dtAll.Rows.Add("1204", "CAR", @"../../UsedForResource/Car/Car_26.jpg", 16, 73, 237, 0);
-            dtAll.Rows.Add("1205", "CAR", @"../../UsedForResource/Car/Car_27.jpg", 29, 123, 171, 1);
-            dtAll.Rows.Add("1206", "CAR", @"../../UsedForResource/Car/Car_28.jpg", 183, 51, 252, 1);
-            dtAll.Rows.Add("1207", "CAR", @"../../UsedForResource/Car/Car_29.jpg", 123, 176, 116, 1);
-            dtAll.Rows.Add("1208", "CAR", @"../../UsedForResource/Car/Car_30.jpg", 92, 62, 136, 1);
-            dtAll.Rows.Add("1209", "CAR", @"../../UsedForResource/Car/Car_31.jpg", 190, 228, 187, 1);
-            dtAll.Rows.Add("1210", "CAR", @"../../UsedForResource/Car/Car_32.jpg", 155, 104, 144, 1);
-            dtAll.Rows.Add("1211", "CAR", @"../../UsedForResource/Car/Car_33.jpg", 74, 186, 79, 0);
-            dtAll.Rows.Add("1212", "CAR", @"../../UsedForResource/Car/Car_34.jpg", 15, 113, 167, 1);
-            dtAll.Rows.Add("1213", "CAR", @"../../UsedForResource/Car/Car_35.jpg", 130, 191, 120, 1);
-            dtAll.Rows.Add("1214", "CAR", @"../../UsedForResource/Car/Car_36.jpg", 132, 174, 283, 1);
-            dtAll.Rows.Add("1215", "CAR", @"../../UsedForResource/Car/Car_37.jpg", 177, 143, 161, 0);
-            dtAll.Rows.Add("1216", "CAR", @"../../UsedForResource/Car/Car_38.jpg", 143, 57, 247, 1);
-            dtAll.Rows.Add("1217", "CAR", @"../../UsedForResource/Car/Car_39.jpg", 149, 160, 295, 0);
-            dtAll.Rows.Add("1218", "CAR", @"../../UsedForResource/Car/Car_40.jpg", 164, 146, 262, 1);
-            dtAll.Rows.Add("1219", "CAR", @"../../UsedForResource/Car/Car_41.jpg", 100, 220, 207, 1);
-            dtAll.Rows.Add("1220", "CAR", @"../../UsedForResource/Car/Car_42.jpg", 197, 120, 135, 0);
-            dtAll.Rows.Add("1221", "CAR", @"../../UsedForResource/Car/Car_43.jpg", 32, 173, 137, 1);
-            dtAll.Rows.Add("1222", "CAR", @"../../UsedForResource/Car/Car_44.jpg", 12, 70, 119, 1);
-            dtAll.Rows.Add("1223", "CAR", @"../../UsedForResource/Car/Car_45.jpg", 98, 201, 243, 1);
-            dtAll.Rows.Add("1224", "CAR", @"../../UsedForResource/Car/Car_46.jpg", 154, 101, 205, 1);
-            dtAll.Rows.Add("1225", "CAR", @"../../UsedForResource/Car/Car_47.jpg", 112, 170, 208, 1);
-            dtAll.Rows.Add("1226", "CAR", @"../../UsedForResource/Car/Car_48.jpg", 93, 231, 103, 0);
-            dtAll.Rows.Add("1227", "CAR", @"../../UsedForResource/Car/Car_49.jpg", 170, 147, 114, 0);
-            dtAll.Rows.Add("1228", "CAR", @"../../UsedForResource/Car/Car_50.jpg", 196, 66, 163, 0);
-            dtAll.Rows.Add("1229", "CAR", @"../../UsedForResource/Car/Car_51.jpg", 176, 213, 71, 1);
-            dtAll.Rows.Add("1230", "CAR", @"../../UsedForResource/Car/Car_52.jpg", 22, 241, 260, 0);
-            dtAll.Rows.Add("1231", "CAR", @"../../UsedForResource/Car/Car_53.jpg", 104, 83, 281, 1);
-            dtAll.Rows.Add("1232", "CAR", @"../../UsedForResource/Car/Car_54.jpg", 194, 162, 278, 0);
-            dtAll.Rows.Add("1233", "CAR", @"../../UsedForResource/Car/Car_55.jpg", 113, 230, 195, 1);
-            dtAll.Rows.Add("1234", "CAR", @"../../UsedForResource/Car/Car_56.jpg", 44, 110, 178, 0);
-            dtAll.Rows.Add("1235", "CAR", @"../../UsedForResource/Car/Car_57.jpg", 129, 152, 86, 0);
-            dtAll.Rows.Add("1236", "CAR", @"../../UsedForResource/Car/Car_58.jpg", 20, 74, 259, 1);
-            dtAll.Rows.Add("1237", "CAR", @"../../UsedForResource/Car/Car_59.jpg", 28, 227, 214, 0);
-            dtAll.Rows.Add("1238", "CAR", @"../../UsedForResource/Car/Car_60.jpg", 101, 156, 104, 1);
-            dtAll.Rows.Add("1239", "CAR", @"../../UsedForResource/Car/Car_61.jpg", 75, 84, 267, 1);
-            dtAll.Rows.Add("1240", "CAR", @"../../UsedForResource/Car/Car_62.jpg", 54, 202, 241, 0);
-            dtAll.Rows.Add("1241", "CAR", @"../../UsedForResource/Car/Car_63.jpg", 88, 119, 158, 0);
-            dtAll.Rows.Add("1242", "CAR", @"../../UsedForResource/Car/Car_64.jpg", 34, 58, 112, 0);
-            dtAll.Rows.Add("1243", "CAR", @"../../UsedForResource/Car/Car_65.jpg", 184, 112, 146, 1);
-            dtAll.Rows.Add("1244", "CAR", @"../../UsedForResource/Car/Car_66.jpg", 106, 108, 141, 1);
-            dtAll.Rows.Add("1245", "CAR", @"../../UsedForResource/Car/Car_67.jpg", 158, 125, 276, 0);
-            dtAll.Rows.Add("1246", "CAR", @"../../UsedForResource/Car/Car_68.jpg", 119, 82, 85, 1);
-            dtAll.Rows.Add("1247", "CAR", @"../../UsedForResource/Car/Car_69.jpg", 78, 222, 234, 0);
-            dtAll.Rows.Add("1248", "CAR", @"../../UsedForResource/Car/Car_70.jpg", 116, 52, 164, 0);
-            dtAll.Rows.Add("1249", "CAR", @"../../UsedForResource/Car/Car_71.jpg", 82, 164, 288, 0);
-            dtAll.Rows.Add("1250", "CAR", @"../../UsedForResource/Car/Car_72.jpg", 172, 56, 154, 0);
-            dtAll.Rows.Add("1251", "CAR", @"../../UsedForResource/Car/Car_73.jpg", 91, 209, 143, 0);
-            dtAll.Rows.Add("1252", "CAR", @"../../UsedForResource/Car/Car_74.jpg", 156, 96, 291, 0);
-            dtAll.Rows.Add("1253", "CAR", @"../../UsedForResource/Car/Car_75.jpg", 162, 215, 92, 1);
-            dtAll.Rows.Add("1254", "CAR", @"../../UsedForResource/Car/Car_76.jpg", 189, 111, 210, 1);
-            dtAll.Rows.Add("1255", "CAR", @"../../UsedForResource/Car/Car_77.jpg", 56, 199, 255, 1);
-            dtAll.Rows.Add("1256", "CAR", @"../../UsedForResource/Car/Car_78.jpg", 165, 197, 113, 1);
-            dtAll.Rows.Add("1257", "CAR", @"../../UsedForResource/Car/Car_79.jpg", 26, 238, 176, 0);
-            dtAll.Rows.Add("1258", "CAR", @"../../UsedForResource/Car/Car_80.jpg", 10, 78, 284, 1);
-            dtAll.Rows.Add("1259", "CAR", @"../../UsedForResource/Car/Car_81.jpg", 103, 145, 93, 1);
-            dtAll.Rows.Add("1260", "CAR", @"../../UsedForResource/Car/Car_82.jpg", 50, 138, 273, 1);
-            dtAll.Rows.Add("1261", "CAR", @"../../UsedForResource/Car/Car_83.jpg", 24, 81, 218, 1);
-            dtAll.Rows.Add("1262", "CAR", @"../../UsedForResource/Car/Car_84.jpg", 76, 225, 139, 0);
-            dtAll.Rows.Add("1263", "CAR", @"../../UsedForResource/Car/Car_85.jpg", 179, 61, 223, 1);
-            dtAll.Rows.Add("1264", "CAR", @"../../UsedForResource/Car/Car_86.jpg", 161, 114, 106, 1);
-            dtAll.Rows.Add("1265", "CAR", @"../../UsedForResource/Car/Car_87.jpg", 124, 90, 90, 1);
-            dtAll.Rows.Add("1266", "CAR", @"../../UsedForResource/Car/Car_88.jpg", 199, 233, 292, 1);
-            dtAll.Rows.Add("1267", "CAR", @"../../UsedForResource/Car/Car_89.jpg", 23, 60, 285, 0);
-            dtAll.Rows.Add("1268", "CAR", @"../../UsedForResource/Car/Car_90.jpg", 198, 248, 271, 0);
-            dtAll.Rows.Add("1269", "CAR", @"../../UsedForResource/Car/Car_91.jpg", 134, 122, 162, 1);
-            dtAll.Rows.Add("1270", "CAR", @"../../UsedForResource/Car/Car_92.jpg", 49, 139, 280, 0);
-            dtAll.Rows.Add("1271", "CAR", @"../../UsedForResource/Car/Car_93.jpg", 30, 117, 128, 1);
-            dtAll.Rows.Add("1272", "CAR", @"../../UsedForResource/Car/Car_94.jpg", 81, 167, 194, 1);
-            dtAll.Rows.Add("1273", "CAR", @"../../UsedForResource/Car/Car_95.jpg", 151, 86, 107, 0);
-            dtAll.Rows.Add("1274", "CAR", @"../../UsedForResource/Car/Car_96.jpg", 186, 126, 204, 1);
-            dtAll.Rows.Add("1275", "CAR", @"../../UsedForResource/Car/Car_97.jpg", 139, 180, 156, 0);
-            dtAll.Rows.Add("1276", "CAR", @"../../UsedForResource/Car/Car_98.jpg", 43, 153, 181, 0);
-            dtAll.Rows.Add("1277", "CAR", @"../../UsedForResource/Car/Car_99.jpg", 14, 211, 201, 1);
-            dtAll.Rows.Add("1278", "CAR", @"../../UsedForResource/Car/Car_100.jpg", 192, 128, 245, 0);
-            dtAll.Rows.Add("1279", "CAR", @"../../UsedForResource/Car/Car_101.jpg", 140, 212, 264, 1);
-            dtAll.Rows.Add("1280", "CAR", @"../../UsedForResource/Car/Car_102.jpg", 97, 127, 258, 1);
-            dtAll.Rows.Add("1281", "CAR", @"../../UsedForResource/Car/Car_103.jpg", 18, 137, 197, 1);
-            dtAll.Rows.Add("1282", "CAR", @"../../UsedForResource/Car/Car_104.jpg", 174, 207, 115, 0);
-            dtAll.Rows.Add("1283", "CAR", @"../../UsedForResource/Car/Car_105.jpg", 83, 178, 129, 0);
-            dtAll.Rows.Add("1284", "CAR", @"../../UsedForResource/Car/Car_106.jpg", 163, 236, 172, 0);
-            dtAll.Rows.Add("1285", "CAR", @"../../UsedForResource/Car/Car_107.jpg", 145, 116, 170, 1);
-            dtAll.Rows.Add("1286", "CAR", @"../../UsedForResource/Car/Car_108.jpg", 193, 192, 269, 0);
-            dtAll.Rows.Add("1287", "CAR", @"../../UsedForResource/Car/Car_109.jpg", 137, 109, 290, 0);
-            dtAll.Rows.Add("1288", "CAR", @"../../UsedForResource/Car/Car_110.jpg", 37, 144, 242, 1);
-            dtAll.Rows.Add("1289", "CAR", @"../../UsedForResource/Car/Car_111.jpg", 109, 217, 108, 0);
-            dtAll.Rows.Add("1290", "CAR", @"../../UsedForResource/Car/Car_112.jpg", 126, 80, 77, 1);
-            dtAll.Rows.Add("1291", "CAR", @"../../UsedForResource/Car/Car_113.jpg", 33, 50, 256, 1);
-            dtAll.Rows.Add("1292", "CAR", @"../../UsedForResource/Car/Car_114.jpg", 47, 131, 134, 1);
-            dtAll.Rows.Add("1293", "CAR", @"../../UsedForResource/Car/Car_115.jpg", 58, 141, 293, 1);
-            dtAll.Rows.Add("1294", "CAR", @"../../UsedForResource/Car/Car_116.jpg", 64, 203, 76, 1);
-            dtAll.Rows.Add("1295", "CAR", @"../../UsedForResource/Car/Car_117.jpg", 147, 132, 133, 1);
-            dtAll.Rows.Add("1296", "CAR", @"../../UsedForResource/Car/Car_118.jpg", 13, 171, 88, 0);
-            dtAll.Rows.Add("1297", "CAR", @"../../UsedForResource/Car/Car_119.jpg", 148, 182, 117, 0);
-            dtAll.Rows.Add("1298", "CAR", @"../../UsedForResource/Car/Car_120.jpg", 72, 103, 130, 0);
-            dtAll.Rows.Add("1299", "CAR", @"../../UsedForResource/Car/Car_121.jpg", 84, 102, 199, 0);
-            dtAll.Rows.Add("1300", "CAR", @"../../UsedForResource/Car/Car_122.jpg", 19, 64, 198, 0);
-            dtAll.Rows.Add("1301", "CAR", @"../../UsedForResource/Car/Car_123.jpg", 67, 87, 297, 1);
-            dtAll.Rows.Add("1302", "CAR", @"../../UsedForResource/Car/Car_124.jpg", 79, 244, 226, 1);
-            dtAll.Rows.Add("1303", "CAR", @"../../UsedForResource/Car/Car_125.jpg", 60, 249, 265, 1);
-            dtAll.Rows.Add("1304", "CAR", @"../../UsedForResource/Car/Car_126.jpg", 153, 72, 173, 1);
-            dtAll.Rows.Add("1305", "CAR", @"../../UsedForResource/Car/Car_127.jpg", 150, 163, 212, 1);
-            dtAll.Rows.Add("1306", "CAR", @"../../UsedForResource/Car/Car_128.jpg", 107, 247, 189, 0);
-            dtAll.Rows.Add("1307", "CAR", @"../../UsedForResource/Car/Car_129.jpg", 52, 94, 229, 0);
-            dtAll.Rows.Add("1308", "CAR", @"../../UsedForResource/Car/Car_130.jpg", 73, 175, 282, 0);
-            dtAll.Rows.Add("1309", "CAR", @"../../UsedForResource/Car/Car_131.jpg", 65, 130, 206, 1);
-            dtAll.Rows.Add("1310", "CAR", @"../../UsedForResource/Car/Car_132.jpg", 77, 142, 233, 0);
-            dtAll.Rows.Add("1311", "CAR", @"../../UsedForResource/Car/Car_133.jpg", 53, 95, 95, 0);
-            dtAll.Rows.Add("1312", "CAR", @"../../UsedForResource/Car/Car_134.jpg", 17, 185, 165, 1);
-            dtAll.Rows.Add("1313", "CAR", @"../../UsedForResource/Car/Car_135.jpg", 35, 154, 224, 0);
-            dtAll.Rows.Add("1314", "CAR", @"../../UsedForResource/Car/Car_136.jpg", 122, 55, 191, 0);
-            dtAll.Rows.Add("1315", "CAR", @"../../UsedForResource/Car/Car_137.jpg", 71, 168, 238, 0);
-            dtAll.Rows.Add("1316", "CAR", @"../../UsedForResource/Car/Car_138.jpg", 86, 134, 81, 1);
-            dtAll.Rows.Add("1317", "CAR", @"../../UsedForResource/Car/Car_139.jpg", 21, 150, 70, 0);
-            dtAll.Rows.Add("1318", "CAR", @"../../UsedForResource/Car/Car_140.jpg", 57, 221, 131, 1);
-            dtAll.Rows.Add("1319", "CAR", @"../../UsedForResource/Car/Car_141.jpg", 80, 194, 160, 1);
-            dtAll.Rows.Add("1320", "CAR", @"../../UsedForResource/Car/Car_142.jpg", 87, 239, 268, 1);
-            dtAll.Rows.Add("1321", "CAR", @"../../UsedForResource/Car/Car_143.jpg", 175, 169, 94, 1);
-            dtAll.Rows.Add("1322", "CAR", @"../../UsedForResource/Car/Car_144.jpg", 110, 92, 279, 0);
-            dtAll.Rows.Add("1323", "CAR", @"../../UsedForResource/Car/Car_145.jpg", 133, 189, 150, 0);
-            dtAll.Rows.Add("1324", "CAR", @"../../UsedForResource/Car/Car_146.jpg", 167, 67, 220, 1);
-            dtAll.Rows.Add("1325", "CAR", @"../../UsedForResource/Car/Car_147.jpg", 168, 79, 186, 1);
-            dtAll.Rows.Add("1326", "CAR", @"../../UsedForResource/Car/Car_148.jpg", 96, 54, 169, 1);
-            dtAll.Rows.Add("1327", "CAR", @"../../UsedForResource/Car/Car_149.jpg", 40, 68, 99, 1);
-            dtAll.Rows.Add("1328", "CAR", @"../../UsedForResource/Car/Car_150.jpg", 152, 106, 185, 0);
-            dtAll.Rows.Add("1329", "CAR", @"../../UsedForResource/Car/Car_151.jpg", 46, 187, 251, 0);
-            dtAll.Rows.Add("1330", "CAR", @"../../UsedForResource/Car/Car_152.jpg", 142, 216, 109, 0);
-            dtAll.Rows.Add("1331", "CAR", @"../../UsedForResource/Car/Car_153.jpg", 117, 196, 277, 1);
-            dtAll.Rows.Add("1332", "CAR", @"../../UsedForResource/Car/Car_154.jpg", 99, 69, 74, 1);
-            dtAll.Rows.Add("1333", "CAR", @"../../UsedForResource/Car/Car_155.jpg", 128, 166, 244, 1);
-            dtAll.Rows.Add("1334", "CAR", @"../../UsedForResource/Car/Car_156.jpg", 61, 157, 222, 0);
-            dtAll.Rows.Add("1335", "CAR", @"../../UsedForResource/Car/Car_157.jpg", 181, 172, 145, 1);
 
 
             //////////////////////////////////////////////ADD DATA FOR INTERIOR CATEGORIZED///////////////////////////////////////////////////////////
@@ -3689,19 +3519,56 @@ namespace doAnC_Sharp_Finale
                     pictureBoxShowingMain_1.Image = Image.FromFile(Convert.ToString(dtCar.Rows[numrandomCar_1 - 1]["Path"]));
                     pictureBox_click_panelExploreTopics_flowLayoutPanelMain_form1_categorizedCar.Image = Image.FromFile(Convert.ToString(dtCar.Rows[numrandomCar_1 - 1]["Path"]));
                     pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_1.Image= Image.FromFile(Convert.ToString(dtCar.Rows[numrandomCar_1 - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized",dtCar.Rows[numrandomCar_1 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtCar.Rows[numrandomCar_1 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtCar.Rows[numrandomCar_1 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtCar.Rows[numrandomCar_1 - 1]["Comments"].ToString());
+                    temp.Add("Views", dtCar.Rows[numrandomCar_1 - 1]["Views"].ToString());
+
+                    temp.Add("Price", dtCar.Rows[numrandomCar_1 - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
                 else if (i == numrandomCar_2)
                 {
                     pictureBoxShowingMain_2.Image = Image.FromFile(Convert.ToString(dtCar.Rows[numrandomCar_2 - 1]["Path"]));
                     pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_2.Image = Image.FromFile(Convert.ToString(dtCar.Rows[numrandomCar_2 - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dtCar.Rows[numrandomCar_2 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtCar.Rows[numrandomCar_2 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtCar.Rows[numrandomCar_2 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtCar.Rows[numrandomCar_2 - 1]["Comments"].ToString());
+                    temp.Add("Views", dtCar.Rows[numrandomCar_2 - 1]["Views"].ToString());
+
+                    temp.Add("Price", dtCar.Rows[numrandomCar_2 - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
+
                 }
                 else if (i == numrandomCar_3)
                 {
                     pictureBoxShowingMain_3.Image = Image.FromFile(Convert.ToString(dtCar.Rows[numrandomCar_3 - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dtCar.Rows[numrandomCar_3 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtCar.Rows[numrandomCar_3 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtCar.Rows[numrandomCar_3 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtCar.Rows[numrandomCar_3 - 1]["Comments"].ToString());
+                    temp.Add("Views", dtCar.Rows[numrandomCar_3 - 1]["Views"].ToString());
+
+                    temp.Add("Price", dtCar.Rows[numrandomCar_3 - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
                 else if (i == numrandomCar_4)
                 {
                     pictureBoxShowingMain_4.Image = Image.FromFile(Convert.ToString(dtCar.Rows[numrandomCar_4 - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dtCar.Rows[numrandomCar_4 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtCar.Rows[numrandomCar_4 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtCar.Rows[numrandomCar_4 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtCar.Rows[numrandomCar_4 - 1]["Comments"].ToString());
+                    temp.Add("Views", dtCar.Rows[numrandomCar_4 - 1]["Views"].ToString());
+
+                    temp.Add("Price", dtCar.Rows[numrandomCar_4 - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
             }
             for (int j = 1; j < 230; j++)
@@ -4037,7 +3904,7 @@ namespace doAnC_Sharp_Finale
         /// <summary>
         /// KHAI BÁO BIẾN COMMENT ĐỂ LẤY SỐ LẦN NGƯỜI DÙNG BẤM NÚT POST COMMENT.NẾU POST 1 LẦN THÌ PANELCOMMENT 1 HIỆN,POST 2 LÀN THÌ PANEL COMMENT 2 HIỆN LÊN...SEE BELOW!!
         /// </summary>
-        int cmt_panelComment_flowLayoutPanelComment_panelDetailPicture_flowLayoutPanelDetailPicture_form1 = 0;
+
 
 
         /// lINKELABEL của button share_panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1
@@ -6961,87 +6828,93 @@ namespace doAnC_Sharp_Finale
         {
 
         }
-
+        int search = 0;
         private void button_click_panelFuntion_form1_search_Click(object sender, EventArgs e)
         {
-
-        }
-        int PRICE = 0;
-        int SIZE = 0;
-        int RANK = 0;
-        int TYPEOF = 0;
-        private void button_click_panelSortBy_flowLayoutPanelResult_form1_SIZE_Click(object sender, EventArgs e)
-        {
-
-            if (SIZE % 2 == 0)
+            flowLayoutPanelMain_form1.Visible = false;
+            if (search % 2 == 0)
             {
-
-                panelSortBySize_flowLayoutPanelResult_form1.Visible = true;
-                SIZE++;
-
+                flowLayoutPanel_searchResult.Visible = true;
+                search++;
             }
-            else if (SIZE % 2 != 0)
+            else if (search % 2 != 0)
             {
-
-                panelSortBySize_flowLayoutPanelResult_form1.Visible = false;
-                SIZE++;
-
+                flowLayoutPanel_searchResult.Visible = false;
+                search++;
             }
         }
 
-        private void button_click_panelSortBy_flowLayoutPanelResult_form1_TYPEOF_Click(object sender, EventArgs e)
+
+        private void richTextBox_panelFunction_form1_search_KeyDown(object sender, KeyEventArgs e)
         {
-            if (TYPEOF % 2 == 0)
+            if(e.KeyCode == Keys.Enter)
             {
+                
+                string Search_string = richTextBox_panelFunction_form1_search.Text;
+                Search_string = Search_string.ToUpper();
+                Search_string = Search_string.Trim();
+                flowLayoutPanel_searchResult.Visible = true;
+                string search_expression = "Categorized='" + Search_string + "'";
+                DataRow[] Found_Rows = dtAll.Select(search_expression);
+                //for(int i=0;i<Found_Rows.Length;i++)
+                //{
+                //    PictureBox temp = new PictureBox();
+                //    temp.Image = Image.FromFile(Convert.ToString(Found_Rows[i]["Path"]));
+                //    temp.Visible = true;
+                //    panelShowResult_flowLayoutPanelResult_form1.Controls.Add(temp);
 
-                panelSortByTypeOf_flowLayoutPanelResult_form1.Visible = true;
-                TYPEOF++;
+                //}
+                int i = 0;
+                foreach(Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                {
+                    if(control1 is PictureBox)
+                    {
+                        ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
+                        i += 1;
+                    }
+                }
+                dtSearched = new DataTable();
+                dtSearched = Found_Rows.CopyToDataTable();
 
-            }
-            else if (TYPEOF % 2 != 0)
-            {
-
-                panelSortByTypeOf_flowLayoutPanelResult_form1.Visible = false;
-                TYPEOF++;
-
+                
             }
         }
 
-        private void button_click_panelSortBy_flowLayoutPanelResult_form1_RANK_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            if (RANK % 2 == 0)
+            string arrange = "Price='0'";
+            DataRow[] Found_free = dtAll.Select(arrange);
+            int j = 0;
+            foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
             {
-
-                panelSortByRank_flowLayoutPanelResult_form1.Visible = true;
-                RANK++;
-
+                if (control1 is PictureBox)
+                {
+                    ((PictureBox)control1).Image = Image.FromFile(Found_free[j]["Path"].ToString());
+                    j += 1;
+                }
             }
-            else if (RANK % 2 != 0)
+            if(j<=29)
             {
-
-                panelSortByRank_flowLayoutPanelResult_form1.Visible = false;
-                RANK++;
-
+                foreach(Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                {
+                    if (control1 is PictureBox)
+                    {
+                        ((PictureBox)control1).Visible = false;
+                        j += 1;
+                    }
+                }
             }
         }
 
-        private void button_click_panelSortBy_flowLayoutPanelResult_form1_PRICE_Click(object sender, EventArgs e)
+        private void pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel_searchResult.Visible = false;
+            flowLayoutPanelDetailPicture_form1.Visible = true;
+        }
+
+        private void label17_Click(object sender, EventArgs e)
         {
 
-            if (PRICE % 2 == 0)
-            {
-
-                panelSortByPrice_flowLayoutPanelResult_form1.Visible = true;
-                PRICE++;
-
-            }
-            else if (PRICE % 2 != 0)
-            {
-
-                panelSortByPrice_flowLayoutPanelResult_form1.Visible = false;
-                PRICE++;
-
-            }
         }
     }
 }
