@@ -81,6 +81,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelExploreTopics_flowLayoutPanelMain_form1_categorizedInterior = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanelDetailPicture_form1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1 = new System.Windows.Forms.Panel();
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE = new System.Windows.Forms.Button();
             this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture = new System.Windows.Forms.Panel();
             this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_PNG = new System.Windows.Forms.Button();
             this.button_click_panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture_JPEG = new System.Windows.Forms.Button();
@@ -1093,6 +1094,7 @@ namespace doAnC_Sharp_Finale
             // panelDetailPicture_flowLayoutPanelDetailPicture_form1
             // 
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(9)))), ((int)(((byte)(13)))));
+            this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Controls.Add(this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE);
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Controls.Add(this.panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture);
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Controls.Add(this.panelMoreActions_panelDetailPicture_flowLayoutPanelDetailPicture_form1);
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Controls.Add(this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_detailPictureBack);
@@ -1124,6 +1126,22 @@ namespace doAnC_Sharp_Finale
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Name = "panelDetailPicture_flowLayoutPanelDetailPicture_form1";
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(830, 772);
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.TabIndex = 0;
+            // 
+            // button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE
+            // 
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.FlatAppearance.BorderSize = 0;
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.ForeColor = System.Drawing.Color.Coral;
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = ((System.Drawing.Image)(resources.GetObject("button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image")));
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Location = new System.Drawing.Point(450, 449);
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Name = "button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE";
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Size = new System.Drawing.Size(87, 32);
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.TabIndex = 47;
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.UseVisualStyleBackColor = true;
+            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture
             // 
@@ -3649,7 +3667,7 @@ namespace doAnC_Sharp_Finale
             this.materialComboBox4.IntegralHeight = false;
             this.materialComboBox4.ItemHeight = 43;
             this.materialComboBox4.Items.AddRange(new object[] {
-            "Any Price",
+            "Any",
             "Free ",
             "Premium"});
             this.materialComboBox4.Location = new System.Drawing.Point(1013, 5);
@@ -3687,7 +3705,7 @@ namespace doAnC_Sharp_Finale
             this.materialComboBox3.Size = new System.Drawing.Size(121, 49);
             this.materialComboBox3.StartIndex = 0;
             this.materialComboBox3.TabIndex = 8;
-            this.materialComboBox3.SelectedIndexChanged += new System.EventHandler(this.materialComboBox3_SelectedIndexChanged);
+            this.materialComboBox3.SelectionChangeCommitted += new System.EventHandler(this.materialComboBox3_SelectionChangeCommitted);
             // 
             // materialComboBox2
             // 
@@ -3704,7 +3722,7 @@ namespace doAnC_Sharp_Finale
             this.materialComboBox2.IntegralHeight = false;
             this.materialComboBox2.ItemHeight = 43;
             this.materialComboBox2.Items.AddRange(new object[] {
-            "Any Type",
+            "Any",
             "JPG",
             "PNG"});
             this.materialComboBox2.Location = new System.Drawing.Point(549, 6);
@@ -3731,7 +3749,7 @@ namespace doAnC_Sharp_Finale
             this.materialComboBox1.IntegralHeight = false;
             this.materialComboBox1.ItemHeight = 43;
             this.materialComboBox1.Items.AddRange(new object[] {
-            "Any Size",
+            "Any",
             "Large ",
             "Medium ",
             "Small"});
@@ -4550,6 +4568,7 @@ namespace doAnC_Sharp_Finale
         private ReaLTaiizor.Controls.MaterialComboBox materialComboBox3;
         private ReaLTaiizor.Controls.MaterialComboBox materialComboBox2;
         private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Button button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE;
     }
 }
 
