@@ -35,6 +35,7 @@ namespace doAnC_Sharp_Finale
         DataTable dtFiltered = new DataTable();
         DataTable dtChoosen = new DataTable();
         List<Dictionary<string, string>> lstImageInfoScreenMain = new List<Dictionary<string, string>> ();
+        List<Dictionary<string, string>> lstImageInfoScreenSearch = new List<Dictionary<string, string>>();
 
         int saveimgnumber = 0;
         private void Form1_Load(object sender, EventArgs e)
@@ -3515,6 +3516,7 @@ namespace doAnC_Sharp_Finale
             int numrandomFlower_3 = randomFlower.Next(1, 160);
             int numrandomFlower_4 = randomFlower.Next(1, 160);
             ///////////////RANDOM CAR CHO 4 PICTUREBO//////////
+
             for (int i = 1; i < 158; i++)
             {
                 if (i == numrandomCar_1)
@@ -3529,7 +3531,9 @@ namespace doAnC_Sharp_Finale
                     temp.Add("Comments", dtCar.Rows[numrandomCar_1 - 1]["Comments"].ToString());
                     temp.Add("Views", dtCar.Rows[numrandomCar_1 - 1]["Views"].ToString());
                     temp.Add("Price", dtCar.Rows[numrandomCar_1 - 1]["Price"].ToString());
+                    button_click_panelDetailPicture_Views.Text = Convert.ToString(numrandomCar_1);
                     lstImageInfoScreenMain.Add(temp);
+                    Console.WriteLine(lstImageInfoScreenMain);
                 }
                 else if (i == numrandomCar_2)
                 {
@@ -3824,14 +3828,14 @@ namespace doAnC_Sharp_Finale
                 else if (u == numrandomFlower_3)
                 {
                     pictureBoxShowingMain_23.Image = Image.FromFile(Convert.ToString(dtFlower.Rows[numrandomFlower_3 - 1]["Path"]));
-                    pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_13.Image = Image.FromFile(Convert.ToString(dtFlower.Rows[numrandomFlower_2 - 1]["Path"]));
+                    pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_13.Image = Image.FromFile(Convert.ToString(dtFlower.Rows[numrandomFlower_3 - 1]["Path"]));
                     Dictionary<string, string> temp = new Dictionary<string, string>();
-                    temp.Add("Categorized", dtFlower.Rows[numrandomFlower_2 - 1]["Categorized"].ToString());
-                    temp.Add("Path", dtFlower.Rows[numrandomFlower_2 - 1]["Path"].ToString());
-                    temp.Add("Favourites", dtFlower.Rows[numrandomFlower_2 - 1]["Favorites"].ToString());
-                    temp.Add("Comments", dtFlower.Rows[numrandomFlower_2 - 1]["Comments"].ToString());
-                    temp.Add("Views", dtFlower.Rows[numrandomFlower_2 - 1]["Views"].ToString());
-                    temp.Add("Price", dtFlower.Rows[numrandomFlower_2 - 1]["Price"].ToString());
+                    temp.Add("Categorized", dtFlower.Rows[numrandomFlower_3 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtFlower.Rows[numrandomFlower_3 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtFlower.Rows[numrandomFlower_3 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtFlower.Rows[numrandomFlower_3 - 1]["Comments"].ToString());
+                    temp.Add("Views", dtFlower.Rows[numrandomFlower_3 - 1]["Views"].ToString());
+                    temp.Add("Price", dtFlower.Rows[numrandomFlower_3 - 1]["Price"].ToString());
                     lstImageInfoScreenMain.Add(temp);
                 }
                 else if (u == numrandomFlower_4)
@@ -3905,6 +3909,11 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBoxShowingMain_1.Image;
             danhgiau_pictureBoxShowing = 1;
             button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "CAR";
+            richTextBox1.Text = lstImageInfoScreenMain[0]["Favourites"] + "   " + lstImageInfoScreenMain[0]["Categorized"] + "   " + lstImageInfoScreenMain[0]["Comments"] + "   " + lstImageInfoScreenMain[0]["Views"];
+
+
+
+
         }
 
         private void button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_detailPictureBack_Click(object sender, EventArgs e)
@@ -4976,51 +4985,147 @@ namespace doAnC_Sharp_Finale
                 if (randomPictureToPutInPictureBoxInPanelShowPicsOfflowLayoutPanelDetailTopics == x1)
                 {
                     pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_1.Image = Image.FromFile(Convert.ToString(dt.Rows[x1 - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dt.Rows[x1 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dt.Rows[x1 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dt.Rows[x1 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dt.Rows[x1 - 1]["Comments"].ToString());
+                    temp.Add("Views", dt.Rows[x1 - 1]["Views"].ToString());
+                    temp.Add("Price", dt.Rows[x1 - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
                 else if (randomPictureToPutInPictureBoxInPanelShowPicsOfflowLayoutPanelDetailTopics == x2)
                 {
                     pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_2.Image = Image.FromFile(Convert.ToString(dt.Rows[x2 - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dt.Rows[x2 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dt.Rows[x2 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dt.Rows[x2 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dt.Rows[x2 - 1]["Comments"].ToString());
+                    temp.Add("Views", dt.Rows[x2 - 1]["Views"].ToString());
+                    temp.Add("Price", dt.Rows[x2 - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
                 else if (randomPictureToPutInPictureBoxInPanelShowPicsOfflowLayoutPanelDetailTopics == x3)
                 {
                     pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_3.Image = Image.FromFile(Convert.ToString(dt.Rows[x3 - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dt.Rows[x3 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dt.Rows[x3 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dt.Rows[x3 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dt.Rows[x3 - 1]["Comments"].ToString());
+                    temp.Add("Views", dt.Rows[x3 - 1]["Views"].ToString());
+                    temp.Add("Price", dt.Rows[x3 - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
                 else if (randomPictureToPutInPictureBoxInPanelShowPicsOfflowLayoutPanelDetailTopics == x4)
                 {
                     pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_4.Image = Image.FromFile(Convert.ToString(dt.Rows[x4 - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dt.Rows[x4 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dt.Rows[x4 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dt.Rows[x4 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dt.Rows[x4 - 1]["Comments"].ToString());
+                    temp.Add("Views", dt.Rows[x4 - 1]["Views"].ToString());
+                    temp.Add("Price", dt.Rows[x4 - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
                 else if (randomPictureToPutInPictureBoxInPanelShowPicsOfflowLayoutPanelDetailTopics == x5)
                 {
                     pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_5.Image = Image.FromFile(Convert.ToString(dt.Rows[x5 - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dt.Rows[x5 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dt.Rows[x5 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dt.Rows[x5 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dt.Rows[x5 - 1]["Comments"].ToString());
+                    temp.Add("Views", dt.Rows[x5 - 1]["Views"].ToString());
+                    temp.Add("Price", dt.Rows[x5 - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
 
                 }
                 else if (randomPictureToPutInPictureBoxInPanelShowPicsOfflowLayoutPanelDetailTopics == x6)
                 {
                     pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_6.Image = Image.FromFile(Convert.ToString(dt.Rows[x6 - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dt.Rows[x6 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dt.Rows[x6 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dt.Rows[x6 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dt.Rows[x6 - 1]["Comments"].ToString());
+                    temp.Add("Views", dt.Rows[x6 - 1]["Views"].ToString());
+                    temp.Add("Price", dt.Rows[x6 - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
                 else if (randomPictureToPutInPictureBoxInPanelShowPicsOfflowLayoutPanelDetailTopics == x7)
                 {
                     pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_7.Image = Image.FromFile(Convert.ToString(dt.Rows[x7 - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dt.Rows[x7 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dt.Rows[x7 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dt.Rows[x7 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dt.Rows[x7 - 1]["Comments"].ToString());
+                    temp.Add("Views", dt.Rows[x7 - 1]["Views"].ToString());
+                    temp.Add("Price", dt.Rows[x7 - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
                 else if (randomPictureToPutInPictureBoxInPanelShowPicsOfflowLayoutPanelDetailTopics == x8)
                 {
                     pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_8.Image = Image.FromFile(Convert.ToString(dt.Rows[x8 - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dt.Rows[x8 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dt.Rows[x8 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dt.Rows[x8 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dt.Rows[x8 - 1]["Comments"].ToString());
+                    temp.Add("Views", dt.Rows[x8 - 1]["Views"].ToString());
+                    temp.Add("Price", dt.Rows[x8 - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
                 else if (randomPictureToPutInPictureBoxInPanelShowPicsOfflowLayoutPanelDetailTopics == x9)
                 {
                     pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_9.Image = Image.FromFile(Convert.ToString(dt.Rows[x9 - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dt.Rows[x9 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dt.Rows[x9 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dt.Rows[x9 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dt.Rows[x9 - 1]["Comments"].ToString());
+                    temp.Add("Views", dt.Rows[x9 - 1]["Views"].ToString());
+                    temp.Add("Price", dt.Rows[x9 - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
                 else if (randomPictureToPutInPictureBoxInPanelShowPicsOfflowLayoutPanelDetailTopics == x10)
                 {
                     pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_10.Image = Image.FromFile(Convert.ToString(dt.Rows[x10 - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dt.Rows[x10 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dt.Rows[x10 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dt.Rows[x10 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dt.Rows[x10 - 1]["Comments"].ToString());
+                    temp.Add("Views", dt.Rows[x10 - 1]["Views"].ToString());
+                    temp.Add("Price", dt.Rows[x10 - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
                 else if (randomPictureToPutInPictureBoxInPanelShowPicsOfflowLayoutPanelDetailTopics ==x11)
                 {
                     pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_11.Image = Image.FromFile(Convert.ToString(dt.Rows[x11 - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dt.Rows[x11 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dt.Rows[x11 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dt.Rows[x11 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dt.Rows[x11 - 1]["Comments"].ToString());
+                    temp.Add("Views", dt.Rows[x11 - 1]["Views"].ToString());
+                    temp.Add("Price", dt.Rows[x11 - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
                 else if (randomPictureToPutInPictureBoxInPanelShowPicsOfflowLayoutPanelDetailTopics == x12)
                 {
                     pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_12.Image = Image.FromFile(Convert.ToString(dt.Rows[x12 - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dt.Rows[x12 - 1]["Categorized"].ToString());
+                    temp.Add("Path", dt.Rows[x12 - 1]["Path"].ToString());
+                    temp.Add("Favourites", dt.Rows[x12 - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dt.Rows[x12 - 1]["Comments"].ToString());
+                    temp.Add("Views", dt.Rows[x12 - 1]["Views"].ToString());
+                    temp.Add("Price", dt.Rows[x12 - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
             }
         }
@@ -5114,6 +5219,14 @@ namespace doAnC_Sharp_Finale
                 if(randomCar==i)
                 {
                     pictureBox_panelHome_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingHome_1.Image = Image.FromFile(Convert.ToString(dtCar.Rows[randomCar - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dtCar.Rows[randomCar - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtCar.Rows[randomCar - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtCar.Rows[randomCar - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtCar.Rows[randomCar - 1]["Comments"].ToString());
+                    temp.Add("Views", dtCar.Rows[randomCar - 1]["Views"].ToString());
+                    temp.Add("Price", dtCar.Rows[randomCar - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
 
             }
@@ -5122,6 +5235,14 @@ namespace doAnC_Sharp_Finale
                 if (randomInterior == j)
                 {
                     pictureBox_panelHome_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingHome_2.Image = Image.FromFile(Convert.ToString(dtInterior.Rows[randomInterior - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dtInterior.Rows[randomInterior - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtInterior.Rows[randomInterior - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtInterior.Rows[randomInterior - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtInterior.Rows[randomInterior - 1]["Comments"].ToString());
+                    temp.Add("Views", dtInterior.Rows[randomInterior - 1]["Views"].ToString());
+                    temp.Add("Price", dtInterior.Rows[randomInterior - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
             }
             for(int k=1;k<=186;k++)
@@ -5129,6 +5250,14 @@ namespace doAnC_Sharp_Finale
                 if (randomOceans == k)
                 {
                     pictureBox_panelHome_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingHome_3.Image = Image.FromFile(Convert.ToString(dtOceans.Rows[randomOceans - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dtOceans.Rows[randomOceans - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtOceans.Rows[randomOceans - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtOceans.Rows[randomOceans - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtOceans.Rows[randomOceans - 1]["Comments"].ToString());
+                    temp.Add("Views", dtOceans.Rows[randomOceans - 1]["Views"].ToString());
+                    temp.Add("Price", dtOceans.Rows[randomOceans - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
             }
             for (int p = 1; p <= 159;p++)
@@ -5136,6 +5265,14 @@ namespace doAnC_Sharp_Finale
                 if (randomFlower == p)
                 {
                     pictureBox_panelHome_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingHome_4.Image = Image.FromFile(Convert.ToString(dtFlower.Rows[randomFlower - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dtFlower.Rows[randomFlower - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtFlower.Rows[randomFlower - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtFlower.Rows[randomFlower - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtFlower.Rows[randomFlower - 1]["Comments"].ToString());
+                    temp.Add("Views", dtFlower.Rows[randomFlower - 1]["Views"].ToString());
+                    temp.Add("Price", dtFlower.Rows[randomFlower - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
             }
             for (int o=1;o<=242;o++)
@@ -5143,6 +5280,14 @@ namespace doAnC_Sharp_Finale
                 if (randomMotoBike == o)
                 {
                     pictureBox_panelHome_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingHome_5.Image = Image.FromFile(Convert.ToString(dtMotoBike.Rows[randomMotoBike - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dtMotoBike.Rows[randomMotoBike - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtMotoBike.Rows[randomMotoBike - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtMotoBike.Rows[randomMotoBike - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtMotoBike.Rows[randomMotoBike - 1]["Comments"].ToString());
+                    temp.Add("Views", dtMotoBike.Rows[randomMotoBike - 1]["Views"].ToString());
+                    temp.Add("Price", dtMotoBike.Rows[randomMotoBike - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
             }
             for(int u=1;u<=205;u++)
@@ -5150,6 +5295,14 @@ namespace doAnC_Sharp_Finale
                 if (randomForest == u)
                 {
                     pictureBox_panelHome_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingHome_6.Image = Image.FromFile(Convert.ToString(dtForest.Rows[randomForest - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dtForest.Rows[randomForest - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtForest.Rows[randomForest - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtForest.Rows[randomForest - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtForest.Rows[randomForest - 1]["Comments"].ToString());
+                    temp.Add("Views", dtForest.Rows[randomForest - 1]["Views"].ToString());
+                    temp.Add("Price", dtForest.Rows[randomForest - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
             }
 
@@ -5813,6 +5966,15 @@ namespace doAnC_Sharp_Finale
                 if (randomCar == i)
                 {
                     pictureBox_panelHome_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingHome_1.Image = Image.FromFile(Convert.ToString(dtCar.Rows[randomCar - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dtCar.Rows[randomCar - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtCar.Rows[randomCar - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtCar.Rows[randomCar - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtCar.Rows[randomCar - 1]["Comments"].ToString());
+                    temp.Add("Views", dtCar.Rows[randomCar - 1]["Views"].ToString());
+                    temp.Add("Price", dtCar.Rows[randomCar - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
+
                 }
 
             }
@@ -5821,6 +5983,14 @@ namespace doAnC_Sharp_Finale
                 if (randomInterior == j)
                 {
                     pictureBox_panelHome_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingHome_2.Image = Image.FromFile(Convert.ToString(dtInterior.Rows[randomInterior - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dtInterior.Rows[randomInterior - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtInterior.Rows[randomInterior - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtInterior.Rows[randomInterior - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtInterior.Rows[randomInterior - 1]["Comments"].ToString());
+                    temp.Add("Views", dtInterior.Rows[randomInterior - 1]["Views"].ToString());
+                    temp.Add("Price", dtInterior.Rows[randomInterior - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
             }
             for (int k = 1; k <= 186; k++)
@@ -5828,6 +5998,14 @@ namespace doAnC_Sharp_Finale
                 if (randomOceans == k)
                 {
                     pictureBox_panelHome_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingHome_3.Image = Image.FromFile(Convert.ToString(dtOceans.Rows[randomOceans - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dtOceans.Rows[randomOceans - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtOceans.Rows[randomOceans - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtOceans.Rows[randomOceans - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtOceans.Rows[randomOceans - 1]["Comments"].ToString());
+                    temp.Add("Views", dtOceans.Rows[randomOceans - 1]["Views"].ToString());
+                    temp.Add("Price", dtOceans.Rows[randomOceans - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
             }
             for (int p = 1; p <= 159; p++)
@@ -5835,6 +6013,14 @@ namespace doAnC_Sharp_Finale
                 if (randomFlower == p)
                 {
                     pictureBox_panelHome_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingHome_4.Image = Image.FromFile(Convert.ToString(dtFlower.Rows[randomFlower - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dtFlower.Rows[randomFlower - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtFlower.Rows[randomFlower - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtFlower.Rows[randomFlower - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtFlower.Rows[randomFlower - 1]["Comments"].ToString());
+                    temp.Add("Views", dtFlower.Rows[randomFlower - 1]["Views"].ToString());
+                    temp.Add("Price", dtFlower.Rows[randomFlower - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
             }
             for (int o = 1; o <= 242; o++)
@@ -5842,6 +6028,14 @@ namespace doAnC_Sharp_Finale
                 if (randomMotoBike == o)
                 {
                     pictureBox_panelHome_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingHome_5.Image = Image.FromFile(Convert.ToString(dtMotoBike.Rows[randomMotoBike - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dtMotoBike.Rows[randomMotoBike - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtMotoBike.Rows[randomMotoBike - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtMotoBike.Rows[randomMotoBike - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtMotoBike.Rows[randomMotoBike - 1]["Comments"].ToString());
+                    temp.Add("Views", dtMotoBike.Rows[randomMotoBike - 1]["Views"].ToString());
+                    temp.Add("Price", dtMotoBike.Rows[randomMotoBike - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
             }
             for (int u = 1; u <= 205; u++)
@@ -5849,6 +6043,14 @@ namespace doAnC_Sharp_Finale
                 if (randomForest == u)
                 {
                     pictureBox_panelHome_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingHome_6.Image = Image.FromFile(Convert.ToString(dtForest.Rows[randomForest - 1]["Path"]));
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized", dtForest.Rows[randomForest - 1]["Categorized"].ToString());
+                    temp.Add("Path", dtForest.Rows[randomForest - 1]["Path"].ToString());
+                    temp.Add("Favourites", dtForest.Rows[randomForest - 1]["Favorites"].ToString());
+                    temp.Add("Comments", dtForest.Rows[randomForest - 1]["Comments"].ToString());
+                    temp.Add("Views", dtForest.Rows[randomForest - 1]["Views"].ToString());
+                    temp.Add("Price", dtForest.Rows[randomForest - 1]["Price"].ToString());
+                    lstImageInfoScreenMain.Add(temp);
                 }
             }
         }
@@ -5957,7 +6159,103 @@ namespace doAnC_Sharp_Finale
             pictureBox_click_flowLayoutPanelDailyAndTrending_form1_showingDailyandTrending_10.Image = Image.FromFile(Convert.ToString(dtMotoBike.Rows[11]["Path"]));
             pictureBox_click_flowLayoutPanelDailyAndTrending_form1_showingDailyandTrending_11.Image = Image.FromFile(Convert.ToString(dtFlower.Rows[10]["Path"]));
             pictureBox_click_flowLayoutPanelDailyAndTrending_form1_showingDailyandTrending_12.Image = Image.FromFile(Convert.ToString(dtFlower.Rows[11]["Path"]));
-              
+            /////////Dic1daily
+            Dictionary<string, string> temp = new Dictionary<string, string>();
+            temp.Add("Categorized", dtCar.Rows[10]["Categorized"].ToString());
+            temp.Add("Path", dtCar.Rows[10]["Path"].ToString());
+            temp.Add("Favourites", dtCar.Rows[10]["Favorites"].ToString());
+            temp.Add("Comments", dtCar.Rows[10]["Comments"].ToString());
+            temp.Add("Views", dtCar.Rows[10]["Views"].ToString());
+            temp.Add("Price", dtCar.Rows[10]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic2daily
+            temp.Add("Categorized", dtCar.Rows[11]["Categorized"].ToString());
+            temp.Add("Path", dtCar.Rows[11]["Path"].ToString());
+            temp.Add("Favourites", dtCar.Rows[11]["Favorites"].ToString());
+            temp.Add("Comments", dtCar.Rows[11]["Comments"].ToString());
+            temp.Add("Views", dtCar.Rows[11]["Views"].ToString());
+            temp.Add("Price", dtCar.Rows[11]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic3daily
+            temp.Add("Categorized", dtInterior.Rows[10]["Categorized"].ToString());
+            temp.Add("Path", dtInterior.Rows[10]["Path"].ToString());
+            temp.Add("Favourites", dtInterior.Rows[10]["Favorites"].ToString());
+            temp.Add("Comments", dtInterior.Rows[10]["Comments"].ToString());
+            temp.Add("Views", dtInterior.Rows[10]["Views"].ToString());
+            temp.Add("Price", dtInterior.Rows[10]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic4daily
+            temp.Add("Categorized", dtInterior.Rows[11]["Categorized"].ToString());
+            temp.Add("Path", dtInterior.Rows[11]["Path"].ToString());
+            temp.Add("Favourites", dtInterior.Rows[11]["Favorites"].ToString());
+            temp.Add("Comments", dtInterior.Rows[11]["Comments"].ToString());
+            temp.Add("Views", dtInterior.Rows[11]["Views"].ToString());
+            temp.Add("Price", dtInterior.Rows[11]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic5daily
+            temp.Add("Categorized", dtForest.Rows[10]["Categorized"].ToString());
+            temp.Add("Path", dtForest.Rows[10]["Path"].ToString());
+            temp.Add("Favourites", dtForest.Rows[10]["Favorites"].ToString());
+            temp.Add("Comments", dtForest.Rows[10]["Comments"].ToString());
+            temp.Add("Views", dtForest.Rows[10]["Views"].ToString());
+            temp.Add("Price", dtForest.Rows[10]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic6daily
+            temp.Add("Categorized", dtForest.Rows[11]["Categorized"].ToString());
+            temp.Add("Path", dtForest.Rows[11]["Path"].ToString());
+            temp.Add("Favourites", dtForest.Rows[11]["Favorites"].ToString());
+            temp.Add("Comments", dtForest.Rows[11]["Comments"].ToString());
+            temp.Add("Views", dtForest.Rows[11]["Views"].ToString());
+            temp.Add("Price", dtForest.Rows[11]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic7daily
+            temp.Add("Categorized", dtOceans.Rows[10]["Categorized"].ToString());
+            temp.Add("Path", dtOceans.Rows[10]["Path"].ToString());
+            temp.Add("Favourites", dtOceans.Rows[10]["Favorites"].ToString());
+            temp.Add("Comments", dtOceans.Rows[10]["Comments"].ToString());
+            temp.Add("Views", dtOceans.Rows[10]["Views"].ToString());
+            temp.Add("Price", dtOceans.Rows[10]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic8daily
+            temp.Add("Categorized", dtOceans.Rows[11]["Categorized"].ToString());
+            temp.Add("Path", dtOceans.Rows[11]["Path"].ToString());
+            temp.Add("Favourites", dtOceans.Rows[11]["Favorites"].ToString());
+            temp.Add("Comments", dtOceans.Rows[11]["Comments"].ToString());
+            temp.Add("Views", dtOceans.Rows[11]["Views"].ToString());
+            temp.Add("Price", dtOceans.Rows[11]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic9daily
+            temp.Add("Categorized", dtMotoBike.Rows[10]["Categorized"].ToString());
+            temp.Add("Path", dtMotoBike.Rows[10]["Path"].ToString());
+            temp.Add("Favourites", dtMotoBike.Rows[10]["Favorites"].ToString());
+            temp.Add("Comments", dtMotoBike.Rows[10]["Comments"].ToString());
+            temp.Add("Views", dtMotoBike.Rows[10]["Views"].ToString());
+            temp.Add("Price", dtMotoBike.Rows[10]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic10daily
+            temp.Add("Categorized", dtMotoBike.Rows[11]["Categorized"].ToString());
+            temp.Add("Path", dtMotoBike.Rows[11]["Path"].ToString());
+            temp.Add("Favourites", dtMotoBike.Rows[11]["Favorites"].ToString());
+            temp.Add("Comments", dtMotoBike.Rows[11]["Comments"].ToString());
+            temp.Add("Views", dtMotoBike.Rows[11]["Views"].ToString());
+            temp.Add("Price", dtMotoBike.Rows[11]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic11daily
+            temp.Add("Categorized", dtFlower.Rows[10]["Categorized"].ToString());
+            temp.Add("Path", dtFlower.Rows[10]["Path"].ToString());
+            temp.Add("Favourites", dtFlower.Rows[10]["Favorites"].ToString());
+            temp.Add("Comments", dtFlower.Rows[10]["Comments"].ToString());
+            temp.Add("Views", dtFlower.Rows[10]["Views"].ToString());
+            temp.Add("Price", dtFlower.Rows[10]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic12daily
+            temp.Add("Categorized", dtFlower.Rows[11]["Categorized"].ToString());
+            temp.Add("Path", dtFlower.Rows[11]["Path"].ToString());
+            temp.Add("Favourites", dtFlower.Rows[11]["Favorites"].ToString());
+            temp.Add("Comments", dtFlower.Rows[11]["Comments"].ToString());
+            temp.Add("Views", dtFlower.Rows[11]["Views"].ToString());
+            temp.Add("Price", dtFlower.Rows[11]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
         }
 
         private void pictureBox_click_flowLayoutPanelDailyAndTrending_form1_showingDailyandTrending_1_Click(object sender, EventArgs e)
@@ -6085,6 +6383,105 @@ namespace doAnC_Sharp_Finale
             pictureBox_click_flowLayoutPanelDailyAndTrending_form1_showingDailyandTrending_10.Image = Image.FromFile(Convert.ToString(dtMotoBike.Rows[51]["Path"]));
             pictureBox_click_flowLayoutPanelDailyAndTrending_form1_showingDailyandTrending_11.Image = Image.FromFile(Convert.ToString(dtFlower.Rows[50]["Path"]));
             pictureBox_click_flowLayoutPanelDailyAndTrending_form1_showingDailyandTrending_12.Image = Image.FromFile(Convert.ToString(dtFlower.Rows[51]["Path"]));
+            /////////Dic1daily
+            Dictionary<string, string> temp = new Dictionary<string, string>();
+            temp.Add("Categorized", dtCar.Rows[50]["Categorized"].ToString());
+            temp.Add("Path", dtCar.Rows[50]["Path"].ToString());
+            temp.Add("Favourites", dtCar.Rows[50]["Favorites"].ToString());
+            temp.Add("Comments", dtCar.Rows[50]["Comments"].ToString());
+            temp.Add("Views", dtCar.Rows[50]["Views"].ToString());
+            temp.Add("Price", dtCar.Rows[50]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic2daily
+            temp.Add("Categorized", dtCar.Rows[51]["Categorized"].ToString());
+            temp.Add("Path", dtCar.Rows[51]["Path"].ToString());
+            temp.Add("Favourites", dtCar.Rows[51]["Favorites"].ToString());
+            temp.Add("Comments", dtCar.Rows[51]["Comments"].ToString());
+            temp.Add("Views", dtCar.Rows[51]["Views"].ToString());
+            temp.Add("Price", dtCar.Rows[51]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic3daily
+            temp.Add("Categorized", dtInterior.Rows[50]["Categorized"].ToString());
+            temp.Add("Path", dtInterior.Rows[50]["Path"].ToString());
+            temp.Add("Favourites", dtInterior.Rows[50]["Favorites"].ToString());
+            temp.Add("Comments", dtInterior.Rows[50]["Comments"].ToString());
+            temp.Add("Views", dtInterior.Rows[50]["Views"].ToString());
+            temp.Add("Price", dtInterior.Rows[50]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic4daily
+            temp.Add("Categorized", dtInterior.Rows[51]["Categorized"].ToString());
+            temp.Add("Path", dtInterior.Rows[51]["Path"].ToString());
+            temp.Add("Favourites", dtInterior.Rows[51]["Favorites"].ToString());
+            temp.Add("Comments", dtInterior.Rows[51]["Comments"].ToString());
+            temp.Add("Views", dtInterior.Rows[51]["Views"].ToString());
+            temp.Add("Price", dtInterior.Rows[51]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic5daily
+            temp.Add("Categorized", dtForest.Rows[50]["Categorized"].ToString());
+            temp.Add("Path", dtForest.Rows[50]["Path"].ToString());
+            temp.Add("Favourites", dtForest.Rows[50]["Favorites"].ToString());
+            temp.Add("Comments", dtForest.Rows[50]["Comments"].ToString());
+            temp.Add("Views", dtForest.Rows[50]["Views"].ToString());
+            temp.Add("Price", dtForest.Rows[50]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic6daily
+            temp.Add("Categorized", dtForest.Rows[51]["Categorized"].ToString());
+            temp.Add("Path", dtForest.Rows[51]["Path"].ToString());
+            temp.Add("Favourites", dtForest.Rows[51]["Favorites"].ToString());
+            temp.Add("Comments", dtForest.Rows[51]["Comments"].ToString());
+            temp.Add("Views", dtForest.Rows[51]["Views"].ToString());
+            temp.Add("Price", dtForest.Rows[51]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic7daily
+            temp.Add("Categorized", dtOceans.Rows[50]["Categorized"].ToString());
+            temp.Add("Path", dtOceans.Rows[50]["Path"].ToString());
+            temp.Add("Favourites", dtOceans.Rows[50]["Favorites"].ToString());
+            temp.Add("Comments", dtOceans.Rows[50]["Comments"].ToString());
+            temp.Add("Views", dtOceans.Rows[50]["Views"].ToString());
+            temp.Add("Price", dtOceans.Rows[50]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic8daily
+            temp.Add("Categorized", dtOceans.Rows[51]["Categorized"].ToString());
+            temp.Add("Path", dtOceans.Rows[51]["Path"].ToString());
+            temp.Add("Favourites", dtOceans.Rows[51]["Favorites"].ToString());
+            temp.Add("Comments", dtOceans.Rows[51]["Comments"].ToString());
+            temp.Add("Views", dtOceans.Rows[51]["Views"].ToString());
+            temp.Add("Price", dtOceans.Rows[51]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic9daily
+            temp.Add("Categorized", dtMotoBike.Rows[50]["Categorized"].ToString());
+            temp.Add("Path", dtMotoBike.Rows[50]["Path"].ToString());
+            temp.Add("Favourites", dtMotoBike.Rows[50]["Favorites"].ToString());
+            temp.Add("Comments", dtMotoBike.Rows[50]["Comments"].ToString());
+            temp.Add("Views", dtMotoBike.Rows[50]["Views"].ToString());
+            temp.Add("Price", dtMotoBike.Rows[50]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic10daily
+            temp.Add("Categorized", dtMotoBike.Rows[51]["Categorized"].ToString());
+            temp.Add("Path", dtMotoBike.Rows[51]["Path"].ToString());
+            temp.Add("Favourites", dtMotoBike.Rows[51]["Favorites"].ToString());
+            temp.Add("Comments", dtMotoBike.Rows[51]["Comments"].ToString());
+            temp.Add("Views", dtMotoBike.Rows[51]["Views"].ToString());
+            temp.Add("Price", dtMotoBike.Rows[51]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic11daily
+            temp.Add("Categorized", dtFlower.Rows[50]["Categorized"].ToString());
+            temp.Add("Path", dtFlower.Rows[50]["Path"].ToString());
+            temp.Add("Favourites", dtFlower.Rows[50]["Favorites"].ToString());
+            temp.Add("Comments", dtFlower.Rows[50]["Comments"].ToString());
+            temp.Add("Views", dtFlower.Rows[50]["Views"].ToString());
+            temp.Add("Price", dtFlower.Rows[50]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+            /////////Dic12daily
+            temp.Add("Categorized", dtFlower.Rows[51]["Categorized"].ToString());
+            temp.Add("Path", dtFlower.Rows[51]["Path"].ToString());
+            temp.Add("Favourites", dtFlower.Rows[51]["Favorites"].ToString());
+            temp.Add("Comments", dtFlower.Rows[51]["Comments"].ToString());
+            temp.Add("Views", dtFlower.Rows[51]["Views"].ToString());
+            temp.Add("Price", dtFlower.Rows[51]["Price"].ToString());
+            lstImageInfoScreenMain.Add(temp);
+
+
 
         }
         int PageDailyAndTrending = 1;
@@ -6991,20 +7388,9 @@ namespace doAnC_Sharp_Finale
         {
 
         }
-        int search = 0;
         private void button_click_panelFuntion_form1_search_Click(object sender, EventArgs e)
         {
-            flowLayoutPanelMain_form1.Visible = false;
-            if (search % 2 == 0)
-            {
-                flowLayoutPanel_searchResult.Visible = true;
-                search++;
-            }
-            else if (search % 2 != 0)
-            {
-                flowLayoutPanel_searchResult.Visible = false;
-                search++;
-            }
+
         }
 
 
@@ -7019,14 +7405,6 @@ namespace doAnC_Sharp_Finale
                 flowLayoutPanel_searchResult.Visible = true;
                 string search_expression = "Categorized='" + Search_string + "'";
                 DataRow[] Found_Rows = dtAll.Select(search_expression);
-                //for(int i=0;i<Found_Rows.Length;i++)
-                //{
-                //    PictureBox temp = new PictureBox();
-                //    temp.Image = Image.FromFile(Convert.ToString(Found_Rows[i]["Path"]));
-                //    temp.Visible = true;
-                //    panelShowResult_flowLayoutPanelResult_form1.Controls.Add(temp);
-
-                //}
                 int i = 0;
                 foreach(Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
                 {
@@ -7037,271 +7415,33 @@ namespace doAnC_Sharp_Finale
                     }
                 }
                 dtSearched = new DataTable();
-                dtSearched = Found_Rows.CopyToDataTable();  
+                dtSearched = Found_Rows.CopyToDataTable();
+                dtFiltered.Clear();
+                dtFiltered = dtSearched.Copy();
+                int count_filter_rows = dtFiltered.Rows.Count;
+                for(int j=0;j<count_filter_rows;j++)
+                {
+                    Dictionary<string, string> temp = new Dictionary<string, string>();
+                    temp.Add("Categorized",dtFiltered.Rows[j]["Categorized"].ToString());
+                    temp.Add("Path", dtFiltered.Rows[j]["Path"].ToString());
+                    temp.Add("Favourites", dtFiltered.Rows[j]["Favorites"].ToString());
+                    temp.Add("Comments", dtFiltered.Rows[j ]["Comments"].ToString());
+                    temp.Add("Views", dtFiltered.Rows[j]["Views"].ToString());
+                    temp.Add("Price", dtFiltered.Rows[j]["Price"].ToString());
+                    lstImageInfoScreenSearch.Add(temp);
+                    button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[0]["Favorites"].ToString();
+                    button_click_panelDetailPicture_Comments.Text =dtFiltered.Rows[0]["Comments"].ToString();
+                }
             }
         }
-
-
         private void pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1_Click(object sender, EventArgs e)
         {
             flowLayoutPanel_searchResult.Visible = false;
             flowLayoutPanelDetailPicture_form1.Visible = true;
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
+            pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image=pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.Image;
 
         }
 
-        private void materialComboBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if(materialComboBox4.SelectedIndex==1)
-            {
-                string arrange = "Price='0'";
-                DataRow[] Found_free = dtSearched.Select(arrange);
-                int j = 0;
-                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
-                {
-                    if (control1 is PictureBox)
-                    {
-                        ((PictureBox)control1).Image = Image.FromFile(Found_free[j]["Path"].ToString());
-                        j += 1;
-                    }
-                }
-                if (j <= 29)
-                {
-                    foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
-                    {
-                        if (control1 is PictureBox)
-                        {
-                            ((PictureBox)control1).Visible = false;
-                            j += 1;
-                        }
-                    }
-                }
-                
-            }
-            else if(materialComboBox4.SelectedIndex == 2)
-            {
-                string arrange = "Price='1'";
-                DataRow[] Found_free = dtSearched.Select(arrange);
-                int j = 0;
-                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
-                {
-                    if (control1 is PictureBox)
-                    {
-                        ((PictureBox)control1).Image = Image.FromFile(Found_free[j]["Path"].ToString());
-                        j += 1;
-                    }
-                }
-                if (j <= 29)
-                {
-                    foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
-                    {
-                        if (control1 is PictureBox)
-                        {
-                            ((PictureBox)control1).Visible = false;
-                            j += 1;
-                        }
-                    }
-                }
-            }
-            else if(materialComboBox4.SelectedIndex == 0)
-            {
-                string Search_string = richTextBox_panelFunction_form1_search.Text;
-                Search_string = Search_string.ToUpper();
-                Search_string = Search_string.Trim();
-                string search_expression = "Categorized='" + Search_string + "'"; 
-                DataRow[] Found_Rows = dtAll.Select(search_expression);
-                //for(int i=0;i<Found_Rows.Length;i++)
-                //{
-                //    PictureBox temp = new PictureBox();
-                //    temp.Image = Image.FromFile(Convert.ToString(Found_Rows[i]["Path"]));
-                //    temp.Visible = true;
-                //    panelShowResult_flowLayoutPanelResult_form1.Controls.Add(temp);
-
-                //}
-                int i = 0;
-                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
-                {
-                    if (control1 is PictureBox)
-                    {
-                        ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
-                        i += 1;
-                    }
-                }
-                dtSearched = new DataTable();
-                dtSearched = Found_Rows.CopyToDataTable();
-
-
-            }
-        }
-        private void materialComboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if(materialComboBox2.SelectedIndex==1)
-            {
-                string Search_string = richTextBox_panelFunction_form1_search.Text;
-                Search_string = Search_string.ToUpper();
-                Search_string = Search_string.Trim();
-                string search_expression = "Categorized='" + Search_string + "'";
-                DataRow[] Found_Rows = dtAll.Select(search_expression);
-                int i = 0;
-                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
-                {
-                    string s = Found_Rows[i]["Path"].ToString().Substring(Found_Rows[i]["Path"].ToString().Length - 3, 3);
-                    if (s == "jpg")
-                    {
-                        if (control1 is PictureBox)
-                        {
-                            ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
-                        }
-                    }
-                    i += 1;  
-                }
-            }
-            else if(materialComboBox2.SelectedIndex == 2)
-            {
-                string Search_string = richTextBox_panelFunction_form1_search.Text;
-                Search_string = Search_string.ToUpper();
-                Search_string = Search_string.Trim();
-                string search_expression = "Categorized='" + Search_string + "'";
-                DataRow[] Found_Rows = dtAll.Select(search_expression);
-                int i = 0;
-                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
-                {
-                    string s = Found_Rows[i]["Path"].ToString().Substring(Found_Rows[i]["Path"].ToString().Length - 3, 3);
-                    if (s == "png")
-                    {
-                        if (control1 is PictureBox)
-                        {
-                            ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
-                        }
-                    }
-                    i += 1;
-                }
-            }
-        }
-
-        private void materialComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void button1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialComboBox3_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            if (materialComboBox3.Text=="Favorites") 
-            {
-                dtAll.DefaultView.Sort = "Favorites DESC";
-                dtAll = dtAll.DefaultView.ToTable();
-                string Search_string = richTextBox_panelFunction_form1_search.Text;     
-                Search_string = Search_string.ToUpper();
-                Search_string = Search_string.Trim();
-                string search_expression = "Categorized='" + Search_string + "'";
-                DataRow[] Found_Rows = dtAll.Select(search_expression);
-                //for(int i=0;i<Found_Rows.Length;i++)
-                //{
-                //    PictureBox temp = new PictureBox();
-                //    temp.Image = Image.FromFile(Convert.ToString(Found_Rows[i]["Path"]));
-                //    temp.Visible = true;
-                //    panelShowResult_flowLayoutPanelResult_form1.Controls.Add(temp);
-
-                //}
-                int i = 0;
-                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
-                {
-                    if (control1 is PictureBox)
-                    {
-                        ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
-                        i += 1;
-                    }
-                }
-            }
-            else if (materialComboBox3.Text == "Comments")
-            {
-                dtAll.DefaultView.Sort = "Comments DESC";
-                dtAll = dtAll.DefaultView.ToTable();
-                string Search_string = richTextBox_panelFunction_form1_search.Text;
-                Search_string = Search_string.ToUpper();
-                Search_string = Search_string.Trim();
-                string search_expression = "Categorized='" + Search_string + "'";
-                DataRow[] Found_Rows = dtAll.Select(search_expression);
-                //for(int i=0;i<Found_Rows.Length;i++)
-                //{
-                //    PictureBox temp = new PictureBox();
-                //    temp.Image = Image.FromFile(Convert.ToString(Found_Rows[i]["Path"]));
-                //    temp.Visible = true;
-                //    panelShowResult_flowLayoutPanelResult_form1.Controls.Add(temp);
-
-                //}
-                int i = 0;
-                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
-                {
-                    if (control1 is PictureBox)
-                    {
-                        ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());  
-                        i += 1;
-                    }
-                }
-            }
-            else if (materialComboBox3.Text == "Views")
-            {
-                dtAll.DefaultView.Sort = "Views DESC";
-                dtAll = dtAll.DefaultView.ToTable();
-                string Search_string = richTextBox_panelFunction_form1_search.Text;
-                Search_string = Search_string.ToUpper();
-                Search_string = Search_string.Trim();
-                string search_expression = "Categorized='" + Search_string + "'";
-                DataRow[] Found_Rows = dtAll.Select(search_expression);
-                //for(int i=0;i<Found_Rows.Length;i++)
-                //{
-                //    PictureBox temp = new PictureBox();
-                //    temp.Image = Image.FromFile(Convert.ToString(Found_Rows[i]["Path"]));
-                //    temp.Visible = true;
-                //    panelShowResult_flowLayoutPanelResult_form1.Controls.Add(temp);
-
-                //}
-                int i = 0;
-                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
-                {
-                    if (control1 is PictureBox)
-                    {
-                        ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
-                        i += 1;
-                    }
-                }
-            }
-            else if (materialComboBox3.Text == "Any")
-            {
-                string Search_string = richTextBox_panelFunction_form1_search.Text;
-                Search_string = Search_string.ToUpper();
-                Search_string = Search_string.Trim();
-                string search_expression = "Categorized='" + Search_string + "'";
-                DataRow[] Found_Rows = dtAll.Select(search_expression);
-                //for(int i=0;i<Found_Rows.Length;i++)
-                //{
-                //    PictureBox temp = new PictureBox();
-                //    temp.Image = Image.FromFile(Convert.ToString(Found_Rows[i]["Path"]));
-                //    temp.Visible = true;
-                //    panelShowResult_flowLayoutPanelResult_form1.Controls.Add(temp);
-
-                //}
-                int i = 0;
-                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
-                {
-                    if (control1 is PictureBox)
-                    {
-                        ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
-                        i += 1;
-                    }
-                }
-            }
-        }
         public void updateDtFiltered()
         {
             dtFiltered.Clear();
@@ -7317,8 +7457,7 @@ namespace doAnC_Sharp_Finale
                     if(img.Width<250 && img.Height<300)
                     {
                         dtFiltered.Rows.RemoveAt(j);
-                    }
-                    
+                    }    
                 }
             }
             else if(materialComboBox1.Text == "Medium")
@@ -7429,6 +7568,78 @@ namespace doAnC_Sharp_Finale
                         i += 1;
                     }
                 }
+            }
+        }
+        private void materialComboBox4_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            dtFiltered = new DataTable();
+            lstImageInfoScreenSearch.Clear();
+            updateDtFiltered();
+            int count_filter_rows = dtFiltered.Rows.Count;
+            for(int j=0;j<count_filter_rows;j++)
+            {
+                Dictionary<string, string> temp = new Dictionary<string, string>();
+                temp.Add("Categorized", dtFiltered.Rows[j]["Categorized"].ToString());
+                temp.Add("Path", dtFiltered.Rows[j]["Path"].ToString());
+                temp.Add("Favourites", dtFiltered.Rows[j]["Favorites"].ToString());
+                temp.Add("Comments", dtFiltered.Rows[j]["Comments"].ToString());
+                temp.Add("Views", dtFiltered.Rows[j]["Views"].ToString());
+                temp.Add("Price", dtFiltered.Rows[j]["Price"].ToString());
+                lstImageInfoScreenSearch.Add(temp);
+            }
+        }
+        private void materialComboBox3_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            dtFiltered = new DataTable();
+            lstImageInfoScreenSearch.Clear();
+            updateDtFiltered();
+            int count_filter_rows = dtFiltered.Rows.Count;
+            for (int j = 0; j < count_filter_rows; j++)
+            {
+                Dictionary<string, string> temp = new Dictionary<string, string>();
+                temp.Add("Categorized", dtFiltered.Rows[j]["Categorized"].ToString());
+                temp.Add("Path", dtFiltered.Rows[j]["Path"].ToString());
+                temp.Add("Favourites", dtFiltered.Rows[j]["Favorites"].ToString());
+                temp.Add("Comments", dtFiltered.Rows[j]["Comments"].ToString());
+                temp.Add("Views", dtFiltered.Rows[j]["Views"].ToString());
+                temp.Add("Price", dtFiltered.Rows[j]["Price"].ToString());
+                lstImageInfoScreenSearch.Add(temp);
+            }
+        }
+        private void materialComboBox2_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            dtFiltered = new DataTable();
+            lstImageInfoScreenSearch.Clear();
+            updateDtFiltered();
+            int count_filter_rows = dtFiltered.Rows.Count;
+            for (int j = 0; j < count_filter_rows; j++)
+            {
+                Dictionary<string, string> temp = new Dictionary<string, string>();
+                temp.Add("Categorized", dtFiltered.Rows[j]["Categorized"].ToString());
+                temp.Add("Path", dtFiltered.Rows[j]["Path"].ToString());
+                temp.Add("Favourites", dtFiltered.Rows[j]["Favorites"].ToString());
+                temp.Add("Comments", dtFiltered.Rows[j]["Comments"].ToString());
+                temp.Add("Views", dtFiltered.Rows[j]["Views"].ToString());
+                temp.Add("Price", dtFiltered.Rows[j]["Price"].ToString());
+                lstImageInfoScreenSearch.Add(temp);
+            }
+        }
+        private void materialComboBox1_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            dtFiltered = new DataTable();
+            lstImageInfoScreenSearch.Clear();
+            updateDtFiltered();
+            int count_filter_rows = dtFiltered.Rows.Count;
+            for (int j = 0; j < count_filter_rows; j++)
+            {
+                Dictionary<string, string> temp = new Dictionary<string, string>();
+                temp.Add("Categorized", dtFiltered.Rows[j]["Categorized"].ToString());
+                temp.Add("Path", dtFiltered.Rows[j]["Path"].ToString());
+                temp.Add("Favourites", dtFiltered.Rows[j]["Favorites"].ToString());
+                temp.Add("Comments", dtFiltered.Rows[j]["Comments"].ToString());
+                temp.Add("Views", dtFiltered.Rows[j]["Views"].ToString());
+                temp.Add("Price", dtFiltered.Rows[j]["Price"].ToString());
+                lstImageInfoScreenSearch.Add(temp);
             }
         }
     }

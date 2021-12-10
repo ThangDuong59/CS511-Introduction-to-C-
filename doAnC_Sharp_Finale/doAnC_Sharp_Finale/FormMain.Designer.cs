@@ -313,6 +313,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1 = new System.Windows.Forms.PictureBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panelDashBoard_form1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_trending)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_topics)).BeginInit();
@@ -1085,9 +1086,9 @@ namespace doAnC_Sharp_Finale
             this.flowLayoutPanelDetailPicture_form1.BackColor = System.Drawing.Color.Yellow;
             this.flowLayoutPanelDetailPicture_form1.Controls.Add(this.panelDetailPicture_flowLayoutPanelDetailPicture_form1);
             this.flowLayoutPanelDetailPicture_form1.Controls.Add(this.panelSeeMore_flowLayoutPanelDetailPicture_form1);
-            this.flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(3, 74);
+            this.flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(207, 74);
             this.flowLayoutPanelDetailPicture_form1.Name = "flowLayoutPanelDetailPicture_form1";
-            this.flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(1269, 570);
+            this.flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(1025, 570);
             this.flowLayoutPanelDetailPicture_form1.TabIndex = 7;
             this.flowLayoutPanelDetailPicture_form1.Visible = false;
             // 
@@ -1124,7 +1125,7 @@ namespace doAnC_Sharp_Finale
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(3, 3);
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Name = "panelDetailPicture_flowLayoutPanelDetailPicture_form1";
-            this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(830, 772);
+            this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(941, 772);
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.TabIndex = 0;
             // 
             // button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE
@@ -1141,7 +1142,6 @@ namespace doAnC_Sharp_Finale
             this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
             this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.UseVisualStyleBackColor = true;
-            this.button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // panelTypeDownLoad_panelDetailPicture_flowLayoutPanelDetailPicture
             // 
@@ -1559,7 +1559,7 @@ namespace doAnC_Sharp_Finale
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Controls.Add(this.pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_6);
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Controls.Add(this.pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_5);
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Controls.Add(this.pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_4);
-            this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(839, 3);
+            this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(3, 781);
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Name = "panelSeeMore_flowLayoutPanelDetailPicture_form1";
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(406, 943);
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.TabIndex = 1;
@@ -1975,9 +1975,9 @@ namespace doAnC_Sharp_Finale
             this.flowLayoutPanelShowingAuthorDetail_form1.AutoScroll = true;
             this.flowLayoutPanelShowingAuthorDetail_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.flowLayoutPanelShowingAuthorDetail_form1.Controls.Add(this.panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1);
-            this.flowLayoutPanelShowingAuthorDetail_form1.Location = new System.Drawing.Point(1076, 71);
+            this.flowLayoutPanelShowingAuthorDetail_form1.Location = new System.Drawing.Point(47, 71);
             this.flowLayoutPanelShowingAuthorDetail_form1.Name = "flowLayoutPanelShowingAuthorDetail_form1";
-            this.flowLayoutPanelShowingAuthorDetail_form1.Size = new System.Drawing.Size(28, 573);
+            this.flowLayoutPanelShowingAuthorDetail_form1.Size = new System.Drawing.Size(34, 573);
             this.flowLayoutPanelShowingAuthorDetail_form1.TabIndex = 13;
             this.flowLayoutPanelShowingAuthorDetail_form1.Visible = false;
             // 
@@ -1999,7 +1999,7 @@ namespace doAnC_Sharp_Finale
             this.panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Controls.Add(this.pictureBox_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorBackground);
             this.panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Location = new System.Drawing.Point(3, 3);
             this.panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Name = "panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1";
-            this.panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Size = new System.Drawing.Size(64, 1197);
+            this.panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Size = new System.Drawing.Size(1148, 1171);
             this.panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.TabIndex = 0;
             // 
             // button_cliclk_panelDetailAuthor_flowLayoutPanelDetailAuthor_back
@@ -2052,7 +2052,7 @@ namespace doAnC_Sharp_Finale
             this.panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Controls.Add(this.label29);
             this.panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Location = new System.Drawing.Point(3, 559);
             this.panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Name = "panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1";
-            this.panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Size = new System.Drawing.Size(1233, 752);
+            this.panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Size = new System.Drawing.Size(17, 752);
             this.panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.TabIndex = 10;
             this.panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_Paint);
             // 
@@ -3583,10 +3583,11 @@ namespace doAnC_Sharp_Finale
             this.flowLayoutPanel_searchResult.BackColor = System.Drawing.Color.Black;
             this.flowLayoutPanel_searchResult.Controls.Add(this.panelSortBy_flowLayoutPanelResult_form1);
             this.flowLayoutPanel_searchResult.Controls.Add(this.panelShowResult_flowLayoutPanelResult_form1);
-            this.flowLayoutPanel_searchResult.Location = new System.Drawing.Point(3, 71);
+            this.flowLayoutPanel_searchResult.Location = new System.Drawing.Point(104, 71);
             this.flowLayoutPanel_searchResult.Name = "flowLayoutPanel_searchResult";
-            this.flowLayoutPanel_searchResult.Size = new System.Drawing.Size(1271, 573);
+            this.flowLayoutPanel_searchResult.Size = new System.Drawing.Size(1078, 573);
             this.flowLayoutPanel_searchResult.TabIndex = 17;
+            this.flowLayoutPanel_searchResult.Visible = false;
             // 
             // panelSortBy_flowLayoutPanelResult_form1
             // 
@@ -3616,7 +3617,6 @@ namespace doAnC_Sharp_Finale
             this.label41.Size = new System.Drawing.Size(56, 25);
             this.label41.TabIndex = 10;
             this.label41.Text = "Price";
-            this.label41.Click += new System.EventHandler(this.label17_Click);
             // 
             // label17
             // 
@@ -3628,7 +3628,6 @@ namespace doAnC_Sharp_Finale
             this.label17.Size = new System.Drawing.Size(57, 25);
             this.label17.TabIndex = 10;
             this.label17.Text = "Rank";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label9
             // 
@@ -3677,7 +3676,7 @@ namespace doAnC_Sharp_Finale
             this.materialComboBox4.Size = new System.Drawing.Size(121, 49);
             this.materialComboBox4.StartIndex = 0;
             this.materialComboBox4.TabIndex = 9;
-            this.materialComboBox4.SelectedIndexChanged += new System.EventHandler(this.materialComboBox4_SelectedIndexChanged);
+            this.materialComboBox4.SelectionChangeCommitted += new System.EventHandler(this.materialComboBox4_SelectionChangeCommitted);
             // 
             // materialComboBox3
             // 
@@ -3732,7 +3731,7 @@ namespace doAnC_Sharp_Finale
             this.materialComboBox2.Size = new System.Drawing.Size(121, 49);
             this.materialComboBox2.StartIndex = 0;
             this.materialComboBox2.TabIndex = 7;
-            this.materialComboBox2.SelectedIndexChanged += new System.EventHandler(this.materialComboBox2_SelectedIndexChanged);
+            this.materialComboBox2.SelectionChangeCommitted += new System.EventHandler(this.materialComboBox2_SelectionChangeCommitted);
             // 
             // materialComboBox1
             // 
@@ -3760,7 +3759,7 @@ namespace doAnC_Sharp_Finale
             this.materialComboBox1.Size = new System.Drawing.Size(126, 49);
             this.materialComboBox1.StartIndex = 0;
             this.materialComboBox1.TabIndex = 6;
-            this.materialComboBox1.SelectedIndexChanged += new System.EventHandler(this.materialComboBox1_SelectedIndexChanged);
+            this.materialComboBox1.SelectionChangeCommitted += new System.EventHandler(this.materialComboBox1_SelectionChangeCommitted);
             // 
             // label16
             // 
@@ -4066,12 +4065,21 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.TabStop = false;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1_Click);
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(1280, 329);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(94, 96);
+            this.richTextBox1.TabIndex = 18;
+            this.richTextBox1.Text = "";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1386, 722);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.flowLayoutPanel_searchResult);
             this.Controls.Add(this.flowLayoutPanelDetailTopics_form1);
             this.Controls.Add(this.flowLayoutPanelTopics_form1);
@@ -4569,6 +4577,7 @@ namespace doAnC_Sharp_Finale
         private ReaLTaiizor.Controls.MaterialComboBox materialComboBox2;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Button button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 
