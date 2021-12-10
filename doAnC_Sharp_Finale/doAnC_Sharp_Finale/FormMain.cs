@@ -7304,23 +7304,25 @@ namespace doAnC_Sharp_Finale
         }
         public void updateDtFiltered()
         {
-             dtFiltered = dtSearched.Copy();
-             dtChoosen = new DataTable();
-             if(materialComboBox1.Text=="Large")
-             {
-                int Count_rows_dtSearch = dtFiltered.Rows.Count;
-                 for (int j = 0; j < Count_rows_dtSearch ; j++)
-                 { 
-                     Image img = Image.FromFile(dtFiltered.Rows[j]["Path"].ToString());
-                     if(img.Width<250 && img.Height<300)
-                     {
+            dtFiltered.Clear();
+            dtFiltered = dtSearched.Copy();
+
+            // Filter by image size
+            if(materialComboBox1.Text == "Large")
+            {
+            int Count_rows_dtSearch = dtFiltered.Rows.Count;
+                for (int j = 0; j < Count_rows_dtSearch ; j++)
+                { 
+                    Image img = Image.FromFile(dtFiltered.Rows[j]["Path"].ToString());
+                    if(img.Width<250 && img.Height<300)
+                    {
                         dtFiltered.Rows.RemoveAt(j);
-                     }
+                    }
                     
-                 }
-             }
-             else if(materialComboBox1.Text == "Medium")
-             {
+                }
+            }
+            else if(materialComboBox1.Text == "Medium")
+            {
                 int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch; j++)
                 {
@@ -7331,14 +7333,14 @@ namespace doAnC_Sharp_Finale
                     }
 
                 }
-             }
+            }
             else if (materialComboBox1.Text == "Small")
             {
                 int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch; j++)
                 {
                     Image img = Image.FromFile(dtFiltered.Rows[j]["Path"].ToString());
-                    if (img.Width < 100 && img.Height < 150)
+                    if (img.Width < 50 && img.Height < 100)
                     {
                         dtFiltered.Rows.RemoveAt(j);
                     }
@@ -7346,7 +7348,88 @@ namespace doAnC_Sharp_Finale
                 }
             }
 
+            // Filter by image format
+            if (materialComboBox2.Text == "JPG")
+            {
+                int Count_rows_dtSearch = dtFiltered.Rows.Count;
+                for (int j = 0; j < Count_rows_dtSearch; j++)
+                {
+                    if (dtFiltered.Rows[j]["Path"].ToString().ToLower().Contains(".jpg"))
+                    {
+                        dtFiltered.Rows.RemoveAt(j);
+                    }
+                }
+            }
+            else if (materialComboBox2.Text == "PNG")
+            {
+                int Count_rows_dtSearch = dtFiltered.Rows.Count;
+                for (int j = 0; j < Count_rows_dtSearch; j++)
+                {
+                    if (dtFiltered.Rows[j]["Path"].ToString().ToLower().Contains(".png"))
+                    {
+                        dtFiltered.Rows.RemoveAt(j);
+                    }
+                }
+            }
 
+            // Filter by ranking
+            if (materialComboBox3.Text == "Favorites")
+            {
+                dtFiltered.DefaultView.Sort = "Favorites DESC";
+            }
+            else if (materialComboBox3.Text == "Comments")
+            {
+                dtFiltered.DefaultView.Sort = "Comments DESC";
+            }
+            else if (materialComboBox3.Text == "Views")
+            {
+                dtFiltered.DefaultView.Sort = "Views DESC";
+            }
+
+            // Filter by image price
+            if (materialComboBox4.Text == "Free")
+            {
+                int Count_rows_dtSearch = dtFiltered.Rows.Count;
+                for (int j = 0; j < Count_rows_dtSearch; j++)
+                {
+                    if (dtFiltered.Rows[j]["Price"].ToString() == "0")
+                    {
+                        dtFiltered.Rows.RemoveAt(j);
+                    }
+                }
+            }
+            else if (materialComboBox4.Text == "Premium")
+            {
+                int Count_rows_dtSearch = dtFiltered.Rows.Count;
+                for (int j = 0; j < Count_rows_dtSearch; j++)
+                {
+                    if (dtFiltered.Rows[j]["Price"].ToString() == "1")
+                    {
+                        dtFiltered.Rows.RemoveAt(j);
+                    }
+                }
+            }
+
+            int i = 0;
+            foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+            {
+                if (control1 is PictureBox)
+                {
+                    ((PictureBox)control1).Image = Image.FromFile(dtFiltered.Rows[i]["PathS"].ToString());
+                    i += 1;
+                }
+            }
+            if (i < 29)
+            {
+                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                {
+                    if (control1 is PictureBox && this.panelShowResult_flowLayoutPanelResult_form1.Controls.IndexOf(control1) == i)
+                    {
+                        ((PictureBox)control1).Visible = false; 
+                        i += 1;
+                    }
+                }
+            }
         }
     }
 }
