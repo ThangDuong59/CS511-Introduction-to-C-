@@ -313,7 +313,6 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1 = new System.Windows.Forms.PictureBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panelDashBoard_form1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_trending)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_topics)).BeginInit();
@@ -1086,9 +1085,9 @@ namespace doAnC_Sharp_Finale
             this.flowLayoutPanelDetailPicture_form1.BackColor = System.Drawing.Color.Yellow;
             this.flowLayoutPanelDetailPicture_form1.Controls.Add(this.panelDetailPicture_flowLayoutPanelDetailPicture_form1);
             this.flowLayoutPanelDetailPicture_form1.Controls.Add(this.panelSeeMore_flowLayoutPanelDetailPicture_form1);
-            this.flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(207, 74);
+            this.flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(12, 74);
             this.flowLayoutPanelDetailPicture_form1.Name = "flowLayoutPanelDetailPicture_form1";
-            this.flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(1025, 570);
+            this.flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(1274, 570);
             this.flowLayoutPanelDetailPicture_form1.TabIndex = 7;
             this.flowLayoutPanelDetailPicture_form1.Visible = false;
             // 
@@ -1125,7 +1124,7 @@ namespace doAnC_Sharp_Finale
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(3, 3);
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Name = "panelDetailPicture_flowLayoutPanelDetailPicture_form1";
-            this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(941, 772);
+            this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(825, 799);
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.TabIndex = 0;
             // 
             // button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE
@@ -1265,9 +1264,9 @@ namespace doAnC_Sharp_Finale
             this.button_click_panelDetailPicture_Views.FlatAppearance.BorderSize = 0;
             this.button_click_panelDetailPicture_Views.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_click_panelDetailPicture_Views.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button_click_panelDetailPicture_Views.Location = new System.Drawing.Point(393, 599);
+            this.button_click_panelDetailPicture_Views.Location = new System.Drawing.Point(415, 599);
             this.button_click_panelDetailPicture_Views.Name = "button_click_panelDetailPicture_Views";
-            this.button_click_panelDetailPicture_Views.Size = new System.Drawing.Size(101, 29);
+            this.button_click_panelDetailPicture_Views.Size = new System.Drawing.Size(145, 29);
             this.button_click_panelDetailPicture_Views.TabIndex = 21;
             this.button_click_panelDetailPicture_Views.Text = "496K Views";
             this.button_click_panelDetailPicture_Views.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1276,7 +1275,7 @@ namespace doAnC_Sharp_Finale
             // pictureBox32
             // 
             this.pictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox32.Image")));
-            this.pictureBox32.Location = new System.Drawing.Point(355, 595);
+            this.pictureBox32.Location = new System.Drawing.Point(377, 595);
             this.pictureBox32.Name = "pictureBox32";
             this.pictureBox32.Size = new System.Drawing.Size(32, 36);
             this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1291,7 +1290,7 @@ namespace doAnC_Sharp_Finale
             this.button_click_panelDetailPicture_Comments.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.button_click_panelDetailPicture_Comments.Location = new System.Drawing.Point(219, 595);
             this.button_click_panelDetailPicture_Comments.Name = "button_click_panelDetailPicture_Comments";
-            this.button_click_panelDetailPicture_Comments.Size = new System.Drawing.Size(130, 36);
+            this.button_click_panelDetailPicture_Comments.Size = new System.Drawing.Size(152, 36);
             this.button_click_panelDetailPicture_Comments.TabIndex = 19;
             this.button_click_panelDetailPicture_Comments.Text = "1,8K Comments";
             this.button_click_panelDetailPicture_Comments.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1300,7 +1299,7 @@ namespace doAnC_Sharp_Finale
             // pictureBox27
             // 
             this.pictureBox27.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox27.Image")));
-            this.pictureBox27.Location = new System.Drawing.Point(189, 595);
+            this.pictureBox27.Location = new System.Drawing.Point(180, 595);
             this.pictureBox27.Name = "pictureBox27";
             this.pictureBox27.Size = new System.Drawing.Size(34, 36);
             this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1559,7 +1558,7 @@ namespace doAnC_Sharp_Finale
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Controls.Add(this.pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_6);
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Controls.Add(this.pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_5);
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Controls.Add(this.pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_4);
-            this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(3, 781);
+            this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(834, 3);
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Name = "panelSeeMore_flowLayoutPanelDetailPicture_form1";
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(406, 943);
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.TabIndex = 1;
@@ -3583,9 +3582,9 @@ namespace doAnC_Sharp_Finale
             this.flowLayoutPanel_searchResult.BackColor = System.Drawing.Color.Black;
             this.flowLayoutPanel_searchResult.Controls.Add(this.panelSortBy_flowLayoutPanelResult_form1);
             this.flowLayoutPanel_searchResult.Controls.Add(this.panelShowResult_flowLayoutPanelResult_form1);
-            this.flowLayoutPanel_searchResult.Location = new System.Drawing.Point(104, 71);
+            this.flowLayoutPanel_searchResult.Location = new System.Drawing.Point(3, 71);
             this.flowLayoutPanel_searchResult.Name = "flowLayoutPanel_searchResult";
-            this.flowLayoutPanel_searchResult.Size = new System.Drawing.Size(1078, 573);
+            this.flowLayoutPanel_searchResult.Size = new System.Drawing.Size(1283, 573);
             this.flowLayoutPanel_searchResult.TabIndex = 17;
             this.flowLayoutPanel_searchResult.Visible = false;
             // 
@@ -3604,7 +3603,7 @@ namespace doAnC_Sharp_Finale
             this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label5);
             this.panelSortBy_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(3, 3);
             this.panelSortBy_flowLayoutPanelResult_form1.Name = "panelSortBy_flowLayoutPanelResult_form1";
-            this.panelSortBy_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(1239, 60);
+            this.panelSortBy_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(1258, 60);
             this.panelSortBy_flowLayoutPanelResult_form1.TabIndex = 0;
             // 
             // label41
@@ -3818,7 +3817,7 @@ namespace doAnC_Sharp_Finale
             this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1);
             this.panelShowResult_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(3, 69);
             this.panelShowResult_flowLayoutPanelResult_form1.Name = "panelShowResult_flowLayoutPanelResult_form1";
-            this.panelShowResult_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(1239, 1190);
+            this.panelShowResult_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(1258, 1195);
             this.panelShowResult_flowLayoutPanelResult_form1.TabIndex = 1;
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30
@@ -3828,6 +3827,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30.Size = new System.Drawing.Size(178, 194);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30.TabIndex = 29;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_29
             // 
@@ -3836,6 +3836,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_29.Size = new System.Drawing.Size(207, 194);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_29.TabIndex = 28;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_29.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_29.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_29_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_28
             // 
@@ -3844,6 +3845,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_28.Size = new System.Drawing.Size(261, 194);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_28.TabIndex = 27;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_28.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_28.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_28_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_27
             // 
@@ -3852,6 +3854,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_27.Size = new System.Drawing.Size(245, 194);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_27.TabIndex = 26;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_27.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_27.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_27_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_26
             // 
@@ -3860,6 +3863,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_26.Size = new System.Drawing.Size(285, 194);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_26.TabIndex = 25;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_26.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_26.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_26_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_25
             // 
@@ -3868,6 +3872,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_25.Size = new System.Drawing.Size(288, 201);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_25.TabIndex = 24;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_25.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_25.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_25_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_24
             // 
@@ -3876,6 +3881,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_24.Size = new System.Drawing.Size(210, 203);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_24.TabIndex = 23;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_24.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_24.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_24_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_23
             // 
@@ -3884,6 +3890,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_23.Size = new System.Drawing.Size(227, 204);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_23.TabIndex = 22;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_23.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_23.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_23_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_22
             // 
@@ -3892,6 +3899,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_22.Size = new System.Drawing.Size(214, 203);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_22.TabIndex = 21;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_22.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_22.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_22_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_21
             // 
@@ -3900,6 +3908,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_21.Size = new System.Drawing.Size(235, 206);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_21.TabIndex = 20;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_21.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_21.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_21_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_20
             // 
@@ -3908,6 +3917,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_20.Size = new System.Drawing.Size(201, 221);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_20.TabIndex = 19;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_20.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_20.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_20_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_19
             // 
@@ -3916,6 +3926,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_19.Size = new System.Drawing.Size(223, 221);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_19.TabIndex = 18;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_19.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_19.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_19_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_18
             // 
@@ -3924,6 +3935,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_18.Size = new System.Drawing.Size(261, 221);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_18.TabIndex = 17;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_18.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_18.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_18_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_17
             // 
@@ -3932,6 +3944,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_17.Size = new System.Drawing.Size(260, 221);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_17.TabIndex = 16;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_17.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_17.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_17_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_16
             // 
@@ -3940,6 +3953,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_16.Size = new System.Drawing.Size(235, 221);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_16.TabIndex = 15;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_16.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_16.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_16_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_15
             // 
@@ -3948,6 +3962,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_15.Size = new System.Drawing.Size(237, 166);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_15.TabIndex = 14;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_15.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_15.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_15_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_14
             // 
@@ -3956,6 +3971,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_14.Size = new System.Drawing.Size(196, 165);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_14.TabIndex = 13;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_14.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_14.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_14_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_13
             // 
@@ -3964,6 +3980,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_13.Size = new System.Drawing.Size(228, 165);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_13.TabIndex = 12;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_13.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_13.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_13_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_12
             // 
@@ -3972,6 +3989,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_12.Size = new System.Drawing.Size(250, 165);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_12.TabIndex = 11;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_12.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_12.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_12_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_11
             // 
@@ -3980,6 +3998,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_11.Size = new System.Drawing.Size(266, 165);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_11.TabIndex = 10;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_11.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_11.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_11_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_10
             // 
@@ -3988,6 +4007,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_10.Size = new System.Drawing.Size(237, 174);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_10.TabIndex = 9;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_10.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_10.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_10_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_9
             // 
@@ -3996,6 +4016,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_9.Size = new System.Drawing.Size(225, 174);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_9.TabIndex = 8;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_9.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_9.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_9_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_8
             // 
@@ -4004,6 +4025,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_8.Size = new System.Drawing.Size(220, 173);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_8.TabIndex = 7;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_8.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_8.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_8_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_7
             // 
@@ -4012,6 +4034,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_7.Size = new System.Drawing.Size(279, 173);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_7.TabIndex = 6;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_7.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_7.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_7_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_6
             // 
@@ -4020,6 +4043,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_6.Size = new System.Drawing.Size(216, 173);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_6.TabIndex = 5;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_6.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_6.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_6_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_5
             // 
@@ -4028,6 +4052,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_5.Size = new System.Drawing.Size(262, 180);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_5.TabIndex = 4;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_5.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_5.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_5_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_4
             // 
@@ -4036,6 +4061,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_4.Size = new System.Drawing.Size(251, 180);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_4.TabIndex = 3;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_4.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_4.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_4_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3
             // 
@@ -4044,6 +4070,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3.Size = new System.Drawing.Size(215, 180);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3.TabIndex = 2;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2
             // 
@@ -4052,6 +4079,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2.Size = new System.Drawing.Size(205, 180);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2.TabIndex = 1;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2.TabStop = false;
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2_Click);
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1
             // 
@@ -4065,21 +4093,12 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.TabStop = false;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1_Click);
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(1280, 329);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(94, 96);
-            this.richTextBox1.TabIndex = 18;
-            this.richTextBox1.Text = "";
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1386, 722);
-            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.flowLayoutPanel_searchResult);
             this.Controls.Add(this.flowLayoutPanelDetailTopics_form1);
             this.Controls.Add(this.flowLayoutPanelTopics_form1);
@@ -4577,7 +4596,6 @@ namespace doAnC_Sharp_Finale
         private ReaLTaiizor.Controls.MaterialComboBox materialComboBox2;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Button button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE;
-        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 

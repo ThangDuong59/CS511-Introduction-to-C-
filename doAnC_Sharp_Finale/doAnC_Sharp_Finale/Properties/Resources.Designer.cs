@@ -43,8 +43,8 @@ namespace doAnC_Sharp_Finale.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("doAnC_Sharp_Finale.Properties.Resources", typeof(Resources).Assembly);
-                    resourceMan = temp;
+                    global::System.Resources.ResourceManager lstImageInfoScreenMain = new global::System.Resources.ResourceManager("doAnC_Sharp_Finale.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = lstImageInfoScreenMain;
                 }
                 return resourceMan;
             }
