@@ -9490,6 +9490,11 @@ namespace doAnC_Sharp_Finale
             materialComboBox4.Text = "Any";
             richTextBox_panelFunction_form1_search.Text = "";
         }
+
+        private void label41_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
