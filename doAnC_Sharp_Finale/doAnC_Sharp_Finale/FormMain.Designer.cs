@@ -272,6 +272,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel_searchResult = new System.Windows.Forms.FlowLayoutPanel();
             this.panelSortBy_flowLayoutPanelResult_form1 = new System.Windows.Forms.Panel();
+            this.ascendent_order_checkBox = new ReaLTaiizor.Controls.MaterialCheckBox();
             this.button_click_panelSortBy_Back = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -314,7 +315,6 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1 = new System.Windows.Forms.PictureBox();
-            this.materialCheckBox1 = new ReaLTaiizor.Controls.MaterialCheckBox();
             this.panelDashBoard_form1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_trending)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_topics)).BeginInit();
@@ -3594,7 +3594,7 @@ namespace doAnC_Sharp_Finale
             // panelSortBy_flowLayoutPanelResult_form1
             // 
             this.panelSortBy_flowLayoutPanelResult_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.materialCheckBox1);
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.ascendent_order_checkBox);
             this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.button_click_panelSortBy_Back);
             this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label41);
             this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label17);
@@ -3610,6 +3610,25 @@ namespace doAnC_Sharp_Finale
             this.panelSortBy_flowLayoutPanelResult_form1.Name = "panelSortBy_flowLayoutPanelResult_form1";
             this.panelSortBy_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(1258, 60);
             this.panelSortBy_flowLayoutPanelResult_form1.TabIndex = 0;
+            // 
+            // ascendent_order_checkBox
+            // 
+            this.ascendent_order_checkBox.Depth = 0;
+            this.ascendent_order_checkBox.FlatAppearance.BorderSize = 0;
+            this.ascendent_order_checkBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ascendent_order_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.ascendent_order_checkBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.ascendent_order_checkBox.Location = new System.Drawing.Point(833, 16);
+            this.ascendent_order_checkBox.Margin = new System.Windows.Forms.Padding(0);
+            this.ascendent_order_checkBox.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.ascendent_order_checkBox.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.ascendent_order_checkBox.Name = "ascendent_order_checkBox";
+            this.ascendent_order_checkBox.Ripple = true;
+            this.ascendent_order_checkBox.Size = new System.Drawing.Size(158, 35);
+            this.ascendent_order_checkBox.TabIndex = 12;
+            this.ascendent_order_checkBox.Text = "Ascendent Order";
+            this.ascendent_order_checkBox.UseVisualStyleBackColor = true;
+            this.ascendent_order_checkBox.CheckedChanged += new System.EventHandler(this.ascendent_checkedChanged_order_checkBox);
             // 
             // button_click_panelSortBy_Back
             // 
@@ -4142,24 +4161,6 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.TabStop = false;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1_Click);
             // 
-            // materialCheckBox1
-            // 
-            this.materialCheckBox1.Depth = 0;
-            this.materialCheckBox1.FlatAppearance.BorderSize = 0;
-            this.materialCheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.materialCheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.materialCheckBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.materialCheckBox1.Location = new System.Drawing.Point(833, 16);
-            this.materialCheckBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCheckBox1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialCheckBox1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialCheckBox1.Name = "materialCheckBox1";
-            this.materialCheckBox1.Ripple = true;
-            this.materialCheckBox1.Size = new System.Drawing.Size(158, 35);
-            this.materialCheckBox1.TabIndex = 12;
-            this.materialCheckBox1.Text = "Ascendent Order";
-            this.materialCheckBox1.UseVisualStyleBackColor = true;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4664,7 +4665,7 @@ namespace doAnC_Sharp_Finale
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Button button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE;
         private System.Windows.Forms.Button button_click_panelSortBy_Back;
-        private ReaLTaiizor.Controls.MaterialCheckBox materialCheckBox1;
+        private ReaLTaiizor.Controls.MaterialCheckBox ascendent_order_checkBox;
     }
 }
 

@@ -8565,24 +8565,57 @@ namespace doAnC_Sharp_Finale
             flowLayoutPanelDailyAndTrending_form1.Visible = false;
             string search_expression = "Categorized='" + Search_string + "'";
             DataRow[] Found_Rows = dtAll.Select(search_expression);
-            int i = 0;
-            foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+            if (Found_Rows.Length > 0)
             {
-                if (control1 is PictureBox)
+                int i = 0;
+                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
                 {
-                    ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
-                    i += 1;
+                    if (control1 is PictureBox)
+                    {
+                        ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
+                        i += 1;
+                    }
                 }
+                dtSearched = new DataTable();
+                dtSearched = Found_Rows.CopyToDataTable();
+                dtFiltered.Clear();
+                dtFiltered = dtSearched.Copy();
             }
-            dtSearched = new DataTable();
-            dtSearched = Found_Rows.CopyToDataTable();
-            dtFiltered.Clear();
-            dtFiltered = dtSearched.Copy();
+            else
+            {
+                dtSearched = new DataTable();
+                dtSearched.Columns.Add("STT", typeof(string));
+                dtSearched.Columns.Add("Categorized", typeof(string));
+                dtSearched.Columns.Add("Path", typeof(string));
+                dtSearched.Columns.Add("Favorites", typeof(int));
+                dtSearched.Columns.Add("Comments", typeof(int));
+                dtSearched.Columns.Add("Views", typeof(int));
+                dtSearched.Columns.Add("Price", typeof(int));
+
+                Random random_index = new Random();
+                List<int> randomed_index = new List<int>();
+                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                {
+                    if (control1 is PictureBox)
+                    {
+                        int i = random_index.Next(0, dtAll.Rows.Count - 1);
+                        if (!randomed_index.Contains(i))
+                        {
+                            randomed_index.Add(i);
+                            ((PictureBox)control1).Image = Image.FromFile(dtAll.Rows[i]["Path"].ToString());
+                            dtSearched.ImportRow(dtAll.Rows[i]);
+                        }
+                    }
+                }
+                dtFiltered.Clear();
+                dtFiltered = dtSearched.Copy();
+            }
 
             materialComboBox1.Text = "Any";
             materialComboBox2.Text = "Any";
             materialComboBox3.Text = "Any";
             materialComboBox4.Text = "Any";
+            ascendent_order_checkBox.Checked = false;
         }
 
 
@@ -8598,24 +8631,57 @@ namespace doAnC_Sharp_Finale
                 flowLayoutPanelDailyAndTrending_form1.Visible = false;
                 string search_expression = "Categorized='" + Search_string + "'";
                 DataRow[] Found_Rows = dtAll.Select(search_expression);
-                int i = 0;
-                foreach(Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                if (Found_Rows.Length > 0)
                 {
-                    if(control1 is PictureBox)
+                    int i = 0;
+                    foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
                     {
-                        ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
-                        i += 1;
+                        if (control1 is PictureBox)
+                        {
+                            ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
+                            i += 1;
+                        }
                     }
+                    dtSearched = new DataTable();
+                    dtSearched = Found_Rows.CopyToDataTable();
+                    dtFiltered.Clear();
+                    dtFiltered = dtSearched.Copy();
                 }
-                dtSearched = new DataTable();
-                dtSearched = Found_Rows.CopyToDataTable();
-                dtFiltered.Clear();
-                dtFiltered = dtSearched.Copy();
+                else
+                {
+                    dtSearched = new DataTable();
+                    dtSearched.Columns.Add("STT", typeof(string));
+                    dtSearched.Columns.Add("Categorized", typeof(string));
+                    dtSearched.Columns.Add("Path", typeof(string));
+                    dtSearched.Columns.Add("Favorites", typeof(int));
+                    dtSearched.Columns.Add("Comments", typeof(int));
+                    dtSearched.Columns.Add("Views", typeof(int));
+                    dtSearched.Columns.Add("Price", typeof(int));
+
+                    Random random_index = new Random();
+                    List<int> randomed_index = new List<int>();
+                    foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                    {
+                        if (control1 is PictureBox)
+                        {
+                            int i = random_index.Next(0, dtAll.Rows.Count - 1);
+                            if (!randomed_index.Contains(i))
+                            {
+                                randomed_index.Add(i);
+                                ((PictureBox)control1).Image = Image.FromFile(dtAll.Rows[i]["Path"].ToString());
+                                dtSearched.ImportRow(dtAll.Rows[i]);
+                            }
+                        }
+                    }
+                    dtFiltered.Clear();
+                    dtFiltered = dtSearched.Copy();
+                }
 
                 materialComboBox1.Text = "Any";
                 materialComboBox2.Text = "Any";
                 materialComboBox3.Text = "Any";
                 materialComboBox4.Text = "Any";
+                ascendent_order_checkBox.Checked = false;
             }
         }
 
@@ -8729,22 +8795,32 @@ namespace doAnC_Sharp_Finale
             }
 
             // Filter by ranking
+            string to_order_type;
+            if (ascendent_order_checkBox.Checked == true)
+            {
+                to_order_type = "ASC";
+            }
+            else
+            {
+                to_order_type = "DESC";
+            }
+
             if (materialComboBox3.Text.Trim() == "Favorites")
             {
                 DataView dv = dtFiltered.DefaultView;
-                dv.Sort = "Favorites DESC";
+                dv.Sort = "Favorites " + to_order_type;
                 dtFiltered = dv.ToTable();
             }
             else if (materialComboBox3.Text.Trim() == "Comments")
             {
                 DataView dv = dtFiltered.DefaultView;
-                dv.Sort = "Comments DESC";
+                dv.Sort = "Comments " + to_order_type;
                 dtFiltered = dv.ToTable();
             }
             else if (materialComboBox3.Text.Trim() == "Views")
             {
                 DataView dv = dtFiltered.DefaultView;
-                dv.Sort = "Views DESC";
+                dv.Sort = "Views " + to_order_type;
                 dtFiltered = dv.ToTable();
             }
 
@@ -9488,12 +9564,18 @@ namespace doAnC_Sharp_Finale
             materialComboBox2.Text = "Any";
             materialComboBox3.Text = "Any";
             materialComboBox4.Text = "Any";
+            ascendent_order_checkBox.Checked = false;
             richTextBox_panelFunction_form1_search.Text = "";
         }
 
         private void label41_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ascendent_checkedChanged_order_checkBox(object sender, EventArgs e)
+        {
+            updateDtFiltered();
         }
     }
 }
