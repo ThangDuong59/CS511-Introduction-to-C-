@@ -8555,11 +8555,60 @@ namespace doAnC_Sharp_Finale
         {
 
         }
-        private void button_click_panelFuntion_form1_search_Click(object sender, EventArgs e)
+
+        public static int CalcLevenshteinDistance(string source1, string source2) //O(n*m)
+        {
+            var source1Length = source1.Length;
+            var source2Length = source2.Length;
+
+            var matrix = new int[source1Length + 1, source2Length + 1];
+
+            // First calculation, if one entry is empty return full length
+            if (source1Length == 0)
+                return source2Length;
+
+            if (source2Length == 0)
+                return source1Length;
+
+            // Initialization of matrix with row size source1Length and columns size source2Length
+            for (var i = 0; i <= source1Length; matrix[i, 0] = i++) { }
+            for (var j = 0; j <= source2Length; matrix[0, j] = j++) { }
+
+            // Calculate rows and collumns distances
+            for (var i = 1; i <= source1Length; i++)
+            {
+                for (var j = 1; j <= source2Length; j++)
+                {
+                    var cost = (source2[j - 1] == source1[i - 1]) ? 0 : 1;
+
+                    matrix[i, j] = Math.Min(
+                        Math.Min(matrix[i - 1, j] + 1, matrix[i, j - 1] + 1),
+                        matrix[i - 1, j - 1] + cost);
+                }
+            }
+            // return result
+            return matrix[source1Length, source2Length];
+        }
+
+        private void search_by_keyword()
         {
             string Search_string = richTextBox_panelFunction_form1_search.Text;
             Search_string = Search_string.ToUpper();
             Search_string = Search_string.Trim();
+            List<string> vn_keywords = new List<string>(){"CAR", "INTERIOR", "MOTOBIKE", "FLOWER", "OCEANS", "FOREST" };
+            int max_score = 10000;
+            string final_keyword = "";
+            foreach (string keyword in vn_keywords)
+            {
+                int dis = CalcLevenshteinDistance(Search_string, keyword);
+                richTextBox1.Text = Convert.ToString(dis);
+                if (dis < max_score)
+                {
+                    final_keyword = keyword;
+                    max_score = dis;
+                }
+            }
+            Search_string = final_keyword;
             flowLayoutPanel_searchResult.Visible = true;
             flowLayoutPanelTopics_form1.Visible = false;
             flowLayoutPanelDailyAndTrending_form1.Visible = false;
@@ -8604,7 +8653,7 @@ namespace doAnC_Sharp_Finale
                         if (control1 is PictureBox && control1.Name == search_name)
                         {
                             int j = random_index.Next(0, dtAll.Rows.Count - 1);
-                            if (randomed_index.Contains(i) == false)
+                            if (randomed_index.Contains(j) == false)
                             {
                                 randomed_index.Add(j);
                                 ((PictureBox)control1).Image = Image.FromFile(dtAll.Rows[j]["Path"].ToString());
@@ -8625,76 +8674,18 @@ namespace doAnC_Sharp_Finale
             ascendent_order_checkBox.Checked = false;
         }
 
+        private void button_click_panelFuntion_form1_search_Click(object sender, EventArgs e)
+        {
+            search_by_keyword();
+        }
+
 
         private void richTextBox_panelFunction_form1_search_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyCode == Keys.Enter)
             {
-                string Search_string = richTextBox_panelFunction_form1_search.Text;
-                Search_string = Search_string.ToUpper();
-                Search_string = Search_string.Trim();
-                flowLayoutPanel_searchResult.Visible = true;
-                flowLayoutPanelTopics_form1.Visible = false;
-                flowLayoutPanelDailyAndTrending_form1.Visible = false;
-                string search_expression = "Categorized='" + Search_string + "'";
-                DataRow[] Found_Rows = dtAll.Select(search_expression);
-                if (Found_Rows.Length > 0)
-                {
-                    for (int i = 0; i < this.panelShowResult_flowLayoutPanelResult_form1.Controls.Count; i++)
-                    {
-                        string search_name = "pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_" + Convert.ToString(i + 1);
-                        foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
-                        {
-                            if (control1 is PictureBox && control1.Name == search_name)
-                            {
-                                ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
-                            }
-                        }
-                    }
-                    dtSearched = new DataTable();
-                    dtSearched = Found_Rows.CopyToDataTable();
-                    dtFiltered.Rows.Clear();
-                    dtFiltered = dtSearched.Copy();
-                }
-                else
-                {
-                    dtSearched = new DataTable();
-                    dtSearched.Columns.Add("STT", typeof(string));
-                    dtSearched.Columns.Add("Categorized", typeof(string));
-                    dtSearched.Columns.Add("Path", typeof(string));
-                    dtSearched.Columns.Add("Favorites", typeof(int));
-                    dtSearched.Columns.Add("Comments", typeof(int));
-                    dtSearched.Columns.Add("Views", typeof(int));
-                    dtSearched.Columns.Add("Price", typeof(int));
-
-                    Random random_index = new Random();
-                    List<int> randomed_index = new List<int>();
-                    for (int i = 0; i < this.panelShowResult_flowLayoutPanelResult_form1.Controls.Count; i++)
-                    {
-                        string search_name = "pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_" + Convert.ToString(i + 1);
-                        foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
-                        {
-                            if (control1 is PictureBox && control1.Name == search_name)
-                            {
-                                int j = random_index.Next(0, dtAll.Rows.Count - 1);
-                                if (randomed_index.Contains(i) == false)
-                                {
-                                    randomed_index.Add(j);
-                                    ((PictureBox)control1).Image = Image.FromFile(dtAll.Rows[j]["Path"].ToString());
-                                    dtSearched.ImportRow(dtAll.Rows[j]);
-                                }
-                            }
-                        }
-                    }
-                    dtFiltered.Clear();
-                    dtFiltered = dtSearched.Copy();
-                }
+                search_by_keyword();
             }
-            materialComboBox1.Text = "Any";
-            materialComboBox2.Text = "Any";
-            materialComboBox3.Text = "Any";
-            materialComboBox4.Text = "Any";
-            ascendent_order_checkBox.Checked = false;
         }
 
 

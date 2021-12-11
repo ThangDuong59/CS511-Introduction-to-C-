@@ -315,6 +315,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1 = new System.Windows.Forms.PictureBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panelDashBoard_form1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_trending)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_topics)).BeginInit();
@@ -559,6 +560,7 @@ namespace doAnC_Sharp_Finale
             // 
             // panelFunction_form1
             // 
+            this.panelFunction_form1.Controls.Add(this.richTextBox1);
             this.panelFunction_form1.Controls.Add(this.pictureBox2);
             this.panelFunction_form1.Controls.Add(this.button_click_panelFuntion_form1_search);
             this.panelFunction_form1.Controls.Add(this.richTextBox_panelFunction_form1_search);
@@ -4161,6 +4163,14 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.TabStop = false;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1_Click);
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(461, 12);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(137, 47);
+            this.richTextBox1.TabIndex = 4;
+            this.richTextBox1.Text = "";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4666,6 +4676,7 @@ namespace doAnC_Sharp_Finale
         private System.Windows.Forms.Button button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE;
         private System.Windows.Forms.Button button_click_panelSortBy_Back;
         private ReaLTaiizor.Controls.MaterialCheckBox ascendent_order_checkBox;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 
