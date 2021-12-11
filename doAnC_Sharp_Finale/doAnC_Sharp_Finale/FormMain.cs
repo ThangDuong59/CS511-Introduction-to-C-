@@ -8567,18 +8567,20 @@ namespace doAnC_Sharp_Finale
             DataRow[] Found_Rows = dtAll.Select(search_expression);
             if (Found_Rows.Length > 0)
             {
-                int i = 0;
-                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                for (int i = 0; i < this.panelShowResult_flowLayoutPanelResult_form1.Controls.Count; i++)
                 {
-                    if (control1 is PictureBox)
+                    string search_name = "pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_" + Convert.ToString(i + 1);
+                    foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
                     {
-                        ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
-                        i += 1;
+                        if (control1 is PictureBox && control1.Name == search_name)
+                        {
+                            ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
+                        }
                     }
                 }
                 dtSearched = new DataTable();
                 dtSearched = Found_Rows.CopyToDataTable();
-                dtFiltered.Clear();
+                dtFiltered.Rows.Clear();
                 dtFiltered = dtSearched.Copy();
             }
             else
@@ -8594,19 +8596,24 @@ namespace doAnC_Sharp_Finale
 
                 Random random_index = new Random();
                 List<int> randomed_index = new List<int>();
-                foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                for (int i = 0; i < this.panelShowResult_flowLayoutPanelResult_form1.Controls.Count; i++)
                 {
-                    if (control1 is PictureBox)
+                    string search_name = "pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_" + Convert.ToString(i + 1);
+                    foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
                     {
-                        int i = random_index.Next(0, dtAll.Rows.Count - 1);
-                        if (!randomed_index.Contains(i))
+                        if (control1 is PictureBox && control1.Name == search_name)
                         {
-                            randomed_index.Add(i);
-                            ((PictureBox)control1).Image = Image.FromFile(dtAll.Rows[i]["Path"].ToString());
-                            dtSearched.ImportRow(dtAll.Rows[i]);
+                            int j = random_index.Next(0, dtAll.Rows.Count - 1);
+                            if (randomed_index.Contains(i) == false)
+                            {
+                                randomed_index.Add(j);
+                                ((PictureBox)control1).Image = Image.FromFile(dtAll.Rows[j]["Path"].ToString());
+                                dtSearched.ImportRow(dtAll.Rows[j]);
+                            }
                         }
                     }
                 }
+
                 dtFiltered.Clear();
                 dtFiltered = dtSearched.Copy();
             }
@@ -8622,7 +8629,7 @@ namespace doAnC_Sharp_Finale
         private void richTextBox_panelFunction_form1_search_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyCode == Keys.Enter)
-            {  
+            {
                 string Search_string = richTextBox_panelFunction_form1_search.Text;
                 Search_string = Search_string.ToUpper();
                 Search_string = Search_string.Trim();
@@ -8633,18 +8640,20 @@ namespace doAnC_Sharp_Finale
                 DataRow[] Found_Rows = dtAll.Select(search_expression);
                 if (Found_Rows.Length > 0)
                 {
-                    int i = 0;
-                    foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                    for (int i = 0; i < this.panelShowResult_flowLayoutPanelResult_form1.Controls.Count; i++)
                     {
-                        if (control1 is PictureBox)
+                        string search_name = "pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_" + Convert.ToString(i + 1);
+                        foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
                         {
-                            ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
-                            i += 1;
+                            if (control1 is PictureBox && control1.Name == search_name)
+                            {
+                                ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
+                            }
                         }
                     }
                     dtSearched = new DataTable();
                     dtSearched = Found_Rows.CopyToDataTable();
-                    dtFiltered.Clear();
+                    dtFiltered.Rows.Clear();
                     dtFiltered = dtSearched.Copy();
                 }
                 else
@@ -8660,36 +8669,39 @@ namespace doAnC_Sharp_Finale
 
                     Random random_index = new Random();
                     List<int> randomed_index = new List<int>();
-                    foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+                    for (int i = 0; i < this.panelShowResult_flowLayoutPanelResult_form1.Controls.Count; i++)
                     {
-                        if (control1 is PictureBox)
+                        string search_name = "pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_" + Convert.ToString(i + 1);
+                        foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
                         {
-                            int i = random_index.Next(0, dtAll.Rows.Count - 1);
-                            if (!randomed_index.Contains(i))
+                            if (control1 is PictureBox && control1.Name == search_name)
                             {
-                                randomed_index.Add(i);
-                                ((PictureBox)control1).Image = Image.FromFile(dtAll.Rows[i]["Path"].ToString());
-                                dtSearched.ImportRow(dtAll.Rows[i]);
+                                int j = random_index.Next(0, dtAll.Rows.Count - 1);
+                                if (randomed_index.Contains(i) == false)
+                                {
+                                    randomed_index.Add(j);
+                                    ((PictureBox)control1).Image = Image.FromFile(dtAll.Rows[j]["Path"].ToString());
+                                    dtSearched.ImportRow(dtAll.Rows[j]);
+                                }
                             }
                         }
                     }
                     dtFiltered.Clear();
                     dtFiltered = dtSearched.Copy();
                 }
-
-                materialComboBox1.Text = "Any";
-                materialComboBox2.Text = "Any";
-                materialComboBox3.Text = "Any";
-                materialComboBox4.Text = "Any";
-                ascendent_order_checkBox.Checked = false;
             }
+            materialComboBox1.Text = "Any";
+            materialComboBox2.Text = "Any";
+            materialComboBox3.Text = "Any";
+            materialComboBox4.Text = "Any";
+            ascendent_order_checkBox.Checked = false;
         }
 
 
 
         public void updateDtFiltered()
         {
-            dtFiltered.Clear();
+            dtFiltered.Rows.Clear();
             dtFiltered = dtSearched.Copy();
 
             // Filter by image size
@@ -8829,10 +8841,9 @@ namespace doAnC_Sharp_Finale
                 string search_name = "pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_" + Convert.ToString(i + 1);
                 foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
                 {
-                    if (control1 is PictureBox && control1.Name == search_name)
+                    if (control1 is PictureBox && ((PictureBox)control1).Name == search_name)
                     {
                         ((PictureBox)control1).Image = Image.FromFile(dtFiltered.Rows[i]["Path"].ToString());
-                        i += 1;
                     }
                 }
             }
