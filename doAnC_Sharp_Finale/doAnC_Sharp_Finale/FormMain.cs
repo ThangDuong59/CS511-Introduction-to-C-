@@ -8596,19 +8596,23 @@ namespace doAnC_Sharp_Finale
             Search_string = Search_string.ToUpper();
             Search_string = Search_string.Trim();
             List<string> vn_keywords = new List<string>(){"CAR", "INTERIOR", "MOTOBIKE", "FLOWER", "OCEANS", "FOREST" };
-            int max_score = 10000;
+            int min_score = 10000;
             string final_keyword = "";
             foreach (string keyword in vn_keywords)
             {
                 int dis = CalcLevenshteinDistance(Search_string, keyword);
-                richTextBox1.Text = Convert.ToString(dis);
-                if (dis < max_score)
+                if (dis < min_score)
                 {
                     final_keyword = keyword;
-                    max_score = dis;
+                    min_score = dis;
                 }
             }
-            Search_string = final_keyword;
+            double threshold = 0.2F;
+            if ((1.0 - ((double)min_score) / (double)Math.Max(Search_string.Length, final_keyword.Length) > threshold))
+            {
+                Search_string = final_keyword;
+            }
+
             flowLayoutPanel_searchResult.Visible = true;
             flowLayoutPanelTopics_form1.Visible = false;
             flowLayoutPanelDailyAndTrending_form1.Visible = false;
