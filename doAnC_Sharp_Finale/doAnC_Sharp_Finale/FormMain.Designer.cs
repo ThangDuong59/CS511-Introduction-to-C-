@@ -313,6 +313,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1 = new System.Windows.Forms.PictureBox();
+            this.button_click_panelSortBy_Back = new System.Windows.Forms.Button();
             this.panelDashBoard_form1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_trending)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_topics)).BeginInit();
@@ -1082,12 +1083,12 @@ namespace doAnC_Sharp_Finale
             // flowLayoutPanelDetailPicture_form1
             // 
             this.flowLayoutPanelDetailPicture_form1.AutoScroll = true;
-            this.flowLayoutPanelDetailPicture_form1.BackColor = System.Drawing.Color.Yellow;
+            this.flowLayoutPanelDetailPicture_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.flowLayoutPanelDetailPicture_form1.Controls.Add(this.panelDetailPicture_flowLayoutPanelDetailPicture_form1);
             this.flowLayoutPanelDetailPicture_form1.Controls.Add(this.panelSeeMore_flowLayoutPanelDetailPicture_form1);
-            this.flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(12, 74);
+            this.flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(3, 74);
             this.flowLayoutPanelDetailPicture_form1.Name = "flowLayoutPanelDetailPicture_form1";
-            this.flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(1274, 570);
+            this.flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(1283, 570);
             this.flowLayoutPanelDetailPicture_form1.TabIndex = 7;
             this.flowLayoutPanelDetailPicture_form1.Visible = false;
             // 
@@ -1124,7 +1125,7 @@ namespace doAnC_Sharp_Finale
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(3, 3);
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Name = "panelDetailPicture_flowLayoutPanelDetailPicture_form1";
-            this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(825, 799);
+            this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(830, 799);
             this.panelDetailPicture_flowLayoutPanelDetailPicture_form1.TabIndex = 0;
             // 
             // button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE
@@ -1290,7 +1291,7 @@ namespace doAnC_Sharp_Finale
             this.button_click_panelDetailPicture_Comments.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.button_click_panelDetailPicture_Comments.Location = new System.Drawing.Point(219, 595);
             this.button_click_panelDetailPicture_Comments.Name = "button_click_panelDetailPicture_Comments";
-            this.button_click_panelDetailPicture_Comments.Size = new System.Drawing.Size(152, 36);
+            this.button_click_panelDetailPicture_Comments.Size = new System.Drawing.Size(145, 36);
             this.button_click_panelDetailPicture_Comments.TabIndex = 19;
             this.button_click_panelDetailPicture_Comments.Text = "1,8K Comments";
             this.button_click_panelDetailPicture_Comments.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1558,7 +1559,7 @@ namespace doAnC_Sharp_Finale
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Controls.Add(this.pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_6);
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Controls.Add(this.pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_5);
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Controls.Add(this.pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_4);
-            this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(834, 3);
+            this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Location = new System.Drawing.Point(839, 3);
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Name = "panelSeeMore_flowLayoutPanelDetailPicture_form1";
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.Size = new System.Drawing.Size(406, 943);
             this.panelSeeMore_flowLayoutPanelDetailPicture_form1.TabIndex = 1;
@@ -1938,12 +1939,12 @@ namespace doAnC_Sharp_Finale
             // 
             // panelfullScreen_form1
             // 
-            this.panelfullScreen_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panelfullScreen_form1.BackColor = System.Drawing.Color.Gray;
             this.panelfullScreen_form1.Controls.Add(this.button_click_panelfullScreen_form1_exitFullScreen);
             this.panelfullScreen_form1.Controls.Add(this.pictureBox_panelfullScreen_form1_fullScreen);
-            this.panelfullScreen_form1.Location = new System.Drawing.Point(1045, 71);
+            this.panelfullScreen_form1.Location = new System.Drawing.Point(3, 71);
             this.panelfullScreen_form1.Name = "panelfullScreen_form1";
-            this.panelfullScreen_form1.Size = new System.Drawing.Size(10, 573);
+            this.panelfullScreen_form1.Size = new System.Drawing.Size(1283, 573);
             this.panelfullScreen_form1.TabIndex = 12;
             this.panelfullScreen_form1.Visible = false;
             // 
@@ -1974,9 +1975,9 @@ namespace doAnC_Sharp_Finale
             this.flowLayoutPanelShowingAuthorDetail_form1.AutoScroll = true;
             this.flowLayoutPanelShowingAuthorDetail_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.flowLayoutPanelShowingAuthorDetail_form1.Controls.Add(this.panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1);
-            this.flowLayoutPanelShowingAuthorDetail_form1.Location = new System.Drawing.Point(47, 71);
+            this.flowLayoutPanelShowingAuthorDetail_form1.Location = new System.Drawing.Point(3, 71);
             this.flowLayoutPanelShowingAuthorDetail_form1.Name = "flowLayoutPanelShowingAuthorDetail_form1";
-            this.flowLayoutPanelShowingAuthorDetail_form1.Size = new System.Drawing.Size(34, 573);
+            this.flowLayoutPanelShowingAuthorDetail_form1.Size = new System.Drawing.Size(1283, 573);
             this.flowLayoutPanelShowingAuthorDetail_form1.TabIndex = 13;
             this.flowLayoutPanelShowingAuthorDetail_form1.Visible = false;
             // 
@@ -1998,7 +1999,7 @@ namespace doAnC_Sharp_Finale
             this.panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Controls.Add(this.pictureBox_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorBackground);
             this.panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Location = new System.Drawing.Point(3, 3);
             this.panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Name = "panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1";
-            this.panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Size = new System.Drawing.Size(1148, 1171);
+            this.panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Size = new System.Drawing.Size(1265, 1316);
             this.panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.TabIndex = 0;
             // 
             // button_cliclk_panelDetailAuthor_flowLayoutPanelDetailAuthor_back
@@ -2009,7 +2010,7 @@ namespace doAnC_Sharp_Finale
             this.button_cliclk_panelDetailAuthor_flowLayoutPanelDetailAuthor_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_cliclk_panelDetailAuthor_flowLayoutPanelDetailAuthor_back.Location = new System.Drawing.Point(1237, 1257);
             this.button_cliclk_panelDetailAuthor_flowLayoutPanelDetailAuthor_back.Name = "button_cliclk_panelDetailAuthor_flowLayoutPanelDetailAuthor_back";
-            this.button_cliclk_panelDetailAuthor_flowLayoutPanelDetailAuthor_back.Size = new System.Drawing.Size(28, 38);
+            this.button_cliclk_panelDetailAuthor_flowLayoutPanelDetailAuthor_back.Size = new System.Drawing.Size(24, 38);
             this.button_cliclk_panelDetailAuthor_flowLayoutPanelDetailAuthor_back.TabIndex = 12;
             this.button_cliclk_panelDetailAuthor_flowLayoutPanelDetailAuthor_back.UseVisualStyleBackColor = true;
             this.button_cliclk_panelDetailAuthor_flowLayoutPanelDetailAuthor_back.Click += new System.EventHandler(this.button_cliclk_panelDetailAuthor_flowLayoutPanelDetailAuthor_back_Click);
@@ -2051,7 +2052,7 @@ namespace doAnC_Sharp_Finale
             this.panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Controls.Add(this.label29);
             this.panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Location = new System.Drawing.Point(3, 559);
             this.panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Name = "panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1";
-            this.panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Size = new System.Drawing.Size(17, 752);
+            this.panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Size = new System.Drawing.Size(1233, 752);
             this.panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.TabIndex = 10;
             this.panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelGallery_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_Paint);
             // 
@@ -2691,7 +2692,7 @@ namespace doAnC_Sharp_Finale
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button3.ForeColor = System.Drawing.Color.DimGray;
             this.button3.Location = new System.Drawing.Point(216, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 50);
@@ -2705,7 +2706,7 @@ namespace doAnC_Sharp_Finale
             this.button_click_panelFunction_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_Gallery.FlatAppearance.BorderSize = 0;
             this.button_click_panelFunction_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_Gallery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_click_panelFunction_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_Gallery.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.button_click_panelFunction_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_Gallery.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button_click_panelFunction_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_Gallery.ForeColor = System.Drawing.Color.DimGray;
             this.button_click_panelFunction_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_Gallery.Location = new System.Drawing.Point(119, 3);
             this.button_click_panelFunction_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_Gallery.Name = "button_click_panelFunction_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorD" +
     "etail_form1_Gallery";
@@ -2721,7 +2722,7 @@ namespace doAnC_Sharp_Finale
             this.button_click_panelFunction_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_Home.FlatAppearance.BorderSize = 0;
             this.button_click_panelFunction_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_click_panelFunction_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_Home.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button_click_panelFunction_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_Home.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button_click_panelFunction_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_Home.ForeColor = System.Drawing.Color.DimGray;
             this.button_click_panelFunction_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_Home.Location = new System.Drawing.Point(37, 3);
             this.button_click_panelFunction_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_Home.Name = "button_click_panelFunction_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorD" +
     "etail_form1_Home";
@@ -2824,7 +2825,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorBackground.Location = new System.Drawing.Point(0, 3);
             this.pictureBox_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorBackground.Name = "pictureBox_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_show" +
     "ingAuthorBackground";
-            this.pictureBox_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorBackground.Size = new System.Drawing.Size(1265, 493);
+            this.pictureBox_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorBackground.Size = new System.Drawing.Size(1261, 493);
             this.pictureBox_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorBackground.TabIndex = 0;
             this.pictureBox_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorBackground.TabStop = false;
@@ -2846,9 +2847,9 @@ namespace doAnC_Sharp_Finale
             this.flowLayoutPanelDailyAndTrending_form1.Controls.Add(this.pictureBox_click_flowLayoutPanelDailyAndTrending_form1_showingDailyandTrending_11);
             this.flowLayoutPanelDailyAndTrending_form1.Controls.Add(this.pictureBox_click_flowLayoutPanelDailyAndTrending_form1_showingDailyandTrending_12);
             this.flowLayoutPanelDailyAndTrending_form1.Controls.Add(this.panelPageChange_flowLayouyPanelDailyAndTrending_form1);
-            this.flowLayoutPanelDailyAndTrending_form1.Location = new System.Drawing.Point(1131, 71);
+            this.flowLayoutPanelDailyAndTrending_form1.Location = new System.Drawing.Point(43, 71);
             this.flowLayoutPanelDailyAndTrending_form1.Name = "flowLayoutPanelDailyAndTrending_form1";
-            this.flowLayoutPanelDailyAndTrending_form1.Size = new System.Drawing.Size(28, 573);
+            this.flowLayoutPanelDailyAndTrending_form1.Size = new System.Drawing.Size(1243, 573);
             this.flowLayoutPanelDailyAndTrending_form1.TabIndex = 14;
             this.flowLayoutPanelDailyAndTrending_form1.Visible = false;
             // 
@@ -3053,18 +3054,18 @@ namespace doAnC_Sharp_Finale
             // flowLayoutPanelTopics_form1
             // 
             this.flowLayoutPanelTopics_form1.AutoScroll = true;
-            this.flowLayoutPanelTopics_form1.BackColor = System.Drawing.Color.LemonChiffon;
+            this.flowLayoutPanelTopics_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.flowLayoutPanelTopics_form1.Controls.Add(this.panelTopTopics_flowLayoutPanelTopics_form1);
             this.flowLayoutPanelTopics_form1.Controls.Add(this.panelAllTopics_flowLayoutPanelTopics_form1);
-            this.flowLayoutPanelTopics_form1.Location = new System.Drawing.Point(1210, 71);
+            this.flowLayoutPanelTopics_form1.Location = new System.Drawing.Point(43, 71);
             this.flowLayoutPanelTopics_form1.Name = "flowLayoutPanelTopics_form1";
-            this.flowLayoutPanelTopics_form1.Size = new System.Drawing.Size(19, 443);
+            this.flowLayoutPanelTopics_form1.Size = new System.Drawing.Size(1243, 573);
             this.flowLayoutPanelTopics_form1.TabIndex = 15;
             this.flowLayoutPanelTopics_form1.Visible = false;
             // 
             // panelTopTopics_flowLayoutPanelTopics_form1
             // 
-            this.panelTopTopics_flowLayoutPanelTopics_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panelTopTopics_flowLayoutPanelTopics_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelTopTopics_flowLayoutPanelTopics_form1.Controls.Add(this.label34);
             this.panelTopTopics_flowLayoutPanelTopics_form1.Controls.Add(this.label33);
             this.panelTopTopics_flowLayoutPanelTopics_form1.Controls.Add(this.label32);
@@ -3076,14 +3077,14 @@ namespace doAnC_Sharp_Finale
             this.panelTopTopics_flowLayoutPanelTopics_form1.Controls.Add(this.label30);
             this.panelTopTopics_flowLayoutPanelTopics_form1.Location = new System.Drawing.Point(3, 3);
             this.panelTopTopics_flowLayoutPanelTopics_form1.Name = "panelTopTopics_flowLayoutPanelTopics_form1";
-            this.panelTopTopics_flowLayoutPanelTopics_form1.Size = new System.Drawing.Size(10, 317);
+            this.panelTopTopics_flowLayoutPanelTopics_form1.Size = new System.Drawing.Size(1228, 309);
             this.panelTopTopics_flowLayoutPanelTopics_form1.TabIndex = 1;
             // 
             // label34
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label34.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label34.Location = new System.Drawing.Point(441, 121);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(59, 21);
@@ -3094,7 +3095,7 @@ namespace doAnC_Sharp_Finale
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label33.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label33.Location = new System.Drawing.Point(252, 121);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(63, 21);
@@ -3105,7 +3106,7 @@ namespace doAnC_Sharp_Finale
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label32.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label32.Location = new System.Drawing.Point(70, 121);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(34, 21);
@@ -3160,8 +3161,9 @@ namespace doAnC_Sharp_Finale
             // label31
             // 
             this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label31.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label31.Location = new System.Drawing.Point(3, 81);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(115, 30);
@@ -3181,7 +3183,7 @@ namespace doAnC_Sharp_Finale
             // 
             // panelAllTopics_flowLayoutPanelTopics_form1
             // 
-            this.panelAllTopics_flowLayoutPanelTopics_form1.BackColor = System.Drawing.Color.Red;
+            this.panelAllTopics_flowLayoutPanelTopics_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelAllTopics_flowLayoutPanelTopics_form1.Controls.Add(this.label40);
             this.panelAllTopics_flowLayoutPanelTopics_form1.Controls.Add(this.label39);
             this.panelAllTopics_flowLayoutPanelTopics_form1.Controls.Add(this.label38);
@@ -3194,9 +3196,9 @@ namespace doAnC_Sharp_Finale
             this.panelAllTopics_flowLayoutPanelTopics_form1.Controls.Add(this.pictureBox_click_panelAllTopics_flowLayoutPanelTopics_form1_categorizedForest);
             this.panelAllTopics_flowLayoutPanelTopics_form1.Controls.Add(this.pictureBox_click_panelAllTopics_flowLayoutPanelTopics_form1_categorizedCar);
             this.panelAllTopics_flowLayoutPanelTopics_form1.Controls.Add(this.pictureBox_click_panelAllTopics_flowLayoutPanelTopics_form1_categorizedFlower);
-            this.panelAllTopics_flowLayoutPanelTopics_form1.Location = new System.Drawing.Point(3, 326);
+            this.panelAllTopics_flowLayoutPanelTopics_form1.Location = new System.Drawing.Point(3, 318);
             this.panelAllTopics_flowLayoutPanelTopics_form1.Name = "panelAllTopics_flowLayoutPanelTopics_form1";
-            this.panelAllTopics_flowLayoutPanelTopics_form1.Size = new System.Drawing.Size(10, 396);
+            this.panelAllTopics_flowLayoutPanelTopics_form1.Size = new System.Drawing.Size(1228, 251);
             this.panelAllTopics_flowLayoutPanelTopics_form1.TabIndex = 2;
             // 
             // label40
@@ -3342,21 +3344,21 @@ namespace doAnC_Sharp_Finale
             this.flowLayoutPanelDetailTopics_form1.BackColor = System.Drawing.Color.Tan;
             this.flowLayoutPanelDetailTopics_form1.Controls.Add(this.panelBackGround_flowLayoutPanelDetailTopics_form1);
             this.flowLayoutPanelDetailTopics_form1.Controls.Add(this.panelShowPics_flowLayoutPanelDetailTopics_form1);
-            this.flowLayoutPanelDetailTopics_form1.Location = new System.Drawing.Point(1185, 71);
+            this.flowLayoutPanelDetailTopics_form1.Location = new System.Drawing.Point(3, 71);
             this.flowLayoutPanelDetailTopics_form1.Name = "flowLayoutPanelDetailTopics_form1";
-            this.flowLayoutPanelDetailTopics_form1.Size = new System.Drawing.Size(15, 544);
+            this.flowLayoutPanelDetailTopics_form1.Size = new System.Drawing.Size(1283, 573);
             this.flowLayoutPanelDetailTopics_form1.TabIndex = 16;
             this.flowLayoutPanelDetailTopics_form1.Visible = false;
             // 
             // panelBackGround_flowLayoutPanelDetailTopics_form1
             // 
-            this.panelBackGround_flowLayoutPanelDetailTopics_form1.BackColor = System.Drawing.Color.Sienna;
+            this.panelBackGround_flowLayoutPanelDetailTopics_form1.BackColor = System.Drawing.Color.Tan;
             this.panelBackGround_flowLayoutPanelDetailTopics_form1.Controls.Add(this.label_panelBackGround_flowLayoutPanelDetailTopics_form1_describetopics);
             this.panelBackGround_flowLayoutPanelDetailTopics_form1.Controls.Add(this.label_panelBackGround_flowLayoutPanelDetailTopics_form1_nameTopics);
             this.panelBackGround_flowLayoutPanelDetailTopics_form1.Controls.Add(this.pictureBox_panelBackGround_flowLayoutPanelDetailTopics_form1_showingBackGroundTopics);
             this.panelBackGround_flowLayoutPanelDetailTopics_form1.Location = new System.Drawing.Point(3, 3);
             this.panelBackGround_flowLayoutPanelDetailTopics_form1.Name = "panelBackGround_flowLayoutPanelDetailTopics_form1";
-            this.panelBackGround_flowLayoutPanelDetailTopics_form1.Size = new System.Drawing.Size(10, 502);
+            this.panelBackGround_flowLayoutPanelDetailTopics_form1.Size = new System.Drawing.Size(1270, 496);
             this.panelBackGround_flowLayoutPanelDetailTopics_form1.TabIndex = 1;
             // 
             // label_panelBackGround_flowLayoutPanelDetailTopics_form1_describetopics
@@ -3386,17 +3388,17 @@ namespace doAnC_Sharp_Finale
             // 
             this.pictureBox_panelBackGround_flowLayoutPanelDetailTopics_form1_showingBackGroundTopics.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_panelBackGround_flowLayoutPanelDetailTopics_form1_showingBackGroundTop" +
         "ics.Image")));
-            this.pictureBox_panelBackGround_flowLayoutPanelDetailTopics_form1_showingBackGroundTopics.Location = new System.Drawing.Point(12, -7);
+            this.pictureBox_panelBackGround_flowLayoutPanelDetailTopics_form1_showingBackGroundTopics.Location = new System.Drawing.Point(12, 4);
             this.pictureBox_panelBackGround_flowLayoutPanelDetailTopics_form1_showingBackGroundTopics.Name = "pictureBox_panelBackGround_flowLayoutPanelDetailTopics_form1_showingBackGroundTop" +
     "ics";
-            this.pictureBox_panelBackGround_flowLayoutPanelDetailTopics_form1_showingBackGroundTopics.Size = new System.Drawing.Size(1250, 498);
+            this.pictureBox_panelBackGround_flowLayoutPanelDetailTopics_form1_showingBackGroundTopics.Size = new System.Drawing.Size(1258, 487);
             this.pictureBox_panelBackGround_flowLayoutPanelDetailTopics_form1_showingBackGroundTopics.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_panelBackGround_flowLayoutPanelDetailTopics_form1_showingBackGroundTopics.TabIndex = 0;
             this.pictureBox_panelBackGround_flowLayoutPanelDetailTopics_form1_showingBackGroundTopics.TabStop = false;
             // 
             // panelShowPics_flowLayoutPanelDetailTopics_form1
             // 
-            this.panelShowPics_flowLayoutPanelDetailTopics_form1.BackColor = System.Drawing.Color.Moccasin;
+            this.panelShowPics_flowLayoutPanelDetailTopics_form1.BackColor = System.Drawing.Color.PapayaWhip;
             this.panelShowPics_flowLayoutPanelDetailTopics_form1.Controls.Add(this.button_click_panelShowPics_flowLayoutPanelDetailTopics_form1_back);
             this.panelShowPics_flowLayoutPanelDetailTopics_form1.Controls.Add(this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_12);
             this.panelShowPics_flowLayoutPanelDetailTopics_form1.Controls.Add(this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_11);
@@ -3410,9 +3412,9 @@ namespace doAnC_Sharp_Finale
             this.panelShowPics_flowLayoutPanelDetailTopics_form1.Controls.Add(this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_3);
             this.panelShowPics_flowLayoutPanelDetailTopics_form1.Controls.Add(this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_2);
             this.panelShowPics_flowLayoutPanelDetailTopics_form1.Controls.Add(this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_1);
-            this.panelShowPics_flowLayoutPanelDetailTopics_form1.Location = new System.Drawing.Point(3, 511);
+            this.panelShowPics_flowLayoutPanelDetailTopics_form1.Location = new System.Drawing.Point(3, 505);
             this.panelShowPics_flowLayoutPanelDetailTopics_form1.Name = "panelShowPics_flowLayoutPanelDetailTopics_form1";
-            this.panelShowPics_flowLayoutPanelDetailTopics_form1.Size = new System.Drawing.Size(1015, 405);
+            this.panelShowPics_flowLayoutPanelDetailTopics_form1.Size = new System.Drawing.Size(1265, 422);
             this.panelShowPics_flowLayoutPanelDetailTopics_form1.TabIndex = 2;
             // 
             // button_click_panelShowPics_flowLayoutPanelDetailTopics_form1_back
@@ -3591,6 +3593,7 @@ namespace doAnC_Sharp_Finale
             // panelSortBy_flowLayoutPanelResult_form1
             // 
             this.panelSortBy_flowLayoutPanelResult_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.button_click_panelSortBy_Back);
             this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label41);
             this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label17);
             this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label9);
@@ -3784,7 +3787,7 @@ namespace doAnC_Sharp_Finale
             // 
             // panelShowResult_flowLayoutPanelResult_form1
             // 
-            this.panelShowResult_flowLayoutPanelResult_form1.BackColor = System.Drawing.Color.ForestGreen;
+            this.panelShowResult_flowLayoutPanelResult_form1.BackColor = System.Drawing.Color.Silver;
             this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30);
             this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_29);
             this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_28);
@@ -3817,14 +3820,14 @@ namespace doAnC_Sharp_Finale
             this.panelShowResult_flowLayoutPanelResult_form1.Controls.Add(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1);
             this.panelShowResult_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(3, 69);
             this.panelShowResult_flowLayoutPanelResult_form1.Name = "panelShowResult_flowLayoutPanelResult_form1";
-            this.panelShowResult_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(1258, 1195);
+            this.panelShowResult_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(1261, 1201);
             this.panelShowResult_flowLayoutPanelResult_form1.TabIndex = 1;
             // 
             // pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30
             // 
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30.Location = new System.Drawing.Point(1033, 979);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30.Name = "pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30";
-            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30.Size = new System.Drawing.Size(178, 194);
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30.Size = new System.Drawing.Size(219, 194);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30.TabIndex = 29;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30.TabStop = false;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30_Click);
@@ -3869,7 +3872,7 @@ namespace doAnC_Sharp_Finale
             // 
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_25.Location = new System.Drawing.Point(923, 767);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_25.Name = "pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_25";
-            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_25.Size = new System.Drawing.Size(288, 201);
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_25.Size = new System.Drawing.Size(329, 201);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_25.TabIndex = 24;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_25.TabStop = false;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_25.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_25_Click);
@@ -3914,7 +3917,7 @@ namespace doAnC_Sharp_Finale
             // 
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_20.Location = new System.Drawing.Point(1010, 540);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_20.Name = "pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_20";
-            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_20.Size = new System.Drawing.Size(201, 221);
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_20.Size = new System.Drawing.Size(242, 221);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_20.TabIndex = 19;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_20.TabStop = false;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_20.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_20_Click);
@@ -3959,7 +3962,7 @@ namespace doAnC_Sharp_Finale
             // 
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_15.Location = new System.Drawing.Point(971, 369);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_15.Name = "pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_15";
-            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_15.Size = new System.Drawing.Size(237, 166);
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_15.Size = new System.Drawing.Size(281, 166);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_15.TabIndex = 14;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_15.TabStop = false;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_15.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_15_Click);
@@ -4004,7 +4007,7 @@ namespace doAnC_Sharp_Finale
             // 
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_10.Location = new System.Drawing.Point(971, 189);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_10.Name = "pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_10";
-            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_10.Size = new System.Drawing.Size(237, 174);
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_10.Size = new System.Drawing.Size(268, 174);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_10.TabIndex = 9;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_10.TabStop = false;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_10.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_10_Click);
@@ -4049,7 +4052,7 @@ namespace doAnC_Sharp_Finale
             // 
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_5.Location = new System.Drawing.Point(946, 3);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_5.Name = "pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_5";
-            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_5.Size = new System.Drawing.Size(262, 180);
+            this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_5.Size = new System.Drawing.Size(296, 180);
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_5.TabIndex = 4;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_5.TabStop = false;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_5.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_5_Click);
@@ -4092,6 +4095,20 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.TabIndex = 0;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.TabStop = false;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1_Click);
+            // 
+            // button_click_panelSortBy_Back
+            // 
+            this.button_click_panelSortBy_Back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_click_panelSortBy_Back.BackgroundImage")));
+            this.button_click_panelSortBy_Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button_click_panelSortBy_Back.FlatAppearance.BorderSize = 0;
+            this.button_click_panelSortBy_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_click_panelSortBy_Back.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button_click_panelSortBy_Back.Location = new System.Drawing.Point(1213, 16);
+            this.button_click_panelSortBy_Back.Name = "button_click_panelSortBy_Back";
+            this.button_click_panelSortBy_Back.Size = new System.Drawing.Size(23, 29);
+            this.button_click_panelSortBy_Back.TabIndex = 11;
+            this.button_click_panelSortBy_Back.UseVisualStyleBackColor = true;
+            this.button_click_panelSortBy_Back.Click += new System.EventHandler(this.button_click_panelSortBy_Back_Click);
             // 
             // FormMain
             // 
@@ -4596,6 +4613,7 @@ namespace doAnC_Sharp_Finale
         private ReaLTaiizor.Controls.MaterialComboBox materialComboBox2;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Button button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE;
+        private System.Windows.Forms.Button button_click_panelSortBy_Back;
     }
 }
 
