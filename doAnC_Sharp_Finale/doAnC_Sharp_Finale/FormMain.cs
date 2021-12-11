@@ -9583,6 +9583,19 @@ namespace doAnC_Sharp_Finale
         {
             updateDtFiltered();
         }
+
+        private void button_click_panelFunction_searchByImage_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            // image filters  
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png;)|*.jpg; *.jpeg; *.gif; *.bmp; *.png;";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+
+                Image img = new Bitmap(open.FileName);
+                flowLayoutPanel_searchResult.Visible = true;
+            }
+        }
     }
 }
 
