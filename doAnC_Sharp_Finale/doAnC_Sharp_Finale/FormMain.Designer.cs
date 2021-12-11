@@ -272,6 +272,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowPics_flowLayoutPanelDetailTopics_form1_showingTopics_1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel_searchResult = new System.Windows.Forms.FlowLayoutPanel();
             this.panelSortBy_flowLayoutPanelResult_form1 = new System.Windows.Forms.Panel();
+            this.button_click_panelSortBy_Back = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -313,7 +314,6 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1 = new System.Windows.Forms.PictureBox();
-            this.button_click_panelSortBy_Back = new System.Windows.Forms.Button();
             this.panelDashBoard_form1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_trending)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_topics)).BeginInit();
@@ -3609,6 +3609,20 @@ namespace doAnC_Sharp_Finale
             this.panelSortBy_flowLayoutPanelResult_form1.Size = new System.Drawing.Size(1258, 60);
             this.panelSortBy_flowLayoutPanelResult_form1.TabIndex = 0;
             // 
+            // button_click_panelSortBy_Back
+            // 
+            this.button_click_panelSortBy_Back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_click_panelSortBy_Back.BackgroundImage")));
+            this.button_click_panelSortBy_Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button_click_panelSortBy_Back.FlatAppearance.BorderSize = 0;
+            this.button_click_panelSortBy_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_click_panelSortBy_Back.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button_click_panelSortBy_Back.Location = new System.Drawing.Point(1213, 16);
+            this.button_click_panelSortBy_Back.Name = "button_click_panelSortBy_Back";
+            this.button_click_panelSortBy_Back.Size = new System.Drawing.Size(23, 29);
+            this.button_click_panelSortBy_Back.TabIndex = 11;
+            this.button_click_panelSortBy_Back.UseVisualStyleBackColor = true;
+            this.button_click_panelSortBy_Back.Click += new System.EventHandler(this.button_click_panelSortBy_Back_Click);
+            // 
             // label41
             // 
             this.label41.AutoSize = true;
@@ -3669,7 +3683,7 @@ namespace doAnC_Sharp_Finale
             this.materialComboBox4.ItemHeight = 43;
             this.materialComboBox4.Items.AddRange(new object[] {
             "Any",
-            "Free ",
+            "Free",
             "Premium"});
             this.materialComboBox4.Location = new System.Drawing.Point(1013, 5);
             this.materialComboBox4.MaxDropDownItems = 4;
@@ -3695,7 +3709,7 @@ namespace doAnC_Sharp_Finale
             this.materialComboBox3.IntegralHeight = false;
             this.materialComboBox3.ItemHeight = 43;
             this.materialComboBox3.Items.AddRange(new object[] {
-            "Any ",
+            "Any",
             "Favorites",
             "Comments",
             "Views"});
@@ -3751,8 +3765,8 @@ namespace doAnC_Sharp_Finale
             this.materialComboBox1.ItemHeight = 43;
             this.materialComboBox1.Items.AddRange(new object[] {
             "Any",
-            "Large ",
-            "Medium ",
+            "Large",
+            "Medium",
             "Small"});
             this.materialComboBox1.Location = new System.Drawing.Point(310, 6);
             this.materialComboBox1.MaxDropDownItems = 4;
@@ -4095,20 +4109,6 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.TabIndex = 0;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.TabStop = false;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1_Click);
-            // 
-            // button_click_panelSortBy_Back
-            // 
-            this.button_click_panelSortBy_Back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_click_panelSortBy_Back.BackgroundImage")));
-            this.button_click_panelSortBy_Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_click_panelSortBy_Back.FlatAppearance.BorderSize = 0;
-            this.button_click_panelSortBy_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_click_panelSortBy_Back.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button_click_panelSortBy_Back.Location = new System.Drawing.Point(1213, 16);
-            this.button_click_panelSortBy_Back.Name = "button_click_panelSortBy_Back";
-            this.button_click_panelSortBy_Back.Size = new System.Drawing.Size(23, 29);
-            this.button_click_panelSortBy_Back.TabIndex = 11;
-            this.button_click_panelSortBy_Back.UseVisualStyleBackColor = true;
-            this.button_click_panelSortBy_Back.Click += new System.EventHandler(this.button_click_panelSortBy_Back_Click);
             // 
             // FormMain
             // 

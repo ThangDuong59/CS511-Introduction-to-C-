@@ -8557,15 +8557,39 @@ namespace doAnC_Sharp_Finale
         }
         private void button_click_panelFuntion_form1_search_Click(object sender, EventArgs e)
         {
+            string Search_string = richTextBox_panelFunction_form1_search.Text;
+            Search_string = Search_string.ToUpper();
+            Search_string = Search_string.Trim();
+            flowLayoutPanel_searchResult.Visible = true;
+            flowLayoutPanelTopics_form1.Visible = false;
+            flowLayoutPanelDailyAndTrending_form1.Visible = false;
+            string search_expression = "Categorized='" + Search_string + "'";
+            DataRow[] Found_Rows = dtAll.Select(search_expression);
+            int i = 0;
+            foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+            {
+                if (control1 is PictureBox)
+                {
+                    ((PictureBox)control1).Image = Image.FromFile(Found_Rows[i]["Path"].ToString());
+                    i += 1;
+                }
+            }
+            dtSearched = new DataTable();
+            dtSearched = Found_Rows.CopyToDataTable();
+            dtFiltered.Clear();
+            dtFiltered = dtSearched.Copy();
 
+            materialComboBox1.Text = "Any";
+            materialComboBox2.Text = "Any";
+            materialComboBox3.Text = "Any";
+            materialComboBox4.Text = "Any";
         }
 
 
         private void richTextBox_panelFunction_form1_search_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyCode == Keys.Enter)
-            {
-                
+            {  
                 string Search_string = richTextBox_panelFunction_form1_search.Text;
                 Search_string = Search_string.ToUpper();
                 Search_string = Search_string.Trim();
@@ -8585,6 +8609,13 @@ namespace doAnC_Sharp_Finale
                 }
                 dtSearched = new DataTable();
                 dtSearched = Found_Rows.CopyToDataTable();
+                dtFiltered.Clear();
+                dtFiltered = dtSearched.Copy();
+
+                materialComboBox1.Text = "Any";
+                materialComboBox2.Text = "Any";
+                materialComboBox3.Text = "Any";
+                materialComboBox4.Text = "Any";
             }
         }
 
@@ -8596,7 +8627,7 @@ namespace doAnC_Sharp_Finale
             dtFiltered = dtSearched.Copy();
 
             // Filter by image size
-            if(materialComboBox1.Text == "Large")
+            if(materialComboBox1.Text.Trim() == "Large")
             {
                 int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch ; j++)
@@ -8606,10 +8637,11 @@ namespace doAnC_Sharp_Finale
                     {
                         dtFiltered.Rows.RemoveAt(j);
                         Count_rows_dtSearch -= 1;
+                        j -= 1;
                     }    
                 }
             }
-            else if(materialComboBox1.Text == "Medium")
+            else if(materialComboBox1.Text.Trim() == "Medium")
             {
                 int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch; j++)
@@ -8619,11 +8651,12 @@ namespace doAnC_Sharp_Finale
                     {
                         dtFiltered.Rows.RemoveAt(j);
                         Count_rows_dtSearch -= 1;
+                        j -= 1;
                     }
 
                 }
             }
-            else if (materialComboBox1.Text == "Small")
+            else if (materialComboBox1.Text.Trim() == "Small")
             {
                 int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch; j++)
@@ -8633,13 +8666,14 @@ namespace doAnC_Sharp_Finale
                     {
                         dtFiltered.Rows.RemoveAt(j);
                         Count_rows_dtSearch -= 1;
+                        j -= 1;
                     }
 
                 }
             }
 
             // Filter by image format
-            if (materialComboBox2.Text == "JPG")
+            if (materialComboBox2.Text.Trim() == "JPG")
             {
                 int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch; j++)
@@ -8648,10 +8682,11 @@ namespace doAnC_Sharp_Finale
                     {
                         dtFiltered.Rows.RemoveAt(j);
                         Count_rows_dtSearch -= 1;
+                        j -= 1;
                     }
                 }
             }
-            else if (materialComboBox2.Text == "PNG")
+            else if (materialComboBox2.Text.Trim() == "PNG")
             {
                 int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch; j++)
@@ -8660,26 +8695,13 @@ namespace doAnC_Sharp_Finale
                     {
                         dtFiltered.Rows.RemoveAt(j);
                         Count_rows_dtSearch -= 1;
+                        j -= 1;
                     }
                 }
             }
 
-            // Filter by ranking
-            if (materialComboBox3.Text == "Favorites")
-            {
-                dtFiltered.DefaultView.Sort = "Favorites DESC";
-            }
-            else if (materialComboBox3.Text == "Comments")
-            {
-                dtFiltered.DefaultView.Sort = "Comments DESC";
-            }
-            else if (materialComboBox3.Text == "Views")
-            {
-                dtFiltered.DefaultView.Sort = "Views DESC";
-            }
-
             // Filter by image price
-            if (materialComboBox4.Text == "Free")
+            if (materialComboBox4.Text.Trim() == "Free")
             {
                 int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch; j++)
@@ -8688,10 +8710,11 @@ namespace doAnC_Sharp_Finale
                     {
                         dtFiltered.Rows.RemoveAt(j);
                         Count_rows_dtSearch -= 1;
+                        j -= 1;
                     }
                 }
             }
-            else if (materialComboBox4.Text == "Premium")
+            else if (materialComboBox4.Text.Trim() == "Premium")
             {
                 int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch; j++)
@@ -8700,8 +8723,29 @@ namespace doAnC_Sharp_Finale
                     {
                         dtFiltered.Rows.RemoveAt(j);
                         Count_rows_dtSearch -= 1;
+                        j -= 1;
                     }
                 }
+            }
+
+            // Filter by ranking
+            if (materialComboBox3.Text.Trim() == "Favorites")
+            {
+                DataView dv = dtFiltered.DefaultView;
+                dv.Sort = "Favorites DESC";
+                dtFiltered = dv.ToTable();
+            }
+            else if (materialComboBox3.Text.Trim() == "Comments")
+            {
+                DataView dv = dtFiltered.DefaultView;
+                dv.Sort = "Comments DESC";
+                dtFiltered = dv.ToTable();
+            }
+            else if (materialComboBox3.Text.Trim() == "Views")
+            {
+                DataView dv = dtFiltered.DefaultView;
+                dv.Sort = "Views DESC";
+                dtFiltered = dv.ToTable();
             }
 
             for (int i = 0; i < dtFiltered.Rows.Count; i++)
@@ -8751,6 +8795,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[0]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[0]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[0]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[0]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -8772,6 +8817,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[1]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[1]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[1]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[1]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -8794,6 +8840,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[2]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[2]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[2]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[2]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -8816,6 +8863,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_4.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[3]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[3]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[3]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[3]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -8838,6 +8886,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_5.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[4]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[4]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[4]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[4]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -8860,6 +8909,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_6.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[5]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[5]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[5]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[5]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -8882,6 +8932,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_7.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[6]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[6]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[6]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[6]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -8904,6 +8955,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_8.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[7]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[7]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[7]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[7]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -8926,6 +8978,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_9.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[8]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[8]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[8]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[8]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -8948,6 +9001,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_10.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[9]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[9]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[9]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[9]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -8970,6 +9024,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_11.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[10]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[10]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[10]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[10]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -8992,6 +9047,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_12.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[11]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[11]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[11]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[11]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9015,6 +9071,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_13.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[12]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[12]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[12]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[12]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9038,6 +9095,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_14.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[13]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[13]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[13]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[13]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9060,6 +9118,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_15.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[14]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[14]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[14]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[14]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9082,6 +9141,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_16.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[15]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[15]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[15]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[15]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9104,6 +9164,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_17.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[16]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[16]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[16]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[16]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9126,6 +9187,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_18.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[17]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[17]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[17]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[17]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9148,6 +9210,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_19.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[18]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[18]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[18]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[18]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9170,6 +9233,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_20.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[19]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[19]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[19]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[19]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9192,6 +9256,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_21.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[20]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[20]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[20]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[20]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9214,6 +9279,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_22.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[21]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[21]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[21]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[21]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9236,6 +9302,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_23.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[22]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[22]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[22]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[22]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9258,6 +9325,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_24.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[23]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[23]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[23]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[23]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9280,6 +9348,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_25.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[24]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[24]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[24]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[24]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9302,6 +9371,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_26.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[25]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[25]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[25]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[25]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9324,6 +9394,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_27.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[26]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[26]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[26]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[26]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9346,6 +9417,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_28.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[27]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[27]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[27]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[27]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9368,6 +9440,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_29.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[28]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[28]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[28]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[28]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9390,6 +9463,7 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30.Image;
             button_click_panelDetailPicture_Favourites.Text = dtFiltered.Rows[29]["Favorites"].ToString() + "K Favourites";
             button_click_panelDetailPicture_Comments.Text = dtFiltered.Rows[29]["Comments"].ToString() + "K Comments";
+            button_click_panelDetailPicture_Views.Text = dtFiltered.Rows[29]["Views"].ToString() + "K Views";
             if (dtFiltered.Rows[29]["Price"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -9409,6 +9483,12 @@ namespace doAnC_Sharp_Finale
         {
             flowLayoutPanel_searchResult.Visible = false;
             flowLayoutPanelMain_form1.Visible = true;
+
+            materialComboBox1.Text = "Any";
+            materialComboBox2.Text = "Any";
+            materialComboBox3.Text = "Any";
+            materialComboBox4.Text = "Any";
+            richTextBox_panelFunction_form1_search.Text = "";
         }
     }
 }
