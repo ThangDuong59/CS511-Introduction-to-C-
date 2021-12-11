@@ -8585,9 +8585,6 @@ namespace doAnC_Sharp_Finale
                 }
                 dtSearched = new DataTable();
                 dtSearched = Found_Rows.CopyToDataTable();
-                dtFiltered.Clear();
-                dtFiltered = dtSearched.Copy();
-
             }
         }
 
@@ -8601,13 +8598,14 @@ namespace doAnC_Sharp_Finale
             // Filter by image size
             if(materialComboBox1.Text == "Large")
             {
-            int Count_rows_dtSearch = dtFiltered.Rows.Count;
+                int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch ; j++)
                 { 
                     Image img = Image.FromFile(dtFiltered.Rows[j]["Path"].ToString());
                     if(img.Width<250 && img.Height<300)
                     {
                         dtFiltered.Rows.RemoveAt(j);
+                        Count_rows_dtSearch -= 1;
                     }    
                 }
             }
@@ -8620,6 +8618,7 @@ namespace doAnC_Sharp_Finale
                     if (img.Width < 150 && img.Height < 200)  
                     {
                         dtFiltered.Rows.RemoveAt(j);
+                        Count_rows_dtSearch -= 1;
                     }
 
                 }
@@ -8633,6 +8632,7 @@ namespace doAnC_Sharp_Finale
                     if (img.Width < 50 && img.Height < 100)
                     {
                         dtFiltered.Rows.RemoveAt(j);
+                        Count_rows_dtSearch -= 1;
                     }
 
                 }
@@ -8647,6 +8647,7 @@ namespace doAnC_Sharp_Finale
                     if (dtFiltered.Rows[j]["Path"].ToString().ToLower().Contains(".jpg"))
                     {
                         dtFiltered.Rows.RemoveAt(j);
+                        Count_rows_dtSearch -= 1;
                     }
                 }
             }
@@ -8658,6 +8659,7 @@ namespace doAnC_Sharp_Finale
                     if (dtFiltered.Rows[j]["Path"].ToString().ToLower().Contains(".png"))
                     {
                         dtFiltered.Rows.RemoveAt(j);
+                        Count_rows_dtSearch -= 1;
                     }
                 }
             }
@@ -8682,9 +8684,10 @@ namespace doAnC_Sharp_Finale
                 int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch; j++)
                 {
-                    if (dtFiltered.Rows[j]["Price"].ToString() == "0")
+                    if (dtFiltered.Rows[j]["Price"].ToString() == "1")
                     {
                         dtFiltered.Rows.RemoveAt(j);
+                        Count_rows_dtSearch -= 1;
                     }
                 }
             }
@@ -8693,29 +8696,22 @@ namespace doAnC_Sharp_Finale
                 int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch; j++)
                 {
-                    if (dtFiltered.Rows[j]["Price"].ToString() == "1")
+                    if (dtFiltered.Rows[j]["Price"].ToString() == "0")
                     {
                         dtFiltered.Rows.RemoveAt(j);
+                        Count_rows_dtSearch -= 1;
                     }
                 }
             }
 
-            int i = 0;
-            foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
+            for (int i = 0; i < dtFiltered.Rows.Count; i++)
             {
-                if (control1 is PictureBox)
-                {
-                    ((PictureBox)control1).Image = Image.FromFile(dtFiltered.Rows[i]["Path"].ToString());
-                    i += 1;
-                }
-            }
-            if (i < 29)
-            {
+                string search_name = "pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_" + Convert.ToString(i + 1);
                 foreach (Control control1 in this.panelShowResult_flowLayoutPanelResult_form1.Controls)
                 {
-                    if (control1 is PictureBox && this.panelShowResult_flowLayoutPanelResult_form1.Controls.IndexOf(control1) == i)
+                    if (control1 is PictureBox && control1.Name == search_name)
                     {
-                        ((PictureBox)control1).Visible = false; 
+                        ((PictureBox)control1).Image = Image.FromFile(dtFiltered.Rows[i]["Path"].ToString());
                         i += 1;
                     }
                 }
@@ -8723,32 +8719,30 @@ namespace doAnC_Sharp_Finale
         }
         private void materialComboBox4_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            dtFiltered = new DataTable();
+            // dtFiltered = new DataTable();
             updateDtFiltered();
-            int count_filter_rows = dtFiltered.Rows.Count;
+            // int count_filter_rows = dtFiltered.Rows.Count;
  
         }
         private void materialComboBox3_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            dtFiltered = new DataTable();
+            // dtFiltered = new DataTable();
 
             updateDtFiltered();
-            int count_filter_rows = dtFiltered.Rows.Count;
+            // int count_filter_rows = dtFiltered.Rows.Count;
     
         }
         private void materialComboBox2_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            dtFiltered = new DataTable();
+            // dtFiltered = new DataTable();
             updateDtFiltered();
 
         }
         private void materialComboBox1_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            dtFiltered = new DataTable();
+            // dtFiltered = new DataTable();
 
             updateDtFiltered();
-
-    
         }
         private void pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1_Click(object sender, EventArgs e)
         {
