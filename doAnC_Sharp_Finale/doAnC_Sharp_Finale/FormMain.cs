@@ -8510,7 +8510,39 @@ namespace doAnC_Sharp_Finale
             }
             else
             {
-                List<string> en_keywords = new List<string>() { "TREE", "ROAD", "HOUSE", "TABLE", "MIRROR", "LAMP", "CHAIR", "GLASS", "LIGHT", "SOFA", "FLOWER VASE", "BATH", "PAINTING", "BOOK"};
+                List<string> en_keywords = new List<string>() { "ROAD", 
+                    "TREE",
+                    "HOUSE",
+                    "FLOWER VASE",
+                    "TABLE",
+                    "LAMP",
+                    "LIGHT",
+                    "GLASS",
+                    "BATH",
+                    "PAINTING",
+                    "BED",
+                    "SOFA",
+                    "DOOR",
+                    "CHAIR",
+                    "BOOK",
+                    "MIRROR",
+                    "WAVE",
+                    "FLOWER",
+                    "SKY",
+                    "SEA",
+                    "FISH",
+                    "WATER",
+                    "SEASIDE",
+                    "SUNSET",
+                    "DAWN",
+                    "PEOPLE",
+                    "LOG",
+                    "WATERSTREAM",
+                    "FIELD",
+                    "LAKE",
+                    "BRIDGE",
+                    "MOUNTAIN"
+};
                 min_score = 10000;
                 final_keyword = "";
                 foreach (string keyword in en_keywords)
