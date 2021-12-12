@@ -277,12 +277,10 @@ namespace doAnC_Sharp_Finale
             this.button_click_panelSortBy_Back = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.materialComboBox4 = new ReaLTaiizor.Controls.MaterialComboBox();
-            this.materialComboBox3 = new ReaLTaiizor.Controls.MaterialComboBox();
-            this.materialComboBox2 = new ReaLTaiizor.Controls.MaterialComboBox();
-            this.materialComboBox1 = new ReaLTaiizor.Controls.MaterialComboBox();
+            this.materialComboBox_price = new ReaLTaiizor.Controls.MaterialComboBox();
+            this.materialComboBox_rank = new ReaLTaiizor.Controls.MaterialComboBox();
+            this.materialComboBox_size = new ReaLTaiizor.Controls.MaterialComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panelShowResult_flowLayoutPanelResult_form1 = new System.Windows.Forms.Panel();
@@ -3612,12 +3610,10 @@ namespace doAnC_Sharp_Finale
             this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.button_click_panelSortBy_Back);
             this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label41);
             this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label17);
-            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label9);
             this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label4);
-            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.materialComboBox4);
-            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.materialComboBox3);
-            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.materialComboBox2);
-            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.materialComboBox1);
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.materialComboBox_price);
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.materialComboBox_rank);
+            this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.materialComboBox_size);
             this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label16);
             this.panelSortBy_flowLayoutPanelResult_form1.Controls.Add(this.label5);
             this.panelSortBy_flowLayoutPanelResult_form1.Location = new System.Drawing.Point(3, 3);
@@ -3632,7 +3628,7 @@ namespace doAnC_Sharp_Finale
             this.ascendent_order_checkBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ascendent_order_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.ascendent_order_checkBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.ascendent_order_checkBox.Location = new System.Drawing.Point(833, 16);
+            this.ascendent_order_checkBox.Location = new System.Drawing.Point(1018, 14);
             this.ascendent_order_checkBox.Margin = new System.Windows.Forms.Padding(0);
             this.ascendent_order_checkBox.MouseLocation = new System.Drawing.Point(-1, -1);
             this.ascendent_order_checkBox.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
@@ -3663,7 +3659,7 @@ namespace doAnC_Sharp_Finale
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label41.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label41.Location = new System.Drawing.Point(1009, 20);
+            this.label41.Location = new System.Drawing.Point(553, 22);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(56, 25);
             this.label41.TabIndex = 10;
@@ -3675,143 +3671,106 @@ namespace doAnC_Sharp_Finale
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label17.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label17.Location = new System.Drawing.Point(654, 21);
+            this.label17.Location = new System.Drawing.Point(820, 21);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(57, 25);
             this.label17.TabIndex = 10;
             this.label17.Text = "Rank";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label9.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label9.Location = new System.Drawing.Point(428, 19);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 25);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Type Of";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(242, 19);
+            this.label4.Location = new System.Drawing.Point(288, 21);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 25);
             this.label4.TabIndex = 10;
             this.label4.Text = "Size";
             // 
-            // materialComboBox4
+            // materialComboBox_price
             // 
-            this.materialComboBox4.AutoResize = false;
-            this.materialComboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox4.Depth = 0;
-            this.materialComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox4.DropDownHeight = 174;
-            this.materialComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox4.DropDownWidth = 121;
-            this.materialComboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialComboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox4.FormattingEnabled = true;
-            this.materialComboBox4.IntegralHeight = false;
-            this.materialComboBox4.ItemHeight = 43;
-            this.materialComboBox4.Items.AddRange(new object[] {
+            this.materialComboBox_price.AutoResize = false;
+            this.materialComboBox_price.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialComboBox_price.Depth = 0;
+            this.materialComboBox_price.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.materialComboBox_price.DropDownHeight = 174;
+            this.materialComboBox_price.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.materialComboBox_price.DropDownWidth = 121;
+            this.materialComboBox_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialComboBox_price.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialComboBox_price.FormattingEnabled = true;
+            this.materialComboBox_price.IntegralHeight = false;
+            this.materialComboBox_price.ItemHeight = 43;
+            this.materialComboBox_price.Items.AddRange(new object[] {
             "Any",
             "Free",
             "Premium"});
-            this.materialComboBox4.Location = new System.Drawing.Point(1076, 6);
-            this.materialComboBox4.MaxDropDownItems = 4;
-            this.materialComboBox4.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.materialComboBox4.Name = "materialComboBox4";
-            this.materialComboBox4.Size = new System.Drawing.Size(121, 49);
-            this.materialComboBox4.StartIndex = 0;
-            this.materialComboBox4.TabIndex = 9;
-            this.materialComboBox4.SelectionChangeCommitted += new System.EventHandler(this.materialComboBox4_SelectionChangeCommitted);
+            this.materialComboBox_price.Location = new System.Drawing.Point(615, 8);
+            this.materialComboBox_price.MaxDropDownItems = 4;
+            this.materialComboBox_price.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.materialComboBox_price.Name = "materialComboBox_price";
+            this.materialComboBox_price.Size = new System.Drawing.Size(121, 49);
+            this.materialComboBox_price.StartIndex = 0;
+            this.materialComboBox_price.TabIndex = 9;
+            this.materialComboBox_price.SelectionChangeCommitted += new System.EventHandler(this.materialComboBox4_SelectionChangeCommitted);
             // 
-            // materialComboBox3
+            // materialComboBox_rank
             // 
-            this.materialComboBox3.AutoResize = false;
-            this.materialComboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox3.Depth = 0;
-            this.materialComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox3.DropDownHeight = 174;
-            this.materialComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox3.DropDownWidth = 121;
-            this.materialComboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox3.FormattingEnabled = true;
-            this.materialComboBox3.IntegralHeight = false;
-            this.materialComboBox3.ItemHeight = 43;
-            this.materialComboBox3.Items.AddRange(new object[] {
+            this.materialComboBox_rank.AutoResize = false;
+            this.materialComboBox_rank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialComboBox_rank.Depth = 0;
+            this.materialComboBox_rank.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.materialComboBox_rank.DropDownHeight = 174;
+            this.materialComboBox_rank.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.materialComboBox_rank.DropDownWidth = 121;
+            this.materialComboBox_rank.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialComboBox_rank.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialComboBox_rank.FormattingEnabled = true;
+            this.materialComboBox_rank.IntegralHeight = false;
+            this.materialComboBox_rank.ItemHeight = 43;
+            this.materialComboBox_rank.Items.AddRange(new object[] {
             "Any",
             "Favorites",
             "Comments",
             "Views"});
-            this.materialComboBox3.Location = new System.Drawing.Point(715, 6);
-            this.materialComboBox3.MaxDropDownItems = 4;
-            this.materialComboBox3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.materialComboBox3.Name = "materialComboBox3";
-            this.materialComboBox3.Size = new System.Drawing.Size(118, 49);
-            this.materialComboBox3.StartIndex = 0;
-            this.materialComboBox3.TabIndex = 8;
-            this.materialComboBox3.SelectionChangeCommitted += new System.EventHandler(this.materialComboBox3_SelectionChangeCommitted);
+            this.materialComboBox_rank.Location = new System.Drawing.Point(883, 8);
+            this.materialComboBox_rank.MaxDropDownItems = 4;
+            this.materialComboBox_rank.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.materialComboBox_rank.Name = "materialComboBox_rank";
+            this.materialComboBox_rank.Size = new System.Drawing.Size(118, 49);
+            this.materialComboBox_rank.StartIndex = 0;
+            this.materialComboBox_rank.TabIndex = 8;
+            this.materialComboBox_rank.SelectedIndexChanged += new System.EventHandler(this.materialComboBox3_SelectedIndexChanged);
+            this.materialComboBox_rank.SelectionChangeCommitted += new System.EventHandler(this.materialComboBox3_SelectionChangeCommitted);
             // 
-            // materialComboBox2
+            // materialComboBox_size
             // 
-            this.materialComboBox2.AutoResize = false;
-            this.materialComboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox2.Depth = 0;
-            this.materialComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox2.DropDownHeight = 174;
-            this.materialComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox2.DropDownWidth = 121;
-            this.materialComboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox2.FormattingEnabled = true;
-            this.materialComboBox2.IntegralHeight = false;
-            this.materialComboBox2.ItemHeight = 43;
-            this.materialComboBox2.Items.AddRange(new object[] {
-            "Any",
-            "JPG",
-            "PNG"});
-            this.materialComboBox2.Location = new System.Drawing.Point(511, 7);
-            this.materialComboBox2.MaxDropDownItems = 4;
-            this.materialComboBox2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.materialComboBox2.Name = "materialComboBox2";
-            this.materialComboBox2.Size = new System.Drawing.Size(121, 49);
-            this.materialComboBox2.StartIndex = 0;
-            this.materialComboBox2.TabIndex = 7;
-            this.materialComboBox2.SelectionChangeCommitted += new System.EventHandler(this.materialComboBox2_SelectionChangeCommitted);
-            // 
-            // materialComboBox1
-            // 
-            this.materialComboBox1.AutoResize = false;
-            this.materialComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.materialComboBox1.Depth = 0;
-            this.materialComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox1.DropDownHeight = 174;
-            this.materialComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox1.DropDownWidth = 115;
-            this.materialComboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.materialComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.materialComboBox1.FormattingEnabled = true;
-            this.materialComboBox1.IntegralHeight = false;
-            this.materialComboBox1.ItemHeight = 43;
-            this.materialComboBox1.Items.AddRange(new object[] {
+            this.materialComboBox_size.AutoResize = false;
+            this.materialComboBox_size.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.materialComboBox_size.Depth = 0;
+            this.materialComboBox_size.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.materialComboBox_size.DropDownHeight = 174;
+            this.materialComboBox_size.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.materialComboBox_size.DropDownWidth = 115;
+            this.materialComboBox_size.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.materialComboBox_size.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.materialComboBox_size.FormattingEnabled = true;
+            this.materialComboBox_size.IntegralHeight = false;
+            this.materialComboBox_size.ItemHeight = 43;
+            this.materialComboBox_size.Items.AddRange(new object[] {
             "Any",
             "Large",
             "Medium",
             "Small"});
-            this.materialComboBox1.Location = new System.Drawing.Point(290, 6);
-            this.materialComboBox1.MaxDropDownItems = 4;
-            this.materialComboBox1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.materialComboBox1.Name = "materialComboBox1";
-            this.materialComboBox1.Size = new System.Drawing.Size(126, 49);
-            this.materialComboBox1.StartIndex = 0;
-            this.materialComboBox1.TabIndex = 6;
-            this.materialComboBox1.SelectionChangeCommitted += new System.EventHandler(this.materialComboBox1_SelectionChangeCommitted);
+            this.materialComboBox_size.Location = new System.Drawing.Point(341, 8);
+            this.materialComboBox_size.MaxDropDownItems = 4;
+            this.materialComboBox_size.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.materialComboBox_size.Name = "materialComboBox_size";
+            this.materialComboBox_size.Size = new System.Drawing.Size(126, 49);
+            this.materialComboBox_size.StartIndex = 0;
+            this.materialComboBox_size.TabIndex = 6;
+            this.materialComboBox_size.SelectionChangeCommitted += new System.EventHandler(this.materialComboBox1_SelectionChangeCommitted);
             // 
             // label16
             // 
@@ -4669,13 +4628,11 @@ namespace doAnC_Sharp_Finale
         private System.Windows.Forms.PictureBox pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_30;
         private System.Windows.Forms.PictureBox pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_29;
         private System.Windows.Forms.PictureBox pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_28;
-        private ReaLTaiizor.Controls.MaterialComboBox materialComboBox1;
+        private ReaLTaiizor.Controls.MaterialComboBox materialComboBox_size;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label4;
-        private ReaLTaiizor.Controls.MaterialComboBox materialComboBox4;
-        private ReaLTaiizor.Controls.MaterialComboBox materialComboBox3;
-        private ReaLTaiizor.Controls.MaterialComboBox materialComboBox2;
+        private ReaLTaiizor.Controls.MaterialComboBox materialComboBox_price;
+        private ReaLTaiizor.Controls.MaterialComboBox materialComboBox_rank;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Button button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE;
         private System.Windows.Forms.Button button_click_panelSortBy_Back;

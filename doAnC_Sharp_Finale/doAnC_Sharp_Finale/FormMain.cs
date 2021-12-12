@@ -8640,10 +8640,9 @@ namespace doAnC_Sharp_Finale
                 }
             }
 
-            materialComboBox1.Text = "Any";
-            materialComboBox2.Text = "Any";
-            materialComboBox3.Text = "Any";
-            materialComboBox4.Text = "Any";
+            materialComboBox_size.Text = "Any";
+            materialComboBox_rank.Text = "Any";
+            materialComboBox_price.Text = "Any";
             ascendent_order_checkBox.Checked = false;
         }
 
@@ -8669,7 +8668,7 @@ namespace doAnC_Sharp_Finale
             dtFiltered = dtSearched.Copy();
 
             // Filter by image size
-            if(materialComboBox1.Text.Trim() == "Large")
+            if(materialComboBox_size.Text.Trim() == "Large")
             {
                 int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch ; j++)
@@ -8683,7 +8682,7 @@ namespace doAnC_Sharp_Finale
                     }    
                 }
             }
-            else if(materialComboBox1.Text.Trim() == "Medium")
+            else if(materialComboBox_size.Text.Trim() == "Medium")
             {
                 int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch; j++)
@@ -8698,7 +8697,7 @@ namespace doAnC_Sharp_Finale
 
                 }
             }
-            else if (materialComboBox1.Text.Trim() == "Small")
+            else if (materialComboBox_size.Text.Trim() == "Small")
             {
                 int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch; j++)
@@ -8714,36 +8713,36 @@ namespace doAnC_Sharp_Finale
                 }
             }
 
-            // Filter by image format
-            if (materialComboBox2.Text.Trim() == "JPG")
-            {
-                int Count_rows_dtSearch = dtFiltered.Rows.Count;
-                for (int j = 0; j < Count_rows_dtSearch; j++)
-                {
-                    if (!dtFiltered.Rows[j]["Path"].ToString().ToLower().Contains(".jpg"))
-                    {
-                        dtFiltered.Rows.RemoveAt(j);
-                        Count_rows_dtSearch -= 1;
-                        j -= 1;
-                    }
-                }
-            }
-            else if (materialComboBox2.Text.Trim() == "PNG")
-            {
-                int Count_rows_dtSearch = dtFiltered.Rows.Count;
-                for (int j = 0; j < Count_rows_dtSearch; j++)
-                {
-                    if (!dtFiltered.Rows[j]["Path"].ToString().ToLower().Contains(".png"))
-                    {
-                        dtFiltered.Rows.RemoveAt(j);
-                        Count_rows_dtSearch -= 1;
-                        j -= 1;
-                    }
-                }
-            }
+            //// Filter by image format
+            //if (materialComboBox2.Text.Trim() == "JPG")
+            //{
+            //    int Count_rows_dtSearch = dtFiltered.Rows.Count;
+            //    for (int j = 0; j < Count_rows_dtSearch; j++)
+            //    {
+            //        if (!dtFiltered.Rows[j]["Path"].ToString().ToLower().Contains(".jpg"))
+            //        {
+            //            dtFiltered.Rows.RemoveAt(j);
+            //            Count_rows_dtSearch -= 1;
+            //            j -= 1;
+            //        }
+            //    }
+            //}
+            //else if (materialComboBox2.Text.Trim() == "PNG")
+            //{
+            //    int Count_rows_dtSearch = dtFiltered.Rows.Count;
+            //    for (int j = 0; j < Count_rows_dtSearch; j++)
+            //    {
+            //        if (!dtFiltered.Rows[j]["Path"].ToString().ToLower().Contains(".png"))
+            //        {
+            //            dtFiltered.Rows.RemoveAt(j);
+            //            Count_rows_dtSearch -= 1;
+            //            j -= 1;
+            //        }
+            //    }
+            //}
 
             // Filter by image price
-            if (materialComboBox4.Text.Trim() == "Free")
+            if (materialComboBox_price.Text.Trim() == "Free")
             {
                 int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch; j++)
@@ -8756,7 +8755,7 @@ namespace doAnC_Sharp_Finale
                     }
                 }
             }
-            else if (materialComboBox4.Text.Trim() == "Premium")
+            else if (materialComboBox_price.Text.Trim() == "Premium")
             {
                 int Count_rows_dtSearch = dtFiltered.Rows.Count;
                 for (int j = 0; j < Count_rows_dtSearch; j++)
@@ -8781,19 +8780,19 @@ namespace doAnC_Sharp_Finale
                 to_order_type = "DESC";
             }
 
-            if (materialComboBox3.Text.Trim() == "Favorites")
+            if (materialComboBox_rank.Text.Trim() == "Favorites")
             {
                 DataView dv = dtFiltered.DefaultView;
                 dv.Sort = "Favorites " + to_order_type;
                 dtFiltered = dv.ToTable();
             }
-            else if (materialComboBox3.Text.Trim() == "Comments")
+            else if (materialComboBox_rank.Text.Trim() == "Comments")
             {
                 DataView dv = dtFiltered.DefaultView;
                 dv.Sort = "Comments " + to_order_type;
                 dtFiltered = dv.ToTable();
             }
-            else if (materialComboBox3.Text.Trim() == "Views")
+            else if (materialComboBox_rank.Text.Trim() == "Views")
             {
                 DataView dv = dtFiltered.DefaultView;
                 dv.Sort = "Views " + to_order_type;
@@ -9536,10 +9535,9 @@ namespace doAnC_Sharp_Finale
             flowLayoutPanel_searchResult.Visible = false;
             flowLayoutPanelMain_form1.Visible = true;
 
-            materialComboBox1.Text = "Any";
-            materialComboBox2.Text = "Any";
-            materialComboBox3.Text = "Any";
-            materialComboBox4.Text = "Any";
+            materialComboBox_size.Text = "Any";
+            materialComboBox_rank.Text = "Any";
+            materialComboBox_price.Text = "Any";
             ascendent_order_checkBox.Checked = false;
             richTextBox_panelFunction_form1_search.Text = "";
         }
@@ -9724,6 +9722,11 @@ namespace doAnC_Sharp_Finale
                 dtFiltered = dtSearched.Copy();
                 flowLayoutPanel_searchResult.Visible = true;
             }
+        }
+
+        private void materialComboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
