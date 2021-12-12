@@ -3612,7 +3612,7 @@ namespace doAnC_Sharp_Finale
                 {
                     pictureBoxShowingMain_19.Image = Image.FromFile(Convert.ToString(dtMotoBike.Rows[numrandomMotoBike_3 - 1]["Path"]));
                     pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_14.Image= Image.FromFile(Convert.ToString(dtMotoBike.Rows[numrandomMotoBike_3 - 1]["Path"]));
-                    Dictionary<string, string> lstImageInfoScreenMain = new Dictionary<string, string>();
+
                     lstImageInfoScreenMain.Add("Categorized_main19", dtMotoBike.Rows[numrandomMotoBike_3 - 1]["Categorized"].ToString());
                     lstImageInfoScreenMain.Add("Path_main19", dtMotoBike.Rows[numrandomMotoBike_3 - 1]["Path"].ToString());
                     lstImageInfoScreenMain.Add("Favourites_main19", dtMotoBike.Rows[numrandomMotoBike_3 - 1]["Favorites"].ToString());
@@ -6376,9 +6376,9 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_1.Image;
             button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "CAR";
             danhgiau_pictureBoxShowing = 40;
-            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main1"].ToString();
-            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main1"].ToString();
-            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main1"].ToString();
+            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main1"].ToString()  +"K Favourites";
+            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main1"].ToString()      +"K Comments";
+            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main1"].ToString()            +"K Views";
             if (lstImageInfoScreenMain["Price_main1"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -6397,9 +6397,9 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_2.Image;
             button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "CAR";
             danhgiau_pictureBoxShowing = 41;
-            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main2"].ToString();
-            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main2"].ToString();
-            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main2"].ToString();
+            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main2"].ToString()   +"K Favourites";
+            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main2"].ToString()       +"K Comments";
+            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main2"].ToString() + "K Views";
             if (lstImageInfoScreenMain["Price_main2"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -6418,9 +6418,9 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_3.Image;
             button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "INTERIOR";
             danhgiau_pictureBoxShowing = 42;
-            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main5"].ToString();
-            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main5"].ToString();
-            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main5"].ToString();
+            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main5"].ToString()   +"K Favourites";
+            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main5"].ToString()       +"K Comments";
+            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main5"].ToString() + "K Views";
             if (lstImageInfoScreenMain["Price_main5"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -6439,9 +6439,9 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_4.Image;
             button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "INTERIOR";
             danhgiau_pictureBoxShowing = 43;
-            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main6"].ToString();
-            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main6"].ToString();
-            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main6"].ToString();
+            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main6"].ToString()  +"K Favourites";
+            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main6"].ToString()      +"K Comments";
+            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main6"].ToString() + "K Views";
             if (lstImageInfoScreenMain["Price_main6"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -6460,9 +6460,9 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_5.Image;
             button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "FOREST";
             danhgiau_pictureBoxShowing = 44;
-            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main9"].ToString();
-            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main9"].ToString();
-            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main9"].ToString();
+            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main9"].ToString()  +"K Favourites";
+            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main9"].ToString()      +"K Comments";
+            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main9"].ToString() + "K Views";
             if (lstImageInfoScreenMain["Price_main9"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -6481,9 +6481,9 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_6.Image;
             button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "FOREST";
             danhgiau_pictureBoxShowing = 45;
-            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main10"].ToString();
-            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main10"].ToString();
-            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main10"].ToString();
+            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main10"].ToString()    +"K Favourites";
+            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main10"].ToString()        +"K Comments";
+            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main10"].ToString() + "K Views";
             if (lstImageInfoScreenMain["Price_main10"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -6502,9 +6502,9 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_7.Image;
             button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "OCEANS";
             danhgiau_pictureBoxShowing = 46;
-            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main13"].ToString();
-            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main13"].ToString();
-            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main13"].ToString();
+            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main13"].ToString()    +"K Favourites";
+            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main13"].ToString()        +"K Comments";
+            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main13"].ToString() + "K Views";
             if (lstImageInfoScreenMain["Price_main13"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -6523,9 +6523,9 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_8.Image;
             button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "OCEANS";
             danhgiau_pictureBoxShowing = 47;
-            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main14"].ToString();
-            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main14"].ToString();
-            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main14"].ToString();
+            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main14"].ToString()    +"K Favourites";
+            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main14"].ToString()        +"K Comments";
+            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main14"].ToString() + "K Views";
             if (lstImageInfoScreenMain["Price_main14"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -6544,9 +6544,9 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_9.Image;
             button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "MOTOBIKE";
             danhgiau_pictureBoxShowing = 48;
-            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main17"].ToString();
-            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main17"].ToString();
-            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main17"].ToString();
+            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main17"].ToString()     +"K Favourites";
+            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main17"].ToString()         +"K Comments";
+            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main17"].ToString() + "K Views";
             if (lstImageInfoScreenMain["Price_main17"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -6565,9 +6565,9 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_10.Image;
             button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "MOTOBIKE";
             danhgiau_pictureBoxShowing = 49;
-            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main18"].ToString();
-            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main18"].ToString();
-            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main18"].ToString();
+            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main18"].ToString()   +"K Favourites";
+            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main18"].ToString()       +"K Comments";
+            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main18"].ToString() + "K Views";
             if (lstImageInfoScreenMain["Price_main18"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -6586,9 +6586,9 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_11.Image;
             button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "FLOWER";
             danhgiau_pictureBoxShowing = 50;
-            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main21"].ToString();
-            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main21"].ToString();
-            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main21"].ToString();
+            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main21"].ToString()   +"K Favourites";
+            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main21"].ToString()       +"K Comments";
+            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main21"].ToString() + "K Views";
             if (lstImageInfoScreenMain["Price_main21"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -6607,9 +6607,9 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_12.Image;
             button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "FLOWER";
             danhgiau_pictureBoxShowing = 51;
-            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main22"].ToString();
-            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main22"].ToString();
-            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main22"].ToString();
+            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main22"].ToString()   +"K Favourites";
+            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main22"].ToString()       +"K Comments";
+            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main22"].ToString() + "K Views";
             if (lstImageInfoScreenMain["Price_main22"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -6628,9 +6628,9 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_13.Image;
             button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "FLOWER";
             danhgiau_pictureBoxShowing = 52;
-            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main23"].ToString();
-            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main23"].ToString();
-            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main23"].ToString();
+            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main23"].ToString()     +"K Favourites";
+            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main23"].ToString()         +"K Comments";
+            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main23"].ToString() + "K Views";
             if (lstImageInfoScreenMain["Price_main23"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -6649,9 +6649,9 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_14.Image;
             button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "MOTOBIKE";
             danhgiau_pictureBoxShowing = 53;
-            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main19"].ToString();
-            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main19"].ToString();
-            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main19"].ToString();
+            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main19"].ToString()    +"K Favourites";
+            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main19"].ToString()        +"K Comments";
+            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main19"].ToString() + "K Views";
             if (lstImageInfoScreenMain["Price_main19"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
@@ -6670,9 +6670,9 @@ namespace doAnC_Sharp_Finale
             pictureBox_panelDetailPicture_flowLayoutPanelDetailPicture_form1_showingPicture.Image = pictureBox_panelSeeMore_flowLayoutPanelDetailPicture_form1_showingMore_15.Image;
             button_click_panelDetailPicture_flowLayoutPanelDetailPicture_form1_tags_1.Text = "OCEANS";
             danhgiau_pictureBoxShowing = 54;
-            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main16"].ToString();
-            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main16"].ToString();
-            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main16"].ToString();
+            button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_main16"].ToString() +"K Favourites";
+            button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_main16"].ToString()     +"K Comments";
+            button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_main16"].ToString() + "K Views";
             if (lstImageInfoScreenMain["Price_main16"].ToString() == "0")
             {
                 button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
