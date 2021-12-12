@@ -99,3 +99,7 @@ D:\CS511-Introduction-to-C-Sharp\doAnC_Sharp_Finale\doAnC_Sharp_Finale\obj\Debug
 D:\CS511-Introduction-to-C-Sharp\doAnC_Sharp_Finale\doAnC_Sharp_Finale\obj\Debug\final_project.csproj.CopyComplete
 D:\CS511-Introduction-to-C-Sharp\doAnC_Sharp_Finale\doAnC_Sharp_Finale\obj\Debug\doAnC_Sharp_Finale.exe
 D:\CS511-Introduction-to-C-Sharp\doAnC_Sharp_Finale\doAnC_Sharp_Finale\obj\Debug\doAnC_Sharp_Finale.pdb
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\doAnC_Sharp_Finale\doAnC_Sharp_Finale\bin\Debug\NTextCat.dll
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\doAnC_Sharp_Finale\doAnC_Sharp_Finale\bin\Debug\NTextCat.xml
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\doAnC_Sharp_Finale\doAnC_Sharp_Finale\bin\Debug\GroupDocs.Search.dll
+D:\UIT\CS511\CS511-Introduction-to-C-Sharp\doAnC_Sharp_Finale\doAnC_Sharp_Finale\bin\Debug\GroupDocs.Search.xml
