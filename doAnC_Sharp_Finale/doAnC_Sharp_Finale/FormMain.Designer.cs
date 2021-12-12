@@ -36,6 +36,7 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelDashBoard_form1_daily = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelDashBoard_form1_home = new System.Windows.Forms.PictureBox();
             this.panelFunction_form1 = new System.Windows.Forms.Panel();
+            this.button_click_panelFunction_searchByImage = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button_click_panelFuntion_form1_search = new System.Windows.Forms.Button();
             this.richTextBox_panelFunction_form1_search = new System.Windows.Forms.RichTextBox();
@@ -315,7 +316,6 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_2 = new System.Windows.Forms.PictureBox();
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1 = new System.Windows.Forms.PictureBox();
-            this.button_click_panelFunction_searchByImage = new System.Windows.Forms.Button();
             this.panelDashBoard_form1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_trending)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_click_panelDashBoard_form1_topics)).BeginInit();
@@ -569,6 +569,18 @@ namespace doAnC_Sharp_Finale
             this.panelFunction_form1.Name = "panelFunction_form1";
             this.panelFunction_form1.Size = new System.Drawing.Size(1224, 66);
             this.panelFunction_form1.TabIndex = 1;
+            // 
+            // button_click_panelFunction_searchByImage
+            // 
+            this.button_click_panelFunction_searchByImage.FlatAppearance.BorderSize = 0;
+            this.button_click_panelFunction_searchByImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_click_panelFunction_searchByImage.Image = ((System.Drawing.Image)(resources.GetObject("button_click_panelFunction_searchByImage.Image")));
+            this.button_click_panelFunction_searchByImage.Location = new System.Drawing.Point(429, 15);
+            this.button_click_panelFunction_searchByImage.Name = "button_click_panelFunction_searchByImage";
+            this.button_click_panelFunction_searchByImage.Size = new System.Drawing.Size(35, 36);
+            this.button_click_panelFunction_searchByImage.TabIndex = 4;
+            this.button_click_panelFunction_searchByImage.UseVisualStyleBackColor = true;
+            this.button_click_panelFunction_searchByImage.Click += new System.EventHandler(this.button_click_panelFunction_searchByImage_Click);
             // 
             // pictureBox2
             // 
@@ -4162,18 +4174,6 @@ namespace doAnC_Sharp_Finale
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.TabIndex = 0;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.TabStop = false;
             this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1.Click += new System.EventHandler(this.pictureBox_click_panelShowResult_flowLayoutPanelResult_form1_ShowingResult_1_Click);
-            // 
-            // button_click_panelFunction_searchByImage
-            // 
-            this.button_click_panelFunction_searchByImage.FlatAppearance.BorderSize = 0;
-            this.button_click_panelFunction_searchByImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_click_panelFunction_searchByImage.Image = ((System.Drawing.Image)(resources.GetObject("button_click_panelFunction_searchByImage.Image")));
-            this.button_click_panelFunction_searchByImage.Location = new System.Drawing.Point(429, 15);
-            this.button_click_panelFunction_searchByImage.Name = "button_click_panelFunction_searchByImage";
-            this.button_click_panelFunction_searchByImage.Size = new System.Drawing.Size(35, 36);
-            this.button_click_panelFunction_searchByImage.TabIndex = 4;
-            this.button_click_panelFunction_searchByImage.UseVisualStyleBackColor = true;
-            this.button_click_panelFunction_searchByImage.Click += new System.EventHandler(this.button_click_panelFunction_searchByImage_Click);
             // 
             // FormMain
             // 
