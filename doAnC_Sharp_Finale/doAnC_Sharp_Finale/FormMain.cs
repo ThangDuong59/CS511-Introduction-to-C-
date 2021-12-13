@@ -8479,7 +8479,7 @@ namespace doAnC_Sharp_Finale
                     min_score = dis;
                 }
             }
-            double threshold = 0.3F;
+            double threshold = 0.8F;
             if ((1.0 - ((double)min_score) / (double)Math.Max(Search_string.Length, final_keyword.Length) > threshold))
             {
                 Search_string = final_keyword;
@@ -8541,7 +8541,8 @@ namespace doAnC_Sharp_Finale
                     "FIELD",
                     "LAKE",
                     "BRIDGE",
-                    "MOUNTAIN"
+                    "MOUNTAIN",
+                    "FURNITURE"
 };
                 min_score = 10000;
                 final_keyword = "";
