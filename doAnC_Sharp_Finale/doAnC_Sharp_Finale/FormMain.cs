@@ -5761,16 +5761,16 @@ namespace doAnC_Sharp_Finale
             flowLayoutPanelDetailPicture_form1.Visible = true;
             if(label_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorName.Text== "TheMandarialThangFAT")
             {
-                button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_authorThang_1"].ToString() + "K Favourites";
-                button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_authorThang_1"].ToString()     + "K Comments";
-                button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_authorThang_1"].ToString()          +"K Views";
-                if (lstImageInfoScreenMain["Price_authorThang_1"].ToString() == "0")
+                button_click_panelDetailPicture_Favourites.Text = lstImageScreenAuthor["Favourites_authorThang_1"].ToString() + "K Favourites";
+                button_click_panelDetailPicture_Comments.Text = lstImageScreenAuthor["Comments_authorThang_1"].ToString()     + "K Comments";
+                button_click_panelDetailPicture_Views.Text = lstImageScreenAuthor["Views_authorThang_1"].ToString()          +"K Views";
+                if (lstImageScreenAuthor["Price_authorThang_1"].ToString() == "0")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/free.png");
 
                 }
-                else if (lstImageInfoScreenMain["Price_authorThang_1"].ToString() == "1")
+                else if (lstImageScreenAuthor["Price_authorThang_1"].ToString() == "1")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Costly";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/premium-quality.png");
@@ -5778,16 +5778,16 @@ namespace doAnC_Sharp_Finale
             }
             else if(label_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorName.Text == "NarukamiTriTaiBAR")
             {
-                button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Categorized_authorTri_1"].ToString()   + "K Favourites";
-                button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_authorTri_1"].ToString()        + "K Comments";
-                button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_authorTri_1"].ToString()             + "K Views";
-                if (lstImageInfoScreenMain["Price_authorTri_1"].ToString() == "0")
+                button_click_panelDetailPicture_Favourites.Text = lstImageScreenAuthor["Categorized_authorTri_1"].ToString()   + "K Favourites";
+                button_click_panelDetailPicture_Comments.Text = lstImageScreenAuthor["Comments_authorTri_1"].ToString()        + "K Comments";
+                button_click_panelDetailPicture_Views.Text = lstImageScreenAuthor["Views_authorTri_1"].ToString()             + "K Views";
+                if (lstImageScreenAuthor["Price_authorTri_1"].ToString() == "0")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/free.png");
 
                 }
-                else if (lstImageInfoScreenMain["Price_authorTri_1"].ToString() == "1")
+                else if (lstImageScreenAuthor["Price_authorTri_1"].ToString() == "1")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Costly";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/premium-quality.png");
@@ -5809,16 +5809,16 @@ namespace doAnC_Sharp_Finale
             flowLayoutPanelDetailPicture_form1.Visible = true;
             if (label_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorName.Text == "TheMandarialThangFAT")
             {
-                button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_authorThang_2"].ToString()    + "K Favourites";
-                button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_authorThang_2"].ToString()        + "K Comments";
-                button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_authorThang_2"].ToString() + "K Views";
-                if (lstImageInfoScreenMain["Price_authorThang_2"].ToString() == "0")
+                button_click_panelDetailPicture_Favourites.Text = lstImageScreenAuthor["Favourites_authorThang_2"].ToString()    + "K Favourites";
+                button_click_panelDetailPicture_Comments.Text = lstImageScreenAuthor["Comments_authorThang_2"].ToString()        + "K Comments";
+                button_click_panelDetailPicture_Views.Text = lstImageScreenAuthor["Views_authorThang_2"].ToString() + "K Views";
+                if (lstImageScreenAuthor["Price_authorThang_2"].ToString() == "0")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/free.png");
 
                 }
-                else if (lstImageInfoScreenMain["Price_authorThang_2"].ToString() == "1")
+                else if (lstImageScreenAuthor["Price_authorThang_2"].ToString() == "1")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Costly";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/premium-quality.png");
@@ -5826,16 +5826,16 @@ namespace doAnC_Sharp_Finale
             }
             else if (label_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorName.Text == "NarukamiTriTaiBAR")
             {
-                button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Categorized_authorTri_2"].ToString()   + "K Favourites";
-                button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_authorTri_2"].ToString()        + "K Comments";
-                button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_authorTri_2"].ToString() + "K Views";
-                if (lstImageInfoScreenMain["Price_authorTri_2"].ToString() == "0")
+                button_click_panelDetailPicture_Favourites.Text = lstImageScreenAuthor["Categorized_authorTri_2"].ToString()   + "K Favourites";
+                button_click_panelDetailPicture_Comments.Text = lstImageScreenAuthor["Comments_authorTri_2"].ToString()        + "K Comments";
+                button_click_panelDetailPicture_Views.Text = lstImageScreenAuthor["Views_authorTri_2"].ToString() + "K Views";
+                if (lstImageScreenAuthor["Price_authorTri_2"].ToString() == "0")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/free.png");
 
                 }
-                else if (lstImageInfoScreenMain["Price_authorTri_2"].ToString() == "1")
+                else if (lstImageScreenAuthor["Price_authorTri_2"].ToString() == "1")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Costly";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/premium-quality.png");
@@ -5852,16 +5852,16 @@ namespace doAnC_Sharp_Finale
             flowLayoutPanelDetailPicture_form1.Visible = true;
             if (label_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorName.Text == "TheMandarialThangFAT")
             {
-                button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_authorThang_3"].ToString()    + "K Favourites";
-                button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_authorThang_3"].ToString()        + "K Comments";
-                button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_authorThang_3"].ToString() + "K Views";
-                if (lstImageInfoScreenMain["Price_authorThang_3"].ToString() == "0")
+                button_click_panelDetailPicture_Favourites.Text = lstImageScreenAuthor["Favourites_authorThang_3"].ToString()    + "K Favourites";
+                button_click_panelDetailPicture_Comments.Text = lstImageScreenAuthor["Comments_authorThang_3"].ToString()        + "K Comments";
+                button_click_panelDetailPicture_Views.Text = lstImageScreenAuthor["Views_authorThang_3"].ToString() + "K Views";
+                if (lstImageScreenAuthor["Price_authorThang_3"].ToString() == "0")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/free.png");
 
                 }
-                else if (lstImageInfoScreenMain["Price_authorThang_3"].ToString() == "1")
+                else if (lstImageScreenAuthor["Price_authorThang_3"].ToString() == "1")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Costly";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/premium-quality.png");
@@ -5869,16 +5869,16 @@ namespace doAnC_Sharp_Finale
             }
             else if (label_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorName.Text == "NarukamiTriTaiBAR")
             {
-                button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Categorized_authorTri_3"].ToString()   + "K Favourites";
-                button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_authorTri_3"].ToString()        + "K Comments";
-                button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_authorTri_3"].ToString() + "K Views";
-                if (lstImageInfoScreenMain["Price_authorTri_3"].ToString() == "0")
+                button_click_panelDetailPicture_Favourites.Text = lstImageScreenAuthor["Categorized_authorTri_3"].ToString()   + "K Favourites";
+                button_click_panelDetailPicture_Comments.Text = lstImageScreenAuthor["Comments_authorTri_3"].ToString()        + "K Comments";
+                button_click_panelDetailPicture_Views.Text = lstImageScreenAuthor["Views_authorTri_3"].ToString() + "K Views";
+                if (lstImageScreenAuthor["Price_authorTri_3"].ToString() == "0")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/free.png");
 
                 }
-                else if (lstImageInfoScreenMain["Price_authorTri_3"].ToString() == "1")
+                else if (lstImageScreenAuthor["Price_authorTri_3"].ToString() == "1")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Costly";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/premium-quality.png");
@@ -5895,16 +5895,16 @@ namespace doAnC_Sharp_Finale
             flowLayoutPanelDetailPicture_form1.Visible = true;
             if (label_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorName.Text == "TheMandarialThangFAT")
             {
-                button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_authorThang_4"].ToString()      + "K Favourites";
-                button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_authorThang_4"].ToString()          + "K Comments";
-                button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_authorThang_4"].ToString() + "K Views";
-                if (lstImageInfoScreenMain["Price_authorThang_4"].ToString() == "0")
+                button_click_panelDetailPicture_Favourites.Text = lstImageScreenAuthor["Favourites_authorThang_4"].ToString()      + "K Favourites";
+                button_click_panelDetailPicture_Comments.Text = lstImageScreenAuthor["Comments_authorThang_4"].ToString()          + "K Comments";
+                button_click_panelDetailPicture_Views.Text = lstImageScreenAuthor["Views_authorThang_4"].ToString() + "K Views";
+                if (lstImageScreenAuthor["Price_authorThang_4"].ToString() == "0")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/free.png");
 
                 }
-                else if (lstImageInfoScreenMain["Price_authorThang_4"].ToString() == "1")
+                else if (lstImageScreenAuthor["Price_authorThang_4"].ToString() == "1")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Costly";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/premium-quality.png");
@@ -5912,16 +5912,16 @@ namespace doAnC_Sharp_Finale
             }
             else if (label_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorName.Text == "NarukamiTriTaiBAR")
             {
-                button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Categorized_authorTri_4"].ToString()    + "K Favourites";
-                button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_authorTri_4"].ToString()         + "K Comments";
-                button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_authorTri_4"].ToString() + "K Views";
-                if (lstImageInfoScreenMain["Price_authorTri_4"].ToString() == "0")
+                button_click_panelDetailPicture_Favourites.Text = lstImageScreenAuthor["Categorized_authorTri_4"].ToString()    + "K Favourites";
+                button_click_panelDetailPicture_Comments.Text = lstImageScreenAuthor["Comments_authorTri_4"].ToString()         + "K Comments";
+                button_click_panelDetailPicture_Views.Text = lstImageScreenAuthor["Views_authorTri_4"].ToString() + "K Views";
+                if (lstImageScreenAuthor["Price_authorTri_4"].ToString() == "0")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/free.png");
 
                 }
-                else if (lstImageInfoScreenMain["Price_authorTri_4"].ToString() == "1")
+                else if (lstImageScreenAuthor["Price_authorTri_4"].ToString() == "1")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Costly";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/premium-quality.png");
@@ -5938,16 +5938,16 @@ namespace doAnC_Sharp_Finale
             flowLayoutPanelDetailPicture_form1.Visible = true;
             if (label_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorName.Text == "TheMandarialThangFAT")
             {
-                button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_authorThang_5"].ToString()       + "K Favourites";
-                button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_authorThang_5"].ToString()           + "K Comments";
-                button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_authorThang_5"].ToString() + "K Views";
-                if (lstImageInfoScreenMain["Price_authorThang_5"].ToString() == "0")
+                button_click_panelDetailPicture_Favourites.Text = lstImageScreenAuthor["Favourites_authorThang_5"].ToString()       + "K Favourites";
+                button_click_panelDetailPicture_Comments.Text = lstImageScreenAuthor["Comments_authorThang_5"].ToString()           + "K Comments";
+                button_click_panelDetailPicture_Views.Text = lstImageScreenAuthor["Views_authorThang_5"].ToString() + "K Views";
+                if (lstImageScreenAuthor["Price_authorThang_5"].ToString() == "0")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/free.png");
 
                 }
-                else if (lstImageInfoScreenMain["Price_authorThang_5"].ToString() == "1")
+                else if (lstImageScreenAuthor["Price_authorThang_5"].ToString() == "1")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Costly";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/premium-quality.png");
@@ -5955,16 +5955,16 @@ namespace doAnC_Sharp_Finale
             }
             else if (label_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorName.Text == "NarukamiTriTaiBAR")
             {
-                button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Categorized_authorTri_5"].ToString()       + "K Favourites";
-                button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_authorTri_5"].ToString()            + "K Comments";
-                button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_authorTri_5"].ToString() + "K Views";
-                if (lstImageInfoScreenMain["Price_authorTri_5"].ToString() == "0")
+                button_click_panelDetailPicture_Favourites.Text = lstImageScreenAuthor["Categorized_authorTri_5"].ToString()       + "K Favourites";
+                button_click_panelDetailPicture_Comments.Text = lstImageScreenAuthor["Comments_authorTri_5"].ToString()            + "K Comments";
+                button_click_panelDetailPicture_Views.Text = lstImageScreenAuthor["Views_authorTri_5"].ToString() + "K Views";
+                if (lstImageScreenAuthor["Price_authorTri_5"].ToString() == "0")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/free.png");
 
                 }
-                else if (lstImageInfoScreenMain["Price_authorTri_5"].ToString() == "1")
+                else if (lstImageScreenAuthor["Price_authorTri_5"].ToString() == "1")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Costly";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/premium-quality.png");
@@ -5981,16 +5981,16 @@ namespace doAnC_Sharp_Finale
             flowLayoutPanelDetailPicture_form1.Visible = true;
             if (label_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorName.Text == "TheMandarialThangFAT")
             {
-                button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Favourites_authorThang_6"].ToString()  + "K Favourites";
-                button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_authorThang_6"].ToString()      + "K Comments";
-                button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_authorThang_6"].ToString() + "K Views";
-                if (lstImageInfoScreenMain["Price_authorThang_6"].ToString() == "0")
+                button_click_panelDetailPicture_Favourites.Text = lstImageScreenAuthor["Favourites_authorThang_6"].ToString()  + "K Favourites";
+                button_click_panelDetailPicture_Comments.Text = lstImageScreenAuthor["Comments_authorThang_6"].ToString()      + "K Comments";
+                button_click_panelDetailPicture_Views.Text = lstImageScreenAuthor["Views_authorThang_6"].ToString() + "K Views";
+                if (lstImageScreenAuthor["Price_authorThang_6"].ToString() == "0")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/free.png");
 
                 }
-                else if (lstImageInfoScreenMain["Price_authorThang_6"].ToString() == "1")
+                else if (lstImageScreenAuthor["Price_authorThang_6"].ToString() == "1")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Costly";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/premium-quality.png");
@@ -5998,16 +5998,16 @@ namespace doAnC_Sharp_Finale
             }
             else if (label_panelShowingAuthorDetail_flowLayoutPanelShowingAuthorDetail_form1_showingAuthorName.Text == "NarukamiTriTaiBAR")
             {
-                button_click_panelDetailPicture_Favourites.Text = lstImageInfoScreenMain["Categorized_authorTri_6"].ToString()   + "K Favourites";
-                button_click_panelDetailPicture_Comments.Text = lstImageInfoScreenMain["Comments_authorTri_6"].ToString()        + "K Comments";
-                button_click_panelDetailPicture_Views.Text = lstImageInfoScreenMain["Views_authorTri_6"].ToString() + "K Views";
-                if (lstImageInfoScreenMain["Price_authorTri_6"].ToString() == "0")
+                button_click_panelDetailPicture_Favourites.Text = lstImageScreenAuthor["Categorized_authorTri_6"].ToString()   + "K Favourites";
+                button_click_panelDetailPicture_Comments.Text = lstImageScreenAuthor["Comments_authorTri_6"].ToString()        + "K Comments";
+                button_click_panelDetailPicture_Views.Text = lstImageScreenAuthor["Views_authorTri_6"].ToString() + "K Views";
+                if (lstImageScreenAuthor["Price_authorTri_6"].ToString() == "0")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Free";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/free.png");
 
                 }
-                else if (lstImageInfoScreenMain["Price_authorTri_6"].ToString() == "1")
+                else if (lstImageScreenAuthor["Price_authorTri_6"].ToString() == "1")
                 {
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Text = "Costly";
                     button_click_panelDetailPicture_flowLayoutPanelDetailPicture_PRICE.Image = Image.FromFile(@"../../UsedForInterface/icon/premium-quality.png");
